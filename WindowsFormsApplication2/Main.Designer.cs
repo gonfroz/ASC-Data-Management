@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2
+namespace WindowsFormsApplication2
 {
     partial class Main
     {
@@ -28,68 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.RoundsButton = new System.Windows.Forms.Button();
+            this.CheckoutButton = new System.Windows.Forms.Button();
+            this.StatsButton = new System.Windows.Forms.Button();
+            this.AdminButton = new System.Windows.Forms.Button();
+            this.NameLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // RoundsButton
             // 
-            this.button1.Location = new System.Drawing.Point(184, 123);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(100, 50);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Building Usage";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.RoundsButton.Location = new System.Drawing.Point(184, 123);
+            this.RoundsButton.Name = "RoundsButton";
+            this.RoundsButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RoundsButton.Size = new System.Drawing.Size(100, 50);
+            this.RoundsButton.TabIndex = 0;
+            this.RoundsButton.Text = "Building Usage";
+            this.RoundsButton.UseVisualStyleBackColor = true;
+            this.RoundsButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // CheckoutButton
             // 
-            this.button2.Location = new System.Drawing.Point(366, 123);
-            this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button2.Size = new System.Drawing.Size(100, 50);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Game Checkout";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.CheckoutButton.Location = new System.Drawing.Point(366, 123);
+            this.CheckoutButton.Name = "CheckoutButton";
+            this.CheckoutButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.CheckoutButton.Size = new System.Drawing.Size(100, 50);
+            this.CheckoutButton.TabIndex = 1;
+            this.CheckoutButton.Text = "Game Checkout";
+            this.CheckoutButton.UseVisualStyleBackColor = true;
+            this.CheckoutButton.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // StatsButton
             // 
-            this.button3.Location = new System.Drawing.Point(184, 237);
-            this.button3.Name = "button3";
-            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button3.Size = new System.Drawing.Size(100, 50);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Statistics";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.StatsButton.Location = new System.Drawing.Point(184, 237);
+            this.StatsButton.Name = "StatsButton";
+            this.StatsButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.StatsButton.Size = new System.Drawing.Size(100, 50);
+            this.StatsButton.TabIndex = 2;
+            this.StatsButton.Text = "Statistics";
+            this.StatsButton.UseVisualStyleBackColor = true;
+            this.StatsButton.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // AdminButton
             // 
-            this.button4.Location = new System.Drawing.Point(366, 237);
-            this.button4.Name = "button4";
-            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button4.Size = new System.Drawing.Size(100, 50);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Administrative";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.AdminButton.Location = new System.Drawing.Point(366, 237);
+            this.AdminButton.Name = "AdminButton";
+            this.AdminButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AdminButton.Size = new System.Drawing.Size(100, 50);
+            this.AdminButton.TabIndex = 3;
+            this.AdminButton.Text = "Administrative";
+            this.AdminButton.UseVisualStyleBackColor = true;
+            this.AdminButton.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label3
+            // NameLabel
             // 
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(47, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 19);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Student Worker Name";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NameLabel.BackColor = System.Drawing.Color.White;
+            this.NameLabel.Location = new System.Drawing.Point(47, 26);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(120, 19);
+            this.NameLabel.TabIndex = 7;
+            this.NameLabel.Text = "Student Worker Name";
+            this.NameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -121,11 +121,11 @@
             this.ClientSize = new System.Drawing.Size(651, 411);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.NameLabel);
+            this.Controls.Add(this.AdminButton);
+            this.Controls.Add(this.StatsButton);
+            this.Controls.Add(this.CheckoutButton);
+            this.Controls.Add(this.RoundsButton);
             this.Name = "Main";
             this.Text = "Home Screen";
             this.ResumeLayout(false);
@@ -134,11 +134,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button RoundsButton;
+        private System.Windows.Forms.Button CheckoutButton;
+        private System.Windows.Forms.Button StatsButton;
+        private System.Windows.Forms.Button AdminButton;
+        private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
     }
