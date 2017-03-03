@@ -28,5 +28,10 @@ namespace WindowsFormsApplication2
             }
             this.Close();
         }
+
+        private void MostPopVal_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -81,11 +81,10 @@
             // 
             // SecondFloor
             // 
-            this.SecondFloor.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SecondFloor.AutoSize = true;
             this.SecondFloor.BackColor = System.Drawing.Color.White;
             this.SecondFloor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SecondFloor.Location = new System.Drawing.Point(277, 24);
+            this.SecondFloor.Location = new System.Drawing.Point(288, 20);
             this.SecondFloor.Name = "SecondFloor";
             this.SecondFloor.Size = new System.Drawing.Size(96, 15);
             this.SecondFloor.TabIndex = 0;
@@ -97,7 +96,7 @@
             this.FirstFloor.AutoSize = true;
             this.FirstFloor.BackColor = System.Drawing.Color.White;
             this.FirstFloor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FirstFloor.Location = new System.Drawing.Point(277, 188);
+            this.FirstFloor.Location = new System.Drawing.Point(288, 184);
             this.FirstFloor.Name = "FirstFloor";
             this.FirstFloor.Size = new System.Drawing.Size(96, 15);
             this.FirstFloor.TabIndex = 0;
@@ -105,30 +104,28 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(203, 65);
+            this.numericUpDown1.Location = new System.Drawing.Point(214, 61);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown1.TabIndex = 1;
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(301, 65);
+            this.numericUpDown2.Location = new System.Drawing.Point(312, 61);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown2.TabIndex = 2;
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(399, 65);
+            this.numericUpDown3.Location = new System.Drawing.Point(410, 61);
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown3.TabIndex = 3;
             // 
             // numericUpDown4
             // 
-            this.numericUpDown4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown4.Location = new System.Drawing.Point(399, 137);
+            this.numericUpDown4.Location = new System.Drawing.Point(410, 133);
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown4.TabIndex = 6;
@@ -136,7 +133,7 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(202, 49);
+            this.label3.Location = new System.Drawing.Point(213, 45);
             this.label3.MinimumSize = new System.Drawing.Size(50, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 13);
@@ -148,7 +145,7 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(300, 49);
+            this.label4.Location = new System.Drawing.Point(311, 45);
             this.label4.MinimumSize = new System.Drawing.Size(50, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 13);
@@ -160,7 +157,7 @@
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(398, 49);
+            this.label5.Location = new System.Drawing.Point(409, 45);
             this.label5.MinimumSize = new System.Drawing.Size(50, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 13);
@@ -172,7 +169,7 @@
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(202, 121);
+            this.label6.Location = new System.Drawing.Point(213, 117);
             this.label6.MinimumSize = new System.Drawing.Size(50, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 13);
@@ -183,7 +180,7 @@
             // label9
             // 
             this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(398, 121);
+            this.label9.Location = new System.Drawing.Point(409, 117);
             this.label9.MinimumSize = new System.Drawing.Size(50, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 13);
@@ -194,7 +191,7 @@
             // label10
             // 
             this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(300, 121);
+            this.label10.Location = new System.Drawing.Point(311, 117);
             this.label10.MinimumSize = new System.Drawing.Size(50, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(50, 13);
@@ -204,14 +201,14 @@
             // 
             // numericUpDown7
             // 
-            this.numericUpDown7.Location = new System.Drawing.Point(301, 137);
+            this.numericUpDown7.Location = new System.Drawing.Point(312, 133);
             this.numericUpDown7.Name = "numericUpDown7";
             this.numericUpDown7.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown7.TabIndex = 5;
             // 
             // numericUpDown8
             // 
-            this.numericUpDown8.Location = new System.Drawing.Point(203, 137);
+            this.numericUpDown8.Location = new System.Drawing.Point(214, 133);
             this.numericUpDown8.Name = "numericUpDown8";
             this.numericUpDown8.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown8.TabIndex = 4;
@@ -219,7 +216,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(496, 290);
+            this.label1.Location = new System.Drawing.Point(507, 286);
             this.label1.MinimumSize = new System.Drawing.Size(50, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 13);
@@ -230,7 +227,7 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(398, 290);
+            this.label2.Location = new System.Drawing.Point(409, 286);
             this.label2.MinimumSize = new System.Drawing.Size(50, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 13);
@@ -241,16 +238,14 @@
             // 
             // numericUpDown5
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(399, 306);
+            this.numericUpDown5.Location = new System.Drawing.Point(410, 302);
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown5.TabIndex = 20;
             // 
             // numericUpDown6
             // 
-            this.numericUpDown6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown6.Location = new System.Drawing.Point(446, 234);
+            this.numericUpDown6.Location = new System.Drawing.Point(457, 230);
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown6.TabIndex = 19;
@@ -258,7 +253,7 @@
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(445, 218);
+            this.label7.Location = new System.Drawing.Point(456, 214);
             this.label7.MinimumSize = new System.Drawing.Size(50, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(50, 13);
@@ -269,7 +264,7 @@
             // label8
             // 
             this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(349, 218);
+            this.label8.Location = new System.Drawing.Point(360, 214);
             this.label8.MinimumSize = new System.Drawing.Size(50, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(50, 13);
@@ -280,7 +275,7 @@
             // label11
             // 
             this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(251, 218);
+            this.label11.Location = new System.Drawing.Point(262, 214);
             this.label11.MinimumSize = new System.Drawing.Size(50, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(54, 13);
@@ -290,10 +285,8 @@
             // 
             // label12
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(157, 218);
+            this.label12.Location = new System.Drawing.Point(168, 214);
             this.label12.MinimumSize = new System.Drawing.Size(50, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(50, 13);
@@ -304,35 +297,35 @@
             // 
             // numericUpDown9
             // 
-            this.numericUpDown9.Location = new System.Drawing.Point(497, 306);
+            this.numericUpDown9.Location = new System.Drawing.Point(508, 302);
             this.numericUpDown9.Name = "numericUpDown9";
             this.numericUpDown9.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown9.TabIndex = 22;
             // 
             // numericUpDown10
             // 
-            this.numericUpDown10.Location = new System.Drawing.Point(350, 234);
+            this.numericUpDown10.Location = new System.Drawing.Point(361, 230);
             this.numericUpDown10.Name = "numericUpDown10";
             this.numericUpDown10.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown10.TabIndex = 18;
             // 
             // numericUpDown11
             // 
-            this.numericUpDown11.Location = new System.Drawing.Point(254, 234);
+            this.numericUpDown11.Location = new System.Drawing.Point(265, 230);
             this.numericUpDown11.Name = "numericUpDown11";
             this.numericUpDown11.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown11.TabIndex = 17;
             // 
             // numericUpDown12
             // 
-            this.numericUpDown12.Location = new System.Drawing.Point(158, 234);
+            this.numericUpDown12.Location = new System.Drawing.Point(169, 230);
             this.numericUpDown12.Name = "numericUpDown12";
             this.numericUpDown12.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown12.TabIndex = 16;
             // 
             // numericUpDown13
             // 
-            this.numericUpDown13.Location = new System.Drawing.Point(105, 306);
+            this.numericUpDown13.Location = new System.Drawing.Point(116, 302);
             this.numericUpDown13.Name = "numericUpDown13";
             this.numericUpDown13.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown13.TabIndex = 28;
@@ -340,7 +333,7 @@
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(104, 290);
+            this.label13.Location = new System.Drawing.Point(115, 286);
             this.label13.MinimumSize = new System.Drawing.Size(50, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(50, 13);
@@ -352,7 +345,7 @@
             // label14
             // 
             this.label14.BackColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(195, 290);
+            this.label14.Location = new System.Drawing.Point(206, 286);
             this.label14.MinimumSize = new System.Drawing.Size(50, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(64, 13);
@@ -363,14 +356,14 @@
             // 
             // numericUpDown14
             // 
-            this.numericUpDown14.Location = new System.Drawing.Point(203, 306);
+            this.numericUpDown14.Location = new System.Drawing.Point(214, 302);
             this.numericUpDown14.Name = "numericUpDown14";
             this.numericUpDown14.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown14.TabIndex = 28;
             // 
             // numericUpDown15
             // 
-            this.numericUpDown15.Location = new System.Drawing.Point(301, 306);
+            this.numericUpDown15.Location = new System.Drawing.Point(312, 302);
             this.numericUpDown15.Name = "numericUpDown15";
             this.numericUpDown15.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown15.TabIndex = 20;
@@ -379,7 +372,7 @@
             // label15
             // 
             this.label15.BackColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(300, 290);
+            this.label15.Location = new System.Drawing.Point(311, 286);
             this.label15.MinimumSize = new System.Drawing.Size(50, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(50, 13);
@@ -390,9 +383,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(524, 354);
+            this.button1.Location = new System.Drawing.Point(535, 350);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 28);
+            this.button1.Size = new System.Drawing.Size(80, 40);
             this.button1.TabIndex = 30;
             this.button1.Text = "Record";
             this.button1.UseVisualStyleBackColor = true;
@@ -400,9 +393,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(59, 354);
+            this.button2.Location = new System.Drawing.Point(70, 350);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(67, 28);
+            this.button2.Size = new System.Drawing.Size(80, 40);
             this.button2.TabIndex = 31;
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
@@ -414,7 +407,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(651, 411);
+            this.ClientSize = new System.Drawing.Size(684, 411);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.numericUpDown14);
