@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication2
 {
-    public partial class Form1 : Form
+    public partial class Rounds : Form
     {
-        public Form1()
+        public Rounds()
         {
             InitializeComponent();
         }
@@ -73,23 +73,12 @@ namespace WindowsFormsApplication2
                 MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk)
                 == DialogResult.OK)
             {
-                /*
-                Form2 frm = new Form2();
-                frm.Show();
-                this.Close();
-                */
+                //save data
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            foreach (Form frm in Application.OpenForms)
-            {
-                if (frm is Form2)
-                {
-                    frm.Show();
-                }
-            }
             this.Close();
         }
     }

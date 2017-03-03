@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication2
 {
-    public partial class Form3 : Form
+    public partial class Statistics : Form
     {
-        public Form3()
+        public Statistics()
         {
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             foreach (Form frm in Application.OpenForms)
             {
-                if (frm is Form2)
+                if (frm is Main)
                 {
                     frm.Show();
                 }
