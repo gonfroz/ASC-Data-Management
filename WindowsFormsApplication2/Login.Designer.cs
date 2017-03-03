@@ -36,7 +36,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 62);
+            this.textBox1.Location = new System.Drawing.Point(142, 69);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(124, 20);
             this.textBox1.TabIndex = 0;
@@ -44,7 +44,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(99, 65);
+            this.label1.Location = new System.Drawing.Point(101, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 2;
@@ -52,7 +52,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(102, 106);
+            this.button1.Location = new System.Drawing.Point(104, 113);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -62,7 +62,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(196, 106);
+            this.button2.Location = new System.Drawing.Point(198, 113);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(68, 23);
             this.button2.TabIndex = 5;
@@ -74,7 +74,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(363, 190);
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(366, 204);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
