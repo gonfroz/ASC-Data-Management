@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication2
 {
-    partial class Form2
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -32,8 +32,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -80,13 +81,6 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(34, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 20);
-            this.textBox1.TabIndex = 4;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -96,9 +90,28 @@
             this.label3.Size = new System.Drawing.Size(113, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Student Worker Name";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // Form2
+            // label1
+            // 
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Location = new System.Drawing.Point(54, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 18);
+            this.label1.TabIndex = 8;
+            this.label1.Text = " ";
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button5.Location = new System.Drawing.Point(54, 356);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(113, 29);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "Log Out";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -106,15 +119,15 @@
             this.BackgroundImage = global::WindowsFormsApplication2.Properties.Resources.serveimage2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(651, 411);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form2";
+            this.Name = "Main";
             this.Text = "Home Screen";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,7 +139,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button5;
     }
 }

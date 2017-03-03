@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication2
 {
-    partial class Form1
+    partial class Rounds
     {
         /// <summary>
         /// Required designer variable.
@@ -105,21 +105,21 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(207, 65);
+            this.numericUpDown1.Location = new System.Drawing.Point(203, 65);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown1.TabIndex = 1;
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(305, 65);
+            this.numericUpDown2.Location = new System.Drawing.Point(301, 65);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown2.TabIndex = 2;
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(403, 65);
+            this.numericUpDown3.Location = new System.Drawing.Point(399, 65);
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown3.TabIndex = 3;
@@ -128,112 +128,120 @@
             // 
             this.numericUpDown4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown4.Location = new System.Drawing.Point(403, 137);
+            this.numericUpDown4.Location = new System.Drawing.Point(399, 137);
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown4.TabIndex = 6;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(221, 49);
+            this.label3.Location = new System.Drawing.Point(202, 49);
+            this.label3.MinimumSize = new System.Drawing.Size(50, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Colab";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(313, 49);
+            this.label4.Location = new System.Drawing.Point(300, 49);
+            this.label4.MinimumSize = new System.Drawing.Size(50, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 13);
+            this.label4.Size = new System.Drawing.Size(50, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Prayer";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(403, 49);
+            this.label5.Location = new System.Drawing.Point(398, 49);
+            this.label5.MinimumSize = new System.Drawing.Size(50, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.Size = new System.Drawing.Size(50, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "Activities";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(221, 121);
+            this.label6.Location = new System.Drawing.Point(202, 121);
+            this.label6.MinimumSize = new System.Drawing.Size(50, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(50, 13);
             this.label6.TabIndex = 9;
             this.label6.Text = "Game";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(419, 121);
+            this.label9.Location = new System.Drawing.Point(398, 121);
+            this.label9.MinimumSize = new System.Drawing.Size(50, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(33, 13);
+            this.label9.Size = new System.Drawing.Size(50, 13);
             this.label9.TabIndex = 15;
             this.label9.Text = "Other";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(305, 121);
+            this.label10.Location = new System.Drawing.Point(300, 121);
+            this.label10.MinimumSize = new System.Drawing.Size(50, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 13);
+            this.label10.Size = new System.Drawing.Size(50, 13);
             this.label10.TabIndex = 14;
             this.label10.Text = "Hallways";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // numericUpDown7
             // 
-            this.numericUpDown7.Location = new System.Drawing.Point(305, 137);
+            this.numericUpDown7.Location = new System.Drawing.Point(301, 137);
             this.numericUpDown7.Name = "numericUpDown7";
             this.numericUpDown7.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown7.TabIndex = 5;
             // 
             // numericUpDown8
             // 
-            this.numericUpDown8.Location = new System.Drawing.Point(207, 137);
+            this.numericUpDown8.Location = new System.Drawing.Point(203, 137);
             this.numericUpDown8.Name = "numericUpDown8";
             this.numericUpDown8.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown8.TabIndex = 4;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(523, 290);
+            this.label1.Location = new System.Drawing.Point(496, 290);
+            this.label1.MinimumSize = new System.Drawing.Size(50, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 13);
+            this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 27;
             this.label1.Text = "Other";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(403, 290);
+            this.label2.Location = new System.Drawing.Point(398, 290);
+            this.label2.MinimumSize = new System.Drawing.Size(50, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 26;
             this.label2.Text = "Hallways";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // numericUpDown5
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(403, 306);
+            this.numericUpDown5.Location = new System.Drawing.Point(399, 306);
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown5.TabIndex = 20;
@@ -242,121 +250,127 @@
             // 
             this.numericUpDown6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown6.Location = new System.Drawing.Point(453, 234);
+            this.numericUpDown6.Location = new System.Drawing.Point(446, 234);
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown6.TabIndex = 19;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(473, 218);
+            this.label7.Location = new System.Drawing.Point(445, 218);
+            this.label7.MinimumSize = new System.Drawing.Size(50, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 13);
+            this.label7.Size = new System.Drawing.Size(50, 13);
             this.label7.TabIndex = 25;
             this.label7.Text = "Hive";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(368, 218);
+            this.label8.Location = new System.Drawing.Point(349, 218);
+            this.label8.MinimumSize = new System.Drawing.Size(50, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(36, 13);
+            this.label8.Size = new System.Drawing.Size(50, 13);
             this.label8.TabIndex = 24;
             this.label8.Text = "Media";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(255, 218);
+            this.label11.Location = new System.Drawing.Point(251, 218);
+            this.label11.MinimumSize = new System.Drawing.Size(50, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(54, 13);
             this.label11.TabIndex = 23;
             this.label11.Text = "Commuter";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(164, 218);
+            this.label12.Location = new System.Drawing.Point(157, 218);
+            this.label12.MinimumSize = new System.Drawing.Size(50, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(48, 13);
+            this.label12.Size = new System.Drawing.Size(50, 13);
             this.label12.TabIndex = 21;
             this.label12.Text = "Common";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // numericUpDown9
             // 
-            this.numericUpDown9.Location = new System.Drawing.Point(507, 306);
+            this.numericUpDown9.Location = new System.Drawing.Point(497, 306);
             this.numericUpDown9.Name = "numericUpDown9";
             this.numericUpDown9.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown9.TabIndex = 22;
             // 
             // numericUpDown10
             // 
-            this.numericUpDown10.Location = new System.Drawing.Point(355, 234);
+            this.numericUpDown10.Location = new System.Drawing.Point(350, 234);
             this.numericUpDown10.Name = "numericUpDown10";
             this.numericUpDown10.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown10.TabIndex = 18;
             // 
             // numericUpDown11
             // 
-            this.numericUpDown11.Location = new System.Drawing.Point(258, 234);
+            this.numericUpDown11.Location = new System.Drawing.Point(254, 234);
             this.numericUpDown11.Name = "numericUpDown11";
             this.numericUpDown11.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown11.TabIndex = 17;
             // 
             // numericUpDown12
             // 
-            this.numericUpDown12.Location = new System.Drawing.Point(163, 234);
+            this.numericUpDown12.Location = new System.Drawing.Point(158, 234);
             this.numericUpDown12.Name = "numericUpDown12";
             this.numericUpDown12.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown12.TabIndex = 16;
             // 
             // numericUpDown13
             // 
-            this.numericUpDown13.Location = new System.Drawing.Point(114, 306);
+            this.numericUpDown13.Location = new System.Drawing.Point(105, 306);
             this.numericUpDown13.Name = "numericUpDown13";
             this.numericUpDown13.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown13.TabIndex = 28;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(113, 290);
+            this.label13.Location = new System.Drawing.Point(104, 290);
+            this.label13.MinimumSize = new System.Drawing.Size(50, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(50, 13);
             this.label13.TabIndex = 29;
             this.label13.Text = "Breakout";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(191, 290);
+            this.label14.Location = new System.Drawing.Point(195, 290);
+            this.label14.MinimumSize = new System.Drawing.Size(50, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(64, 13);
             this.label14.TabIndex = 29;
             this.label14.Text = "Great Room";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label14.Click += new System.EventHandler(this.label13_Click);
             // 
             // numericUpDown14
             // 
-            this.numericUpDown14.Location = new System.Drawing.Point(206, 306);
+            this.numericUpDown14.Location = new System.Drawing.Point(203, 306);
             this.numericUpDown14.Name = "numericUpDown14";
             this.numericUpDown14.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown14.TabIndex = 28;
             // 
             // numericUpDown15
             // 
-            this.numericUpDown15.Location = new System.Drawing.Point(305, 306);
+            this.numericUpDown15.Location = new System.Drawing.Point(301, 306);
             this.numericUpDown15.Name = "numericUpDown15";
             this.numericUpDown15.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown15.TabIndex = 20;
@@ -364,18 +378,19 @@
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(328, 290);
+            this.label15.Location = new System.Drawing.Point(300, 290);
+            this.label15.MinimumSize = new System.Drawing.Size(50, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(26, 13);
+            this.label15.Size = new System.Drawing.Size(50, 13);
             this.label15.TabIndex = 26;
             this.label15.Text = "Mail";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label15.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(290, 354);
+            this.button1.Location = new System.Drawing.Point(292, 354);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(67, 28);
             this.button1.TabIndex = 30;
@@ -385,7 +400,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(96, 354);
+            this.button2.Location = new System.Drawing.Point(136, 354);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(67, 28);
             this.button2.TabIndex = 31;
@@ -393,7 +408,7 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // Rounds
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -434,7 +449,7 @@
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.FirstFloor);
             this.Controls.Add(this.SecondFloor);
-            this.Name = "Form1";
+            this.Name = "Rounds";
             this.Text = "Building Usage";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication2
 {
-    partial class Form4
+    partial class Statistics
     {
         /// <summary>
         /// Required designer variable.
@@ -41,15 +41,15 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form4
+            // Statistics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(651, 411);
             this.Controls.Add(this.button1);
-            this.Name = "Form4";
-            this.Text = "Form4";
+            this.Name = "Statistics";
+            this.Text = "Statistics";
             this.ResumeLayout(false);
 
         }
