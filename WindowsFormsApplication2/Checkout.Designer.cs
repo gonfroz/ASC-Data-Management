@@ -211,7 +211,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 42);
             this.button1.TabIndex = 33;
-            this.button1.Text = "Return to Inventory";
+            this.button1.Text = "Return Item";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label1
