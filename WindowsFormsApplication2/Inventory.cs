@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication2
 {
-    public partial class Admin : Form
+    public partial class Inventory : Form
     {
-        public Admin()
+        public Inventory()
         {
             InitializeComponent();
         }
@@ -37,6 +37,11 @@ namespace WindowsFormsApplication2
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Admin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

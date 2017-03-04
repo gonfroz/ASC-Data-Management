@@ -64,6 +64,7 @@ namespace WindowsFormsApplication2
             this.CollabNum = new System.Windows.Forms.Label();
             this.MostPopVal = new System.Windows.Forms.Label();
             this.LeastPopVal = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -81,9 +82,10 @@ namespace WindowsFormsApplication2
             // 
             this.WeeklyStats.AutoSize = true;
             this.WeeklyStats.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.WeeklyStats.Location = new System.Drawing.Point(279, 34);
+            this.WeeklyStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.WeeklyStats.Location = new System.Drawing.Point(259, 34);
             this.WeeklyStats.Name = "WeeklyStats";
-            this.WeeklyStats.Size = new System.Drawing.Size(88, 13);
+            this.WeeklyStats.Size = new System.Drawing.Size(129, 20);
             this.WeeklyStats.TabIndex = 1;
             this.WeeklyStats.Text = "Weekly Statistics";
             this.WeeklyStats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -92,7 +94,7 @@ namespace WindowsFormsApplication2
             // 
             this.MostPopLabel.AutoSize = true;
             this.MostPopLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.MostPopLabel.Location = new System.Drawing.Point(212, 88);
+            this.MostPopLabel.Location = new System.Drawing.Point(212, 79);
             this.MostPopLabel.Name = "MostPopLabel";
             this.MostPopLabel.Size = new System.Drawing.Size(97, 13);
             this.MostPopLabel.TabIndex = 2;
@@ -102,7 +104,7 @@ namespace WindowsFormsApplication2
             // 
             this.LeastPopLabel.AutoSize = true;
             this.LeastPopLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.LeastPopLabel.Location = new System.Drawing.Point(209, 129);
+            this.LeastPopLabel.Location = new System.Drawing.Point(209, 117);
             this.LeastPopLabel.Name = "LeastPopLabel";
             this.LeastPopLabel.Size = new System.Drawing.Size(100, 13);
             this.LeastPopLabel.TabIndex = 3;
@@ -381,7 +383,7 @@ namespace WindowsFormsApplication2
             // MostPopVal
             // 
             this.MostPopVal.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.MostPopVal.Location = new System.Drawing.Point(315, 88);
+            this.MostPopVal.Location = new System.Drawing.Point(315, 79);
             this.MostPopVal.Name = "MostPopVal";
             this.MostPopVal.Size = new System.Drawing.Size(122, 13);
             this.MostPopVal.TabIndex = 35;
@@ -391,11 +393,23 @@ namespace WindowsFormsApplication2
             // LeastPopVal
             // 
             this.LeastPopVal.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.LeastPopVal.Location = new System.Drawing.Point(315, 129);
+            this.LeastPopVal.Location = new System.Drawing.Point(315, 117);
             this.LeastPopVal.Name = "LeastPopVal";
             this.LeastPopVal.Size = new System.Drawing.Size(122, 13);
             this.LeastPopVal.TabIndex = 36;
             this.LeastPopVal.Text = "Activities Room";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.Location = new System.Drawing.Point(289, 155);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 17);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Averages";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Statistics
             // 
@@ -403,6 +417,7 @@ namespace WindowsFormsApplication2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(647, 519);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.LeastPopVal);
             this.Controls.Add(this.MostPopVal);
             this.Controls.Add(this.CollabNum);
@@ -486,5 +501,6 @@ namespace WindowsFormsApplication2
         private System.Windows.Forms.Label CollabNum;
         private System.Windows.Forms.Label MostPopVal;
         private System.Windows.Forms.Label LeastPopVal;
+        private System.Windows.Forms.Label label1;
     }
 }

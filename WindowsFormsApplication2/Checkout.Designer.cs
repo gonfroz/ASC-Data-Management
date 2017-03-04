@@ -1,4 +1,4 @@
-namespace WindowsFormsApplication2
+﻿namespace WindowsFormsApplication2
 {
     partial class Checkout
     {
@@ -191,7 +191,6 @@ namespace WindowsFormsApplication2
             this.BackButton.TabIndex = 32;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // Checkout
             // 

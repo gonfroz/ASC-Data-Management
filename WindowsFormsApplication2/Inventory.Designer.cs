@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication2
 {
-    partial class Admin
+    partial class Inventory
     {
         /// <summary>
         /// Required designer variable.
@@ -65,10 +65,11 @@
             "Smash Bros",
             "xBox Controllers",
             "Wii Controllers",
-            "Playstation Controllers"});
-            this.Items.Location = new System.Drawing.Point(113, 69);
+            "Playstation Controllers",
+            "HDMI Cables"});
+            this.Items.Location = new System.Drawing.Point(113, 56);
             this.Items.Name = "Items";
-            this.Items.Size = new System.Drawing.Size(217, 173);
+            this.Items.Size = new System.Drawing.Size(217, 186);
             this.Items.TabIndex = 4;
             // 
             // Owned
@@ -87,10 +88,11 @@
             "1",
             "8",
             "4",
-            "8"});
-            this.Owned.Location = new System.Drawing.Point(383, 69);
+            "8",
+            "15"});
+            this.Owned.Location = new System.Drawing.Point(383, 56);
             this.Owned.Name = "Owned";
-            this.Owned.Size = new System.Drawing.Size(51, 173);
+            this.Owned.Size = new System.Drawing.Size(51, 186);
             this.Owned.TabIndex = 5;
             // 
             // Available
@@ -109,10 +111,11 @@
             "1",
             "4",
             "2",
-            "2"});
-            this.Available.Location = new System.Drawing.Point(487, 69);
+            "2",
+            "13"});
+            this.Available.Location = new System.Drawing.Point(487, 56);
             this.Available.Name = "Available";
-            this.Available.Size = new System.Drawing.Size(51, 173);
+            this.Available.Size = new System.Drawing.Size(51, 186);
             this.Available.TabIndex = 6;
             this.Available.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
@@ -139,17 +142,17 @@
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button3.Location = new System.Drawing.Point(535, 352);
+            this.button3.Location = new System.Drawing.Point(521, 352);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 40);
+            this.button3.Size = new System.Drawing.Size(94, 40);
             this.button3.TabIndex = 9;
-            this.button3.Text = "Reset";
+            this.button3.Text = "Reload List";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(380, 48);
+            this.label1.Location = new System.Drawing.Point(380, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 10;
@@ -158,7 +161,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(484, 48);
+            this.label2.Location = new System.Drawing.Point(484, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 11;
@@ -167,13 +170,13 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(110, 48);
+            this.label3.Location = new System.Drawing.Point(110, 40);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 12;
             this.label3.Text = "Item List";
             // 
-            // Admin
+            // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -189,8 +192,9 @@
             this.Controls.Add(this.Owned);
             this.Controls.Add(this.Items);
             this.Controls.Add(this.button1);
-            this.Name = "Admin";
-            this.Text = "Admin Mode";
+            this.Name = "Inventory";
+            this.Text = "Inventory";
+            this.Load += new System.EventHandler(this.Admin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

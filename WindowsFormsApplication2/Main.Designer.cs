@@ -77,7 +77,7 @@ namespace WindowsFormsApplication2
             this.AdminButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.AdminButton.Size = new System.Drawing.Size(100, 50);
             this.AdminButton.TabIndex = 3;
-            this.AdminButton.Text = "Administrative";
+            this.AdminButton.Text = "Inventory";
             this.AdminButton.UseVisualStyleBackColor = true;
             this.AdminButton.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -104,9 +104,9 @@ namespace WindowsFormsApplication2
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button5.Location = new System.Drawing.Point(47, 355);
+            this.button5.Location = new System.Drawing.Point(47, 342);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(120, 29);
+            this.button5.Size = new System.Drawing.Size(120, 42);
             this.button5.TabIndex = 9;
             this.button5.Text = "Log Out";
             this.button5.UseVisualStyleBackColor = true;

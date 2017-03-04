@@ -41,7 +41,7 @@ namespace WindowsFormsApplication2
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Admin frm = new Admin();
+            Inventory frm = new Inventory();
             this.Hide();
             frm.ShowDialog();
             this.Show();
