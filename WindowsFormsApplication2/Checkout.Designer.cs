@@ -68,11 +68,13 @@
             // 
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Items.AddRange(new object[] {
-            "Hayley Davis\t2121212\t           xBox\tCall of Duty\t2\tJames"});
+            "Hayley Davis\t2121212\t           xBox\tCall of Duty\t2\tJames",
+            "Mark Rusty\t2176762\t           Wii\tSmash Bros\t2\tJames"});
             this.listBox2.Location = new System.Drawing.Point(18, 210);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(476, 121);
             this.listBox2.TabIndex = 19;
+            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
             // NameBox
             // 
@@ -200,6 +202,7 @@
             this.BackButton.TabIndex = 32;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // button1
             // 

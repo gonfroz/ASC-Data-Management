@@ -26,5 +26,15 @@ namespace WindowsFormsApplication2
         {
             
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
