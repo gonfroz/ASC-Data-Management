@@ -33,8 +33,8 @@ namespace WindowsFormsApplication2
             this.StatsButton = new System.Windows.Forms.Button();
             this.AdminButton = new System.Windows.Forms.Button();
             this.NameLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.NameBox = new System.Windows.Forms.Label();
+            this.LogoutButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // RoundsButton
@@ -46,7 +46,7 @@ namespace WindowsFormsApplication2
             this.RoundsButton.TabIndex = 0;
             this.RoundsButton.Text = "Building Usage";
             this.RoundsButton.UseVisualStyleBackColor = true;
-            this.RoundsButton.Click += new System.EventHandler(this.button1_Click);
+            this.RoundsButton.Click += new System.EventHandler(this.RoundsButton_Click);
             // 
             // CheckoutButton
             // 
@@ -57,7 +57,7 @@ namespace WindowsFormsApplication2
             this.CheckoutButton.TabIndex = 1;
             this.CheckoutButton.Text = "Game Checkout";
             this.CheckoutButton.UseVisualStyleBackColor = true;
-            this.CheckoutButton.Click += new System.EventHandler(this.button2_Click);
+            this.CheckoutButton.Click += new System.EventHandler(this.CheckoutButton_Click);
             // 
             // StatsButton
             // 
@@ -68,7 +68,7 @@ namespace WindowsFormsApplication2
             this.StatsButton.TabIndex = 2;
             this.StatsButton.Text = "Statistics";
             this.StatsButton.UseVisualStyleBackColor = true;
-            this.StatsButton.Click += new System.EventHandler(this.button3_Click);
+            this.StatsButton.Click += new System.EventHandler(this.StatsButton_Click);
             // 
             // AdminButton
             // 
@@ -79,7 +79,7 @@ namespace WindowsFormsApplication2
             this.AdminButton.TabIndex = 3;
             this.AdminButton.Text = "Inventory";
             this.AdminButton.UseVisualStyleBackColor = true;
-            this.AdminButton.Click += new System.EventHandler(this.button4_Click);
+            this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);
             // 
             // NameLabel
             // 
@@ -91,26 +91,26 @@ namespace WindowsFormsApplication2
             this.NameLabel.Text = "Student Worker Name";
             this.NameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // NameBox
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(47, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 20);
-            this.label1.TabIndex = 8;
-            this.label1.Text = " ";
+            this.NameBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.NameBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NameBox.Location = new System.Drawing.Point(47, 45);
+            this.NameBox.Name = "NameBox";
+            this.NameBox.Size = new System.Drawing.Size(120, 20);
+            this.NameBox.TabIndex = 8;
+            this.NameBox.Text = " ";
             // 
-            // button5
+            // LogoutButton
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button5.Location = new System.Drawing.Point(47, 342);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(120, 42);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Log Out";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.LogoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LogoutButton.Location = new System.Drawing.Point(47, 342);
+            this.LogoutButton.Name = "LogoutButton";
+            this.LogoutButton.Size = new System.Drawing.Size(120, 42);
+            this.LogoutButton.TabIndex = 9;
+            this.LogoutButton.Text = "Log Out";
+            this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // Main
             // 
@@ -119,8 +119,8 @@ namespace WindowsFormsApplication2
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(651, 411);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LogoutButton);
+            this.Controls.Add(this.NameBox);
             this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.AdminButton);
             this.Controls.Add(this.StatsButton);
@@ -139,7 +139,7 @@ namespace WindowsFormsApplication2
         private System.Windows.Forms.Button StatsButton;
         private System.Windows.Forms.Button AdminButton;
         private System.Windows.Forms.Label NameLabel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label NameBox;
+        private System.Windows.Forms.Button LogoutButton;
     }
 }

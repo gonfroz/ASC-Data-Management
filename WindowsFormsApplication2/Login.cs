@@ -17,9 +17,9 @@ namespace WindowsFormsApplication2
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void LoginButton_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            if (NameBox.Text == "")
             {
                 MessageBox.Show("Please enter your name.", "Sign In",
            MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -28,17 +28,16 @@ namespace WindowsFormsApplication2
             {
                 Main main = new Main();
                 this.Hide();
-                main.setName(textBox1.Text);
+                main.setName(NameBox.Text);
                 main.ShowDialog();
-                textBox1.Text = "";
+                NameBox.Text = "";
                 this.Show();
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ExitButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
     }
 }

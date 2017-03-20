@@ -28,7 +28,7 @@ namespace WindowsFormsApplication2
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Button();
             this.WeeklyStats = new System.Windows.Forms.Label();
             this.MostPopLabel = new System.Windows.Forms.Label();
             this.LeastPopLabel = new System.Windows.Forms.Label();
@@ -67,25 +67,25 @@ namespace WindowsFormsApplication2
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // BackButton
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(47, 454);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BackButton.Location = new System.Drawing.Point(47, 454);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(82, 36);
+            this.BackButton.TabIndex = 0;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // WeeklyStats
             // 
             this.WeeklyStats.AutoSize = true;
             this.WeeklyStats.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.WeeklyStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.WeeklyStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Underline);
             this.WeeklyStats.Location = new System.Drawing.Point(259, 34);
             this.WeeklyStats.Name = "WeeklyStats";
-            this.WeeklyStats.Size = new System.Drawing.Size(129, 20);
+            this.WeeklyStats.Size = new System.Drawing.Size(147, 24);
             this.WeeklyStats.TabIndex = 1;
             this.WeeklyStats.Text = "Weekly Statistics";
             this.WeeklyStats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -388,7 +388,6 @@ namespace WindowsFormsApplication2
             this.MostPopVal.Size = new System.Drawing.Size(122, 13);
             this.MostPopVal.TabIndex = 35;
             this.MostPopVal.Text = "Common Grounds";
-            this.MostPopVal.Click += new System.EventHandler(this.MostPopVal_Click);
             // 
             // LeastPopVal
             // 
@@ -403,10 +402,10 @@ namespace WindowsFormsApplication2
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline);
             this.label1.Location = new System.Drawing.Point(289, 155);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
+            this.label1.Size = new System.Drawing.Size(76, 20);
             this.label1.TabIndex = 37;
             this.label1.Text = "Averages";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -453,7 +452,7 @@ namespace WindowsFormsApplication2
             this.Controls.Add(this.LeastPopLabel);
             this.Controls.Add(this.MostPopLabel);
             this.Controls.Add(this.WeeklyStats);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BackButton);
             this.Name = "Statistics";
             this.Text = "Statistics";
             this.ResumeLayout(false);
@@ -465,7 +464,7 @@ namespace WindowsFormsApplication2
 
 
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Label WeeklyStats;
         private System.Windows.Forms.Label MostPopLabel;
         private System.Windows.Forms.Label LeastPopLabel;

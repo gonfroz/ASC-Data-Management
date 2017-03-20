@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.AddButton = new System.Windows.Forms.Button();
             this.Items = new System.Windows.Forms.ListBox();
             this.Owned = new System.Windows.Forms.ListBox();
             this.Available = new System.Windows.Forms.ListBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.RemoveButton = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Button();
+            this.ReloadButton = new System.Windows.Forms.Button();
+            this.QuantityLabel = new System.Windows.Forms.Label();
+            this.AvailableLabel = new System.Windows.Forms.Label();
+            this.ItemsLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // AddButton
             // 
-            this.button1.Location = new System.Drawing.Point(113, 269);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 48);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Add Item";
-            this.button1.UseVisualStyleBackColor = true;
+            this.AddButton.Location = new System.Drawing.Point(113, 269);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(97, 48);
+            this.AddButton.TabIndex = 0;
+            this.AddButton.Text = "Add Item";
+            this.AddButton.UseVisualStyleBackColor = true;
             // 
             // Items
             // 
@@ -119,62 +119,62 @@
             this.Available.TabIndex = 6;
             this.Available.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
-            // button4
+            // RemoveButton
             // 
-            this.button4.Location = new System.Drawing.Point(233, 269);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(97, 48);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Remove Item";
-            this.button4.UseVisualStyleBackColor = true;
+            this.RemoveButton.Location = new System.Drawing.Point(233, 269);
+            this.RemoveButton.Name = "RemoveButton";
+            this.RemoveButton.Size = new System.Drawing.Size(97, 48);
+            this.RemoveButton.TabIndex = 7;
+            this.RemoveButton.Text = "Remove Item";
+            this.RemoveButton.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // BackButton
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button5.Location = new System.Drawing.Point(55, 352);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 40);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "Back";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.BackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BackButton.Location = new System.Drawing.Point(55, 352);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(80, 40);
+            this.BackButton.TabIndex = 8;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
-            // button3
+            // ReloadButton
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button3.Location = new System.Drawing.Point(521, 352);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 40);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Reload List";
-            this.button3.UseVisualStyleBackColor = true;
+            this.ReloadButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.ReloadButton.Location = new System.Drawing.Point(521, 352);
+            this.ReloadButton.Name = "ReloadButton";
+            this.ReloadButton.Size = new System.Drawing.Size(94, 40);
+            this.ReloadButton.TabIndex = 9;
+            this.ReloadButton.Text = "Reload List";
+            this.ReloadButton.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // QuantityLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(380, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "# Owned";
+            this.QuantityLabel.AutoSize = true;
+            this.QuantityLabel.Location = new System.Drawing.Point(380, 40);
+            this.QuantityLabel.Name = "QuantityLabel";
+            this.QuantityLabel.Size = new System.Drawing.Size(51, 13);
+            this.QuantityLabel.TabIndex = 10;
+            this.QuantityLabel.Text = "# Owned";
             // 
-            // label2
+            // AvailableLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(484, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "# Available";
+            this.AvailableLabel.AutoSize = true;
+            this.AvailableLabel.Location = new System.Drawing.Point(484, 40);
+            this.AvailableLabel.Name = "AvailableLabel";
+            this.AvailableLabel.Size = new System.Drawing.Size(60, 13);
+            this.AvailableLabel.TabIndex = 11;
+            this.AvailableLabel.Text = "# Available";
             // 
-            // label3
+            // ItemsLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(110, 40);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Item List";
+            this.ItemsLabel.AutoSize = true;
+            this.ItemsLabel.Location = new System.Drawing.Point(110, 40);
+            this.ItemsLabel.Name = "ItemsLabel";
+            this.ItemsLabel.Size = new System.Drawing.Size(46, 13);
+            this.ItemsLabel.TabIndex = 12;
+            this.ItemsLabel.Text = "Item List";
             // 
             // Inventory
             // 
@@ -182,16 +182,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(651, 411);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.ItemsLabel);
+            this.Controls.Add(this.AvailableLabel);
+            this.Controls.Add(this.QuantityLabel);
+            this.Controls.Add(this.ReloadButton);
+            this.Controls.Add(this.BackButton);
+            this.Controls.Add(this.RemoveButton);
             this.Controls.Add(this.Available);
             this.Controls.Add(this.Owned);
             this.Controls.Add(this.Items);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AddButton);
             this.Name = "Inventory";
             this.Text = "Inventory";
             this.Load += new System.EventHandler(this.Admin_Load);
@@ -202,15 +202,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.ListBox Items;
         private System.Windows.Forms.ListBox Owned;
         private System.Windows.Forms.ListBox Available;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button RemoveButton;
+        private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.Button ReloadButton;
+        private System.Windows.Forms.Label QuantityLabel;
+        private System.Windows.Forms.Label AvailableLabel;
+        private System.Windows.Forms.Label ItemsLabel;
     }
 }

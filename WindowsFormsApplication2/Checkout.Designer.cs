@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.GamesLabel = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.CheckoutBox = new System.Windows.Forms.ListBox();
             this.NameBox = new System.Windows.Forms.TextBox();
             this.IDBox = new System.Windows.Forms.TextBox();
             this.NameLabel = new System.Windows.Forms.Label();
@@ -43,7 +43,7 @@
             this.ConsoleLabel = new System.Windows.Forms.Label();
             this.GamesList = new System.Windows.Forms.CheckedListBox();
             this.BackButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ReturnButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -64,17 +64,16 @@
             this.GamesLabel.Text = "Items Ready For Checkout";
             this.GamesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // listBox2
+            // CheckoutBox
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Items.AddRange(new object[] {
+            this.CheckoutBox.FormattingEnabled = true;
+            this.CheckoutBox.Items.AddRange(new object[] {
             "Hayley Davis\t2121212\t           xBox\tCall of Duty\t2\tJames",
             "Mark Rusty\t2176762\t           Wii\tSmash Bros\t2\tJames"});
-            this.listBox2.Location = new System.Drawing.Point(18, 210);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(476, 121);
-            this.listBox2.TabIndex = 19;
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            this.CheckoutBox.Location = new System.Drawing.Point(18, 210);
+            this.CheckoutBox.Name = "CheckoutBox";
+            this.CheckoutBox.Size = new System.Drawing.Size(476, 121);
+            this.CheckoutBox.TabIndex = 19;
             // 
             // NameBox
             // 
@@ -116,7 +115,6 @@
             this.SubmitButton.TabIndex = 24;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
-            this.SubmitButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // XBoxRadio
             // 
@@ -196,7 +194,7 @@
             // BackButton
             // 
             this.BackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BackButton.Location = new System.Drawing.Point(25, 337);
+            this.BackButton.Location = new System.Drawing.Point(25, 344);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(80, 42);
             this.BackButton.TabIndex = 32;
@@ -204,15 +202,15 @@
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
-            // button1
+            // ReturnButton
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(407, 337);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 42);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "Return Item";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ReturnButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.ReturnButton.Location = new System.Drawing.Point(407, 344);
+            this.ReturnButton.Name = "ReturnButton";
+            this.ReturnButton.Size = new System.Drawing.Size(80, 42);
+            this.ReturnButton.TabIndex = 33;
+            this.ReturnButton.Text = "Return Item";
+            this.ReturnButton.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -273,14 +271,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(513, 391);
+            this.ClientSize = new System.Drawing.Size(505, 398);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ReturnButton);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.GamesList);
             this.Controls.Add(this.ConsoleLabel);
@@ -294,7 +292,7 @@
             this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.IDBox);
             this.Controls.Add(this.NameBox);
-            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.CheckoutBox);
             this.Controls.Add(this.GamesLabel);
             this.Name = "Checkout";
             this.Text = "Checkout";
@@ -306,7 +304,7 @@
 
         #endregion
         private System.Windows.Forms.Label GamesLabel;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox CheckoutBox;
         private System.Windows.Forms.TextBox NameBox;
         private System.Windows.Forms.TextBox IDBox;
         private System.Windows.Forms.Label NameLabel;
@@ -320,7 +318,7 @@
         private System.Windows.Forms.Label ConsoleLabel;
         private System.Windows.Forms.CheckedListBox GamesList;
         private System.Windows.Forms.Button BackButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ReturnButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

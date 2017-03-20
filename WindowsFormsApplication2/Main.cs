@@ -17,7 +17,7 @@ namespace WindowsFormsApplication2
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void StatsButton_Click(object sender, EventArgs e)
         {
             Statistics frm = new Statistics();
             this.Hide();
@@ -28,10 +28,10 @@ namespace WindowsFormsApplication2
         
         public void setName(string e)
         {
-            label1.Text = e;
+            NameBox.Text = e;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void RoundsButton_Click(object sender, EventArgs e)
         {
             Rounds frm = new Rounds();
             this.Hide();
@@ -39,7 +39,7 @@ namespace WindowsFormsApplication2
             this.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void AdminButton_Click(object sender, EventArgs e)
         {
             Inventory frm = new Inventory();
             this.Hide();
@@ -47,7 +47,7 @@ namespace WindowsFormsApplication2
             this.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void CheckoutButton_Click(object sender, EventArgs e)
         {
             Checkout frm = new Checkout();
             this.Hide();
@@ -55,7 +55,7 @@ namespace WindowsFormsApplication2
             this.Show();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void LogoutButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }

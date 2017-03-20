@@ -17,7 +17,7 @@ namespace WindowsFormsApplication2
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BackButton_Click(object sender, EventArgs e)
         {
             foreach (Form frm in Application.OpenForms)
             {
@@ -27,11 +27,6 @@ namespace WindowsFormsApplication2
                 }
             }
             this.Close();
-        }
-
-        private void MostPopVal_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

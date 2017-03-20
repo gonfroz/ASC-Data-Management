@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication2
 {
-    public partial class Inventory : Form
+    public partial class Admin : Form
     {
-        public Inventory()
+        public Admin()
         {
             InitializeComponent();
         }
@@ -27,21 +27,6 @@ namespace WindowsFormsApplication2
                 }
             }
             this.Close();
-        }
-
-        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BackButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Admin_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

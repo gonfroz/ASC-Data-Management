@@ -1,0 +1,14 @@
+F:\Connor Manning\Documents\School\Software Engineering 1\ASC usage\ASC-Data-Management-Updated\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+F:\Connor Manning\Documents\School\Software Engineering 1\ASC usage\ASC-Data-Management-Updated\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+F:\Connor Manning\Documents\School\Software Engineering 1\ASC usage\ASC-Data-Management-Updated\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+F:\Connor Manning\Documents\School\Software Engineering 1\ASC usage\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\Building Usage.csprojResolveAssemblyReference.cache
+F:\Connor Manning\Documents\School\Software Engineering 1\ASC usage\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Checkout.resources
+F:\Connor Manning\Documents\School\Software Engineering 1\ASC usage\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Rounds.resources
+F:\Connor Manning\Documents\School\Software Engineering 1\ASC usage\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Main.resources
+F:\Connor Manning\Documents\School\Software Engineering 1\ASC usage\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Statistics.resources
+F:\Connor Manning\Documents\School\Software Engineering 1\ASC usage\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Login.resources
+F:\Connor Manning\Documents\School\Software Engineering 1\ASC usage\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+F:\Connor Manning\Documents\School\Software Engineering 1\ASC usage\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\Building Usage.csproj.GenerateResource.Cache
+F:\Connor Manning\Documents\School\Software Engineering 1\ASC usage\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+F:\Connor Manning\Documents\School\Software Engineering 1\ASC usage\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+F:\Connor Manning\Documents\School\Software Engineering 1\ASC usage\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Inventory.resources
