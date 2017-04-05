@@ -389,7 +389,6 @@ namespace WindowsFormsApplication2
             this.MostPopVal.Size = new System.Drawing.Size(122, 13);
             this.MostPopVal.TabIndex = 35;
             this.MostPopVal.Text = "Common Grounds";
-            this.MostPopVal.Click += new System.EventHandler(this.MostPopVal_Click);
             // 
             // LeastPopVal
             // 
@@ -468,6 +467,7 @@ namespace WindowsFormsApplication2
             this.Controls.Add(this.button1);
             this.Name = "Statistics";
             this.Text = "Statistics";
+            this.Load += new System.EventHandler(this.Statistics_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

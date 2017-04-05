@@ -31,32 +31,61 @@ namespace WindowsFormsApplication2
             this.Close();
         }
 
-        private void MostPopVal_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+
             var xlApp = new Excel.Application();
-            var xlWorkbook = xlApp.Workbooks.Open(@"C:\Users\sceleris\Source\Repos\ASC-Data-Management\WindowsFormsApplication2\bin\Debug\asc_data.xlsx");
-            var xlSheet = xlWorkbook.Sheets[1];
-            var xlRange = xlSheet.UsedRange;
+            try
+            {
+                var xlWorkbook = xlApp.Workbooks.Open(@"C:\Users\E540\OneDrive\Documents\October Tally Sheet.xlsx");
+                var xlSheet = xlWorkbook.Sheets[1];
+                var xlRange = xlSheet.UsedRange;
 
-            var topleft = xlRange.Cells[8, 3].Value2;
-            
+                var topleft = xlRange.Cells[8, 3].Value2;
+                // yout operation
+
+            }
+            catch (Exception ex) { MessageBox.Show("readExcel:" + ex.Message); }
+            finally
+            {
+                KillExcel(xlApp);
+                System.Threading.Thread.Sleep(100);
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+            }
+        }
 
 
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-            Marshal.ReleaseComObject(xlRange);
-            Marshal.ReleaseComObject(xlSheet);
+        [DllImport("User32.dll")]
+        public static extern int GetWindowThreadProcessId(IntPtr hWnd, out int ProcessId);
+        private static void KillExcel(Excel.Application theApp)
+        {
+            int id = 0;
+            IntPtr intptr = new IntPtr(theApp.Hwnd);
+            System.Diagnostics.Process p = null;
+            try
+            {
+                GetWindowThreadProcessId(intptr, out id);
+                p = System.Diagnostics.Process.GetProcessById(id);
+                if (p != null)
+                {
+                    p.Kill();
+                    p.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show("KillExcel:" + ex.Message);
+            }
+        }
 
-            xlWorkbook.Close();
-            Marshal.ReleaseComObject(xlWorkbook);
 
-            xlApp.Quit();
-            Marshal.ReleaseComObject(xlApp);
+
+        private void Statistics_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
