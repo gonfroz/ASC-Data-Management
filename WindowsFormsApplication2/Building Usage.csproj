@@ -55,6 +55,7 @@
     <Compile Include="Checkout.Designer.cs">
       <DependentUpon>Checkout.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager.cs" />
     <Compile Include="Rounds.cs">
       <SubType>Form</SubType>
     </Compile>

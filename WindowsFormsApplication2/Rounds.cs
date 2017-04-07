@@ -35,8 +35,7 @@ namespace WindowsFormsApplication2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var mainForm = new Main();
-            var worker = mainForm.workerName;
+            var worker = Manager.MainInstance.workerName;
             if (MessageBox.Show("Are you sure you want to record this data?", "Confirm",MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk)== DialogResult.OK)
             {
                 //save data

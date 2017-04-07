@@ -26,10 +26,9 @@ namespace WindowsFormsApplication2
             }
             else
             {
-                Main main = new Main();
                 this.Hide();
-                main.workerName = textBox1.Text;
-                main.ShowDialog();
+                Manager.MainInstance.workerName = textBox1.Text;
+                Manager.MainInstance.ShowDialog();
                 textBox1.Text = "";
                 this.Show();
             }
