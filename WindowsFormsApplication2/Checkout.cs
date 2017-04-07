@@ -30,7 +30,7 @@ namespace WindowsFormsApplication2
             //in case no button was selected (button is null)
             try
             {
-                gameName = cons.Text;
+                gameName = game.Text;
             }
             catch (NullReferenceException)
             {
@@ -47,8 +47,12 @@ namespace WindowsFormsApplication2
             var other = ControllersNum.Value;
             if (hdmi.Checked) { other++; }
 
-            listView1.Items.Add(new ListViewItem(new[] { NameBox.Text, IDBox.Text, consoleName, gameName, other.ToString(), Manager.MainInstance.workerName }));
-
+            //add checkout info to list view
+            listView1.Items.Add(new ListViewItem(new[] { NameBox.Text, IDBox.Text, consoleName, gameName, other.ToString(), Manager.MainInstance.workerName}));
+            
+            //append to csv
+            System.IO.File.AppendAllText("asc_checkout_list.csv", $"{NameBox.Text}, {IDBox.Text}, {consoleName}, {gameName}, {other.ToString()}, {Manager.MainInstance.workerName}\n");
+       
             //reset stuff
             NameBox.Clear();
             IDBox.Clear();
@@ -64,6 +68,7 @@ namespace WindowsFormsApplication2
             {
                 (ctrl as RadioButton).Checked = false;
             }
+
         }
 
         private void BackButton_Click(object sender, EventArgs e)
@@ -73,7 +78,16 @@ namespace WindowsFormsApplication2
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            listView1.SelectedItems[0].Remove();
+            try
+            {
+                listView1.SelectedItems[0].Remove();
+            }
+            catch(ArgumentOutOfRangeException)
+            {
+                MessageBox.Show("No item selected to remove.", "Select an Item",
+                MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            
         }
     }
 }
