@@ -24,7 +24,7 @@ namespace WindowsFormsApplication2
             var other = ControllersNum.Value;
             if (checkBox1.Checked) { other++; }
 
-            listView1.Items.Add(new ListViewItem(new[] {NameBox.Text, IDBox.Text, cons.Text, game.Text, other.ToString()}));
+            listView1.Items.Add(new ListViewItem(new[] { NameBox.Text, IDBox.Text, cons.Text, game.Text, other.ToString(), Manager.MainInstance.workerName }));
             NameBox.Clear();
             IDBox.Clear();
 
