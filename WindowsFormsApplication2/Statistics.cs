@@ -62,22 +62,18 @@ namespace WindowsFormsApplication2
         public static extern int GetWindowThreadProcessId(IntPtr hWnd, out int ProcessId);
         private static void KillExcel(Excel.Application theApp)
         {
-            int id = 0;
-            IntPtr intptr = new IntPtr(theApp.Hwnd);
-            System.Diagnostics.Process p = null;
+            var id = 0;
+            var intptr = new IntPtr(theApp.Hwnd);
             try
             {
                 GetWindowThreadProcessId(intptr, out id);
-                p = System.Diagnostics.Process.GetProcessById(id);
-                if (p != null)
-                {
-                    p.Kill();
-                    p.Dispose();
-                }
+                System.Diagnostics.Process p = System.Diagnostics.Process.GetProcessById(id);
+                p.Kill();
+                p.Dispose();
             }
             catch (Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show("KillExcel:" + ex.Message);
+                MessageBox.Show("KillExcel:" + ex.Message);
             }
         }
 

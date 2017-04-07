@@ -12,6 +12,17 @@ namespace WindowsFormsApplication2
 {
     public partial class Main : Form
     {
+        private string _workerName;
+        public string workerName
+        {
+            get { return _workerName; }
+            set
+            {
+                _workerName = value;
+                updateWorker(_workerName);
+            }
+        }
+
         public Main()
         {
             InitializeComponent();
@@ -25,10 +36,20 @@ namespace WindowsFormsApplication2
             this.Show();
         }
 
-        
-        public void setName(string e)
+        delegate void updateLabelText(string text);
+        private void updateWorker(string e)
         {
-            label1.Text = e;
+            if (label1.InvokeRequired)
+            {
+                // this is worker thread
+                updateLabelText del = updateWorker;
+                label1.Invoke(del, e);
+            }
+            else
+            {
+                // this is UI thread
+                label1.Text = e;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

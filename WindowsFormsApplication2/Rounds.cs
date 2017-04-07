@@ -27,53 +27,20 @@ namespace WindowsFormsApplication2
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void numericUpDown15_ValueChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void eventLog1_EntryWritten(object sender, System.Diagnostics.EntryWrittenEventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure you want to record this data?", "Confirm",
-                MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk)
-                == DialogResult.OK)
+            var mainForm = new Main();
+            var worker = mainForm.workerName;
+            if (MessageBox.Show("Are you sure you want to record this data?", "Confirm",MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk)== DialogResult.OK)
             {
                 //save data
+
             }
         }
 

@@ -140,7 +140,6 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Colab";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -152,7 +151,6 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Prayer";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -164,7 +162,6 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Activities";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -234,7 +231,6 @@
             this.label2.TabIndex = 26;
             this.label2.Text = "Hallways";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // numericUpDown5
             // 
@@ -293,7 +289,6 @@
             this.label12.TabIndex = 21;
             this.label12.Text = "Common";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // numericUpDown9
             // 
@@ -340,7 +335,6 @@
             this.label13.TabIndex = 29;
             this.label13.Text = "Breakout";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label14
             // 
@@ -352,7 +346,6 @@
             this.label14.TabIndex = 29;
             this.label14.Text = "Great Room";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label14.Click += new System.EventHandler(this.label13_Click);
             // 
             // numericUpDown14
             // 
@@ -379,7 +372,6 @@
             this.label15.TabIndex = 26;
             this.label15.Text = "Mail";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label15.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
