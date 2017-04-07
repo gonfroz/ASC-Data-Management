@@ -80,7 +80,23 @@ namespace WindowsFormsApplication2
         {
             try
             {
+
+                var lines = new List<string>();
+                var file = new System.IO.StreamReader("asc_checkout_list.csv");
+                string line;
+                while ((line = file.ReadLine()) != null)
+                {
+                    lines.Add(line);
+                }
+                file.Close();
+
+                lines.RemoveAt(listView1.SelectedIndices[0]);
+
+                System.IO.File.WriteAllLines("asc_checkout_list.csv", lines);
+                
+                //remove from listView1
                 listView1.SelectedItems[0].Remove();
+
             }
             catch(ArgumentOutOfRangeException)
             {
@@ -88,6 +104,19 @@ namespace WindowsFormsApplication2
                 MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
             
+        }
+
+        private void Checkout_Load(object sender, EventArgs e)
+        {
+            var lines = new List<string>();
+            var file = new System.IO.StreamReader("asc_checkout_list.csv");
+            string line;
+            while ((line = file.ReadLine()) != null)
+            {
+                lines.Add(line);
+            }
+            file.Close();
+            listView1.Items.Add(new ListViewItem(new[] { NameBox.Text, IDBox.Text, consoleName, gameName, other.ToString(), Manager.MainInstance.workerName }));
         }
     }
 }

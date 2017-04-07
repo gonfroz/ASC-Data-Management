@@ -372,6 +372,7 @@
             this.Controls.Add(this.NameBox);
             this.Name = "Checkout";
             this.Text = "Checkout";
+            this.Load += new System.EventHandler(this.Checkout_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ControllersNum)).EndInit();
             this.console.ResumeLayout(false);
             this.console.PerformLayout();
