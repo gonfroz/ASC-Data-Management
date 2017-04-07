@@ -116,7 +116,7 @@ namespace WindowsFormsApplication2
                 lines.Add(line);
             }
             file.Close();
-            listView1.Items.Add(new ListViewItem(new[] { NameBox.Text, IDBox.Text, consoleName, gameName, other.ToString(), Manager.MainInstance.workerName }));
+            //listView1.Items.Add(new ListViewItem(new[] { NameBox.Text, IDBox.Text, consoleName, gameName, other.ToString(), Manager.MainInstance.workerName }));
         }
     }
 }
