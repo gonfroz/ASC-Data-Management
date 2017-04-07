@@ -108,15 +108,36 @@ namespace WindowsFormsApplication2
 
         private void Checkout_Load(object sender, EventArgs e)
         {
-            var lines = new List<string>();
-            var file = new System.IO.StreamReader("asc_checkout_list.csv");
-            string line;
-            while ((line = file.ReadLine()) != null)
+            try
             {
-                lines.Add(line);
+                System.IO.FileStream srcFS;
+                srcFS = new System.IO.FileStream("asc_checkout_list.csv", System.IO.FileMode.OpenOrCreate);
+                System.IO.StreamReader srcSR = new System.IO.StreamReader(srcFS, System.Text.Encoding.Default);
+                while (true)
+                {
+                    string ins = srcSR.ReadLine();
+                    if (ins == null){
+                        break;
+                    }
+                    string[] columns = ins.Split(',');
+
+                    ListViewItem lvi = new ListViewItem(columns[0]);
+
+                    for (int i = 1; i < columns.Count(); i++)
+                    {
+                        lvi.SubItems.Add(columns[i]);
+                    }
+
+                    listView1.Items.Add(lvi);
+
+                }
+                srcSR.Close();
+                    
             }
-            file.Close();
-            //listView1.Items.Add(new ListViewItem(new[] { NameBox.Text, IDBox.Text, consoleName, gameName, other.ToString(), Manager.MainInstance.workerName }));
+            catch (Exception errorMsg)
+            {
+                MessageBox.Show(errorMsg.Message, "Error reading a file", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
