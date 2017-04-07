@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.GamesLabel = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
             this.NameBox = new System.Windows.Forms.TextBox();
             this.IDBox = new System.Windows.Forms.TextBox();
             this.NameLabel = new System.Windows.Forms.Label();
@@ -40,52 +38,41 @@
             this.PSRadio = new System.Windows.Forms.RadioButton();
             this.ControllersNum = new System.Windows.Forms.NumericUpDown();
             this.ControllersLabel = new System.Windows.Forms.Label();
-            this.ConsoleLabel = new System.Windows.Forms.Label();
-            this.GamesList = new System.Windows.Forms.CheckedListBox();
             this.BackButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.console = new System.Windows.Forms.GroupBox();
+            this.games = new System.Windows.Forms.GroupBox();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.ControllersNum)).BeginInit();
+            this.console.SuspendLayout();
+            this.games.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // GamesLabel
-            // 
-            this.GamesLabel.BackColor = System.Drawing.Color.White;
-            this.GamesLabel.Location = new System.Drawing.Point(25, 20);
-            this.GamesLabel.MinimumSize = new System.Drawing.Size(50, 0);
-            this.GamesLabel.Name = "GamesLabel";
-            this.GamesLabel.Size = new System.Drawing.Size(137, 20);
-            this.GamesLabel.TabIndex = 16;
-            this.GamesLabel.Text = "Items Ready For Checkout";
-            this.GamesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Items.AddRange(new object[] {
-            "Hayley Davis\t2121212\t           xBox\tCall of Duty\t2\tJames",
-            "Mark Rusty\t2176762\t           Wii\tSmash Bros\t2\tJames"});
-            this.listBox2.Location = new System.Drawing.Point(18, 210);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(476, 121);
-            this.listBox2.TabIndex = 19;
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
             // NameBox
             // 
-            this.NameBox.Location = new System.Drawing.Point(255, 118);
+            this.NameBox.Location = new System.Drawing.Point(232, 126);
             this.NameBox.Name = "NameBox";
             this.NameBox.Size = new System.Drawing.Size(117, 20);
             this.NameBox.TabIndex = 20;
             // 
             // IDBox
             // 
-            this.IDBox.Location = new System.Drawing.Point(255, 147);
+            this.IDBox.Location = new System.Drawing.Point(232, 155);
             this.IDBox.Name = "IDBox";
             this.IDBox.Size = new System.Drawing.Size(117, 20);
             this.IDBox.TabIndex = 21;
@@ -93,7 +80,7 @@
             // NameLabel
             // 
             this.NameLabel.AutoSize = true;
-            this.NameLabel.Location = new System.Drawing.Point(174, 121);
+            this.NameLabel.Location = new System.Drawing.Point(151, 129);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(75, 13);
             this.NameLabel.TabIndex = 22;
@@ -102,7 +89,7 @@
             // IDLabel
             // 
             this.IDLabel.AutoSize = true;
-            this.IDLabel.Location = new System.Drawing.Point(191, 150);
+            this.IDLabel.Location = new System.Drawing.Point(168, 158);
             this.IDLabel.Name = "IDLabel";
             this.IDLabel.Size = new System.Drawing.Size(58, 13);
             this.IDLabel.TabIndex = 23;
@@ -110,7 +97,7 @@
             // 
             // SubmitButton
             // 
-            this.SubmitButton.Location = new System.Drawing.Point(407, 135);
+            this.SubmitButton.Location = new System.Drawing.Point(398, 136);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(75, 32);
             this.SubmitButton.TabIndex = 24;
@@ -121,7 +108,7 @@
             // XBoxRadio
             // 
             this.XBoxRadio.AutoSize = true;
-            this.XBoxRadio.Location = new System.Drawing.Point(191, 39);
+            this.XBoxRadio.Location = new System.Drawing.Point(9, 19);
             this.XBoxRadio.Name = "XBoxRadio";
             this.XBoxRadio.Size = new System.Drawing.Size(48, 17);
             this.XBoxRadio.TabIndex = 25;
@@ -132,7 +119,7 @@
             // WiiRadio
             // 
             this.WiiRadio.AutoSize = true;
-            this.WiiRadio.Location = new System.Drawing.Point(191, 62);
+            this.WiiRadio.Location = new System.Drawing.Point(9, 42);
             this.WiiRadio.Name = "WiiRadio";
             this.WiiRadio.Size = new System.Drawing.Size(40, 17);
             this.WiiRadio.TabIndex = 26;
@@ -143,7 +130,7 @@
             // PSRadio
             // 
             this.PSRadio.AutoSize = true;
-            this.PSRadio.Location = new System.Drawing.Point(191, 85);
+            this.PSRadio.Location = new System.Drawing.Point(9, 65);
             this.PSRadio.Name = "PSRadio";
             this.PSRadio.Size = new System.Drawing.Size(76, 17);
             this.PSRadio.TabIndex = 27;
@@ -153,7 +140,7 @@
             // 
             // ControllersNum
             // 
-            this.ControllersNum.Location = new System.Drawing.Point(296, 36);
+            this.ControllersNum.Location = new System.Drawing.Point(265, 69);
             this.ControllersNum.Name = "ControllersNum";
             this.ControllersNum.Size = new System.Drawing.Size(54, 20);
             this.ControllersNum.TabIndex = 28;
@@ -161,37 +148,11 @@
             // ControllersLabel
             // 
             this.ControllersLabel.AutoSize = true;
-            this.ControllersLabel.Location = new System.Drawing.Point(284, 20);
+            this.ControllersLabel.Location = new System.Drawing.Point(265, 50);
             this.ControllersLabel.Name = "ControllersLabel";
             this.ControllersLabel.Size = new System.Drawing.Size(78, 13);
             this.ControllersLabel.TabIndex = 29;
             this.ControllersLabel.Text = "# of Controllers";
-            // 
-            // ConsoleLabel
-            // 
-            this.ConsoleLabel.AutoSize = true;
-            this.ConsoleLabel.Location = new System.Drawing.Point(188, 20);
-            this.ConsoleLabel.Name = "ConsoleLabel";
-            this.ConsoleLabel.Size = new System.Drawing.Size(45, 13);
-            this.ConsoleLabel.TabIndex = 30;
-            this.ConsoleLabel.Text = "Console";
-            // 
-            // GamesList
-            // 
-            this.GamesList.FormattingEnabled = true;
-            this.GamesList.Items.AddRange(new object[] {
-            "Donkey Kong",
-            "Fifa",
-            "Smash Bros",
-            "Madden NFL",
-            "Battlefield",
-            "Call of Duty",
-            "Mario Kart",
-            "Battle Toads"});
-            this.GamesList.Location = new System.Drawing.Point(25, 43);
-            this.GamesList.Name = "GamesList";
-            this.GamesList.Size = new System.Drawing.Size(137, 124);
-            this.GamesList.TabIndex = 31;
             // 
             // BackButton
             // 
@@ -214,59 +175,180 @@
             this.button1.Text = "Return Item";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // console
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 194);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Student Name";
+            this.console.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.console.Controls.Add(this.XBoxRadio);
+            this.console.Controls.Add(this.WiiRadio);
+            this.console.Controls.Add(this.PSRadio);
+            this.console.Location = new System.Drawing.Point(138, 20);
+            this.console.Name = "console";
+            this.console.Size = new System.Drawing.Size(98, 92);
+            this.console.TabIndex = 40;
+            this.console.TabStop = false;
+            this.console.Text = "Console";
             // 
-            // label2
+            // games
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(113, 194);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
-            this.label2.TabIndex = 35;
-            this.label2.Text = "Student ID";
+            this.games.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.games.Controls.Add(this.radioButton7);
+            this.games.Controls.Add(this.radioButton8);
+            this.games.Controls.Add(this.radioButton4);
+            this.games.Controls.Add(this.radioButton5);
+            this.games.Controls.Add(this.radioButton6);
+            this.games.Controls.Add(this.radioButton1);
+            this.games.Controls.Add(this.radioButton2);
+            this.games.Controls.Add(this.radioButton3);
+            this.games.Location = new System.Drawing.Point(18, 20);
+            this.games.Name = "games";
+            this.games.Size = new System.Drawing.Size(98, 155);
+            this.games.TabIndex = 41;
+            this.games.TabStop = false;
+            this.games.Text = "Games";
             // 
-            // label3
+            // radioButton7
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(191, 194);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
-            this.label3.TabIndex = 36;
-            this.label3.Text = "Console";
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(5, 109);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(73, 17);
+            this.radioButton7.TabIndex = 31;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Mario Kart";
+            this.radioButton7.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // radioButton8
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(258, 194);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
-            this.label4.TabIndex = 37;
-            this.label4.Text = "Item Name";
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(5, 124);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(85, 17);
+            this.radioButton8.TabIndex = 32;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Battle Toads";
+            this.radioButton8.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // radioButton4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(334, 194);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 13);
-            this.label5.TabIndex = 38;
-            this.label5.Text = "# of Items";
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(5, 64);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(87, 17);
+            this.radioButton4.TabIndex = 28;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Madden NFL";
+            this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // radioButton5
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(400, 194);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(82, 13);
-            this.label6.TabIndex = 39;
-            this.label6.Text = "Student Worker";
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(5, 79);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(71, 17);
+            this.radioButton5.TabIndex = 29;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Battlefield";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(5, 94);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(79, 17);
+            this.radioButton6.TabIndex = 30;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Call of Duty";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(5, 19);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(90, 17);
+            this.radioButton1.TabIndex = 25;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Donkey Kong";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(5, 34);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(42, 17);
+            this.radioButton2.TabIndex = 26;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Fifa";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(5, 49);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(81, 17);
+            this.radioButton3.TabIndex = 27;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Smash Bros";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(265, 20);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(84, 17);
+            this.checkBox1.TabIndex = 44;
+            this.checkBox1.Text = "HDMI Cable";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6});
+            this.listView1.Location = new System.Drawing.Point(18, 194);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(483, 112);
+            this.listView1.TabIndex = 45;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Student Name";
+            this.columnHeader1.Width = 82;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Student ID";
+            this.columnHeader2.Width = 65;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Console";
+            this.columnHeader3.Width = 71;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Game";
+            this.columnHeader4.Width = 99;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Other";
+            this.columnHeader5.Width = 43;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Worker Name";
+            this.columnHeader6.Width = 90;
             // 
             // Checkout
             // 
@@ -274,39 +356,32 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(513, 391);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.games);
+            this.Controls.Add(this.console);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BackButton);
-            this.Controls.Add(this.GamesList);
-            this.Controls.Add(this.ConsoleLabel);
             this.Controls.Add(this.ControllersLabel);
             this.Controls.Add(this.ControllersNum);
-            this.Controls.Add(this.PSRadio);
-            this.Controls.Add(this.WiiRadio);
-            this.Controls.Add(this.XBoxRadio);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.IDLabel);
             this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.IDBox);
             this.Controls.Add(this.NameBox);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.GamesLabel);
             this.Name = "Checkout";
             this.Text = "Checkout";
             ((System.ComponentModel.ISupportInitialize)(this.ControllersNum)).EndInit();
+            this.console.ResumeLayout(false);
+            this.console.PerformLayout();
+            this.games.ResumeLayout(false);
+            this.games.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label GamesLabel;
-        private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.TextBox NameBox;
         private System.Windows.Forms.TextBox IDBox;
         private System.Windows.Forms.Label NameLabel;
@@ -317,15 +392,25 @@
         private System.Windows.Forms.RadioButton PSRadio;
         private System.Windows.Forms.NumericUpDown ControllersNum;
         private System.Windows.Forms.Label ControllersLabel;
-        private System.Windows.Forms.Label ConsoleLabel;
-        private System.Windows.Forms.CheckedListBox GamesList;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox console;
+        private System.Windows.Forms.GroupBox games;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
     }
 }

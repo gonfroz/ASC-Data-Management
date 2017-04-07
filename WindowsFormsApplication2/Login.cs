@@ -28,7 +28,7 @@ namespace WindowsFormsApplication2
             {
                 Main main = new Main();
                 this.Hide();
-                main.workerName=textBox1.Text;
+                main.workerName = textBox1.Text;
                 main.ShowDialog();
                 textBox1.Text = "";
                 this.Show();
