@@ -39,7 +39,7 @@
             this.ControllersNum = new System.Windows.Forms.NumericUpDown();
             this.ControllersLabel = new System.Windows.Forms.Label();
             this.BackButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.returnButton = new System.Windows.Forms.Button();
             this.console = new System.Windows.Forms.GroupBox();
             this.games = new System.Windows.Forms.GroupBox();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
@@ -50,7 +50,7 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.hdmi = new System.Windows.Forms.CheckBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -165,15 +165,16 @@
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
-            // button1
+            // returnButton
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(407, 337);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 42);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "Return Item";
-            this.button1.UseVisualStyleBackColor = true;
+            this.returnButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.returnButton.Location = new System.Drawing.Point(407, 337);
+            this.returnButton.Name = "returnButton";
+            this.returnButton.Size = new System.Drawing.Size(80, 42);
+            this.returnButton.TabIndex = 33;
+            this.returnButton.Text = "Return Item";
+            this.returnButton.UseVisualStyleBackColor = true;
+            this.returnButton.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // console
             // 
@@ -294,15 +295,15 @@
             this.radioButton3.Text = "Smash Bros";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // hdmi
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(265, 20);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(84, 17);
-            this.checkBox1.TabIndex = 44;
-            this.checkBox1.Text = "HDMI Cable";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.hdmi.AutoSize = true;
+            this.hdmi.Location = new System.Drawing.Point(265, 20);
+            this.hdmi.Name = "hdmi";
+            this.hdmi.Size = new System.Drawing.Size(84, 17);
+            this.hdmi.TabIndex = 44;
+            this.hdmi.Text = "HDMI Cable";
+            this.hdmi.UseVisualStyleBackColor = true;
             // 
             // listView1
             // 
@@ -357,10 +358,10 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(513, 391);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.hdmi);
             this.Controls.Add(this.games);
             this.Controls.Add(this.console);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.returnButton);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.ControllersLabel);
             this.Controls.Add(this.ControllersNum);
@@ -393,7 +394,7 @@
         private System.Windows.Forms.NumericUpDown ControllersNum;
         private System.Windows.Forms.Label ControllersLabel;
         private System.Windows.Forms.Button BackButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button returnButton;
         private System.Windows.Forms.GroupBox console;
         private System.Windows.Forms.GroupBox games;
         private System.Windows.Forms.RadioButton radioButton1;
@@ -404,7 +405,7 @@
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox hdmi;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
