@@ -87,7 +87,7 @@ namespace WindowsFormsApplication2
             this.WeeklyStats.AutoSize = true;
             this.WeeklyStats.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.WeeklyStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.WeeklyStats.Location = new System.Drawing.Point(294, 80);
+            this.WeeklyStats.Location = new System.Drawing.Point(294, 67);
             this.WeeklyStats.Name = "WeeklyStats";
             this.WeeklyStats.Size = new System.Drawing.Size(74, 20);
             this.WeeklyStats.TabIndex = 1;
@@ -99,7 +99,7 @@ namespace WindowsFormsApplication2
             this.MostPopLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MostPopLabel.AutoSize = true;
             this.MostPopLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.MostPopLabel.Location = new System.Drawing.Point(220, 125);
+            this.MostPopLabel.Location = new System.Drawing.Point(220, 112);
             this.MostPopLabel.Name = "MostPopLabel";
             this.MostPopLabel.Size = new System.Drawing.Size(97, 13);
             this.MostPopLabel.TabIndex = 2;
@@ -110,7 +110,7 @@ namespace WindowsFormsApplication2
             this.LeastPopLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LeastPopLabel.AutoSize = true;
             this.LeastPopLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.LeastPopLabel.Location = new System.Drawing.Point(217, 163);
+            this.LeastPopLabel.Location = new System.Drawing.Point(217, 150);
             this.LeastPopLabel.Name = "LeastPopLabel";
             this.LeastPopLabel.Size = new System.Drawing.Size(100, 13);
             this.LeastPopLabel.TabIndex = 3;
@@ -270,7 +270,7 @@ namespace WindowsFormsApplication2
             // 
             this.MostPopVal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MostPopVal.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.MostPopVal.Location = new System.Drawing.Point(323, 125);
+            this.MostPopVal.Location = new System.Drawing.Point(323, 112);
             this.MostPopVal.Name = "MostPopVal";
             this.MostPopVal.Size = new System.Drawing.Size(122, 13);
             this.MostPopVal.TabIndex = 35;
@@ -279,7 +279,7 @@ namespace WindowsFormsApplication2
             // 
             this.LeastPopVal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LeastPopVal.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.LeastPopVal.Location = new System.Drawing.Point(323, 163);
+            this.LeastPopVal.Location = new System.Drawing.Point(323, 150);
             this.LeastPopVal.Name = "LeastPopVal";
             this.LeastPopVal.Size = new System.Drawing.Size(122, 13);
             this.LeastPopVal.TabIndex = 36;
@@ -290,7 +290,7 @@ namespace WindowsFormsApplication2
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(295, 198);
+            this.label1.Location = new System.Drawing.Point(295, 185);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 17);
             this.label1.TabIndex = 37;
@@ -300,7 +300,7 @@ namespace WindowsFormsApplication2
             // duration
             // 
             this.duration.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.duration.Location = new System.Drawing.Point(370, 195);
+            this.duration.Location = new System.Drawing.Point(370, 182);
             this.duration.Name = "duration";
             this.duration.Size = new System.Drawing.Size(75, 23);
             this.duration.TabIndex = 39;
@@ -341,7 +341,7 @@ namespace WindowsFormsApplication2
             this.groupBoxStats.Controls.Add(this.GameRoomLabel);
             this.groupBoxStats.Controls.Add(this.PrayerLabel);
             this.groupBoxStats.Controls.Add(this.CollabLabel);
-            this.groupBoxStats.Location = new System.Drawing.Point(128, 227);
+            this.groupBoxStats.Location = new System.Drawing.Point(128, 214);
             this.groupBoxStats.Name = "groupBoxStats";
             this.groupBoxStats.Size = new System.Drawing.Size(407, 238);
             this.groupBoxStats.TabIndex = 40;
