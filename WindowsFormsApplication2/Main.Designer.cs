@@ -131,9 +131,10 @@ namespace WindowsFormsApplication2
             this.Controls.Add(this.StatsButton);
             this.Controls.Add(this.CheckoutButton);
             this.Controls.Add(this.RoundsButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home Screen";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
