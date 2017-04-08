@@ -77,11 +77,68 @@ namespace WindowsFormsApplication2
             }
         }
 
+    static double ColumnAverage(IEnumerable<string> strs, int column)  
+    {  
+ 
+        // Variable columnQuery is an IEnumerable<int>.  
+        // The following query performs two steps:  
+        // 1) use Split to break each row (a string) into an array of strings,   
+        // 2) convert the element to an int and select it.  
+        var columnQuery =  
+            from line in strs  
+            let elements = line.Split(',')  
+            select Convert.ToInt32(elements[column]);  
+  
+        // Execute the query and cache the results to improve  
+        // performance. This is helpful only with very large files.  
+        var results = columnQuery.ToList();  
+  
+        // Perform aggregate calculations Average, Max, and  
+        // Min on the column specified by column.  
+        double average = results.Average();
 
+        return average;
+
+            //int max = results.Max();  
+
+            //int min = results.Min();  
+  
+          //Console.WriteLine("Exam #{0}: Average:{1:##.##} High Score:{2} Low Score:{3}",  
+          //       column, average, max, min);  
+    } 
 
         private void Statistics_Load(object sender, EventArgs e)
         {
+            string[] lines = System.IO.File.ReadAllLines(@"asc_data.csv");
 
+            // Compute Averages  
+            CommonGroundsNum.Text = ColumnAverage(lines, 2).ToString();
+            CommuterLoungeNum.Text = ColumnAverage(lines, 3).ToString();
+            MediaRoomNum.Text = ColumnAverage(lines, 4).ToString();
+            HiveNum.Text = ColumnAverage(lines, 5).ToString();
+            BreakoutNum.Text = ColumnAverage(lines, 6).ToString();
+            GreatRoomNum.Text = ColumnAverage(lines, 7).ToString();
+            MailNum.Text = ColumnAverage(lines, 8).ToString();
+            Halls1Num.Text = ColumnAverage(lines, 9).ToString();
+            Other1Num.Text = ColumnAverage(lines, 10).ToString();
+            CollabNum.Text = ColumnAverage(lines, 12).ToString();
+            PrayerNum.Text = ColumnAverage(lines, 13).ToString();
+            ActivitiesNum.Text = ColumnAverage(lines, 14).ToString();
+            GameRoomNum.Text = ColumnAverage(lines, 15).ToString();
+            Halls2Num.Text = ColumnAverage(lines, 16).ToString();
+            Other2Num.Text = ColumnAverage(lines, 17).ToString();
+        }
+
+        private void duration_Click(object sender, EventArgs e)
+        {
+            if (duration.Text == "Daily")
+            {
+                duration.Text = "Weekly";
+            }
+            else
+            {
+                duration.Text = "Daily";
+            }
         }
     }
 }

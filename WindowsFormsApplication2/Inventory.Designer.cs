@@ -125,7 +125,6 @@
             this.Available.Name = "Available";
             this.Available.Size = new System.Drawing.Size(51, 186);
             this.Available.TabIndex = 6;
-            this.Available.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
             // button4
             // 
