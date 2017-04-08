@@ -33,12 +33,13 @@ namespace WindowsFormsApplication2
             this.StatsButton = new System.Windows.Forms.Button();
             this.AdminButton = new System.Windows.Forms.Button();
             this.NameLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.onDuty = new System.Windows.Forms.Label();
+            this.logout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // RoundsButton
             // 
+            this.RoundsButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RoundsButton.Location = new System.Drawing.Point(184, 123);
             this.RoundsButton.Name = "RoundsButton";
             this.RoundsButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -50,6 +51,7 @@ namespace WindowsFormsApplication2
             // 
             // CheckoutButton
             // 
+            this.CheckoutButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CheckoutButton.Location = new System.Drawing.Point(366, 123);
             this.CheckoutButton.Name = "CheckoutButton";
             this.CheckoutButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -61,6 +63,7 @@ namespace WindowsFormsApplication2
             // 
             // StatsButton
             // 
+            this.StatsButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.StatsButton.Location = new System.Drawing.Point(184, 237);
             this.StatsButton.Name = "StatsButton";
             this.StatsButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -72,6 +75,7 @@ namespace WindowsFormsApplication2
             // 
             // AdminButton
             // 
+            this.AdminButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.AdminButton.Location = new System.Drawing.Point(366, 237);
             this.AdminButton.Name = "AdminButton";
             this.AdminButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -84,33 +88,34 @@ namespace WindowsFormsApplication2
             // NameLabel
             // 
             this.NameLabel.BackColor = System.Drawing.Color.White;
-            this.NameLabel.Location = new System.Drawing.Point(47, 26);
+            this.NameLabel.Location = new System.Drawing.Point(12, 9);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(120, 19);
             this.NameLabel.TabIndex = 7;
             this.NameLabel.Text = "Student Worker Name";
             this.NameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // onDuty
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(47, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 20);
-            this.label1.TabIndex = 8;
-            this.label1.Text = " ";
+            this.onDuty.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.onDuty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.onDuty.Location = new System.Drawing.Point(12, 28);
+            this.onDuty.Name = "onDuty";
+            this.onDuty.Size = new System.Drawing.Size(120, 20);
+            this.onDuty.TabIndex = 8;
+            this.onDuty.Text = " ";
             // 
-            // button5
+            // logout
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button5.Location = new System.Drawing.Point(47, 342);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(120, 42);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Log Out";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.logout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.logout.Location = new System.Drawing.Point(15, 357);
+            this.logout.Name = "logout";
+            this.logout.Size = new System.Drawing.Size(120, 42);
+            this.logout.TabIndex = 9;
+            this.logout.Text = "Log Out";
+            this.logout.UseVisualStyleBackColor = true;
+            this.logout.Click += new System.EventHandler(this.button5_Click);
             // 
             // Main
             // 
@@ -119,8 +124,8 @@ namespace WindowsFormsApplication2
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(651, 411);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.logout);
+            this.Controls.Add(this.onDuty);
             this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.AdminButton);
             this.Controls.Add(this.StatsButton);
@@ -128,6 +133,7 @@ namespace WindowsFormsApplication2
             this.Controls.Add(this.RoundsButton);
             this.Name = "Main";
             this.Text = "Home Screen";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
@@ -139,7 +145,7 @@ namespace WindowsFormsApplication2
         private System.Windows.Forms.Button StatsButton;
         private System.Windows.Forms.Button AdminButton;
         private System.Windows.Forms.Label NameLabel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label onDuty;
+        private System.Windows.Forms.Button logout;
     }
 }

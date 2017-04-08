@@ -81,6 +81,7 @@
             // 
             // SecondFloor
             // 
+            this.SecondFloor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SecondFloor.AutoSize = true;
             this.SecondFloor.BackColor = System.Drawing.Color.White;
             this.SecondFloor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -93,6 +94,7 @@
             // 
             // FirstFloor
             // 
+            this.FirstFloor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.FirstFloor.AutoSize = true;
             this.FirstFloor.BackColor = System.Drawing.Color.White;
             this.FirstFloor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -104,6 +106,7 @@
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown1.Location = new System.Drawing.Point(214, 61);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(49, 20);
@@ -111,6 +114,7 @@
             // 
             // numericUpDown2
             // 
+            this.numericUpDown2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown2.Location = new System.Drawing.Point(312, 61);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(49, 20);
@@ -118,6 +122,7 @@
             // 
             // numericUpDown3
             // 
+            this.numericUpDown3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown3.Location = new System.Drawing.Point(410, 61);
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(49, 20);
@@ -125,6 +130,7 @@
             // 
             // numericUpDown4
             // 
+            this.numericUpDown4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown4.Location = new System.Drawing.Point(410, 133);
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(49, 20);
@@ -132,6 +138,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(213, 45);
             this.label3.MinimumSize = new System.Drawing.Size(50, 0);
@@ -143,6 +150,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(311, 45);
             this.label4.MinimumSize = new System.Drawing.Size(50, 0);
@@ -154,6 +162,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(409, 45);
             this.label5.MinimumSize = new System.Drawing.Size(50, 0);
@@ -165,6 +174,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(213, 117);
             this.label6.MinimumSize = new System.Drawing.Size(50, 0);
@@ -176,6 +186,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(409, 117);
             this.label9.MinimumSize = new System.Drawing.Size(50, 0);
@@ -187,6 +198,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(311, 117);
             this.label10.MinimumSize = new System.Drawing.Size(50, 0);
@@ -198,6 +210,7 @@
             // 
             // numericUpDown7
             // 
+            this.numericUpDown7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown7.Location = new System.Drawing.Point(312, 133);
             this.numericUpDown7.Name = "numericUpDown7";
             this.numericUpDown7.Size = new System.Drawing.Size(49, 20);
@@ -205,6 +218,7 @@
             // 
             // numericUpDown8
             // 
+            this.numericUpDown8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown8.Location = new System.Drawing.Point(214, 133);
             this.numericUpDown8.Name = "numericUpDown8";
             this.numericUpDown8.Size = new System.Drawing.Size(49, 20);
@@ -212,6 +226,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(507, 286);
             this.label1.MinimumSize = new System.Drawing.Size(50, 0);
@@ -223,6 +238,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(409, 286);
             this.label2.MinimumSize = new System.Drawing.Size(50, 0);
@@ -234,6 +250,7 @@
             // 
             // numericUpDown5
             // 
+            this.numericUpDown5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown5.Location = new System.Drawing.Point(410, 302);
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(49, 20);
@@ -241,6 +258,7 @@
             // 
             // numericUpDown6
             // 
+            this.numericUpDown6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown6.Location = new System.Drawing.Point(457, 230);
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(49, 20);
@@ -248,6 +266,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(456, 214);
             this.label7.MinimumSize = new System.Drawing.Size(50, 0);
@@ -259,6 +278,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(360, 214);
             this.label8.MinimumSize = new System.Drawing.Size(50, 0);
@@ -270,6 +290,7 @@
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(262, 214);
             this.label11.MinimumSize = new System.Drawing.Size(50, 0);
@@ -281,6 +302,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.BackColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(168, 214);
             this.label12.MinimumSize = new System.Drawing.Size(50, 0);
@@ -292,6 +314,7 @@
             // 
             // numericUpDown9
             // 
+            this.numericUpDown9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown9.Location = new System.Drawing.Point(508, 302);
             this.numericUpDown9.Name = "numericUpDown9";
             this.numericUpDown9.Size = new System.Drawing.Size(49, 20);
@@ -299,6 +322,7 @@
             // 
             // numericUpDown10
             // 
+            this.numericUpDown10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown10.Location = new System.Drawing.Point(361, 230);
             this.numericUpDown10.Name = "numericUpDown10";
             this.numericUpDown10.Size = new System.Drawing.Size(49, 20);
@@ -306,6 +330,7 @@
             // 
             // numericUpDown11
             // 
+            this.numericUpDown11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown11.Location = new System.Drawing.Point(265, 230);
             this.numericUpDown11.Name = "numericUpDown11";
             this.numericUpDown11.Size = new System.Drawing.Size(49, 20);
@@ -313,6 +338,7 @@
             // 
             // numericUpDown12
             // 
+            this.numericUpDown12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown12.Location = new System.Drawing.Point(169, 230);
             this.numericUpDown12.Name = "numericUpDown12";
             this.numericUpDown12.Size = new System.Drawing.Size(49, 20);
@@ -320,6 +346,7 @@
             // 
             // numericUpDown13
             // 
+            this.numericUpDown13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown13.Location = new System.Drawing.Point(116, 302);
             this.numericUpDown13.Name = "numericUpDown13";
             this.numericUpDown13.Size = new System.Drawing.Size(49, 20);
@@ -327,6 +354,7 @@
             // 
             // label13
             // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.BackColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(115, 286);
             this.label13.MinimumSize = new System.Drawing.Size(50, 0);
@@ -338,6 +366,7 @@
             // 
             // label14
             // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.BackColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(206, 286);
             this.label14.MinimumSize = new System.Drawing.Size(50, 0);
@@ -349,6 +378,7 @@
             // 
             // numericUpDown14
             // 
+            this.numericUpDown14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown14.Location = new System.Drawing.Point(214, 302);
             this.numericUpDown14.Name = "numericUpDown14";
             this.numericUpDown14.Size = new System.Drawing.Size(49, 20);
@@ -356,6 +386,7 @@
             // 
             // numericUpDown15
             // 
+            this.numericUpDown15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown15.Location = new System.Drawing.Point(312, 302);
             this.numericUpDown15.Name = "numericUpDown15";
             this.numericUpDown15.Size = new System.Drawing.Size(49, 20);
@@ -364,6 +395,7 @@
             // 
             // label15
             // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.BackColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(311, 286);
             this.label15.MinimumSize = new System.Drawing.Size(50, 0);
@@ -375,7 +407,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(535, 350);
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(592, 359);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 40);
             this.button1.TabIndex = 30;
@@ -385,7 +418,8 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(70, 350);
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button2.Location = new System.Drawing.Point(12, 359);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(80, 40);
             this.button2.TabIndex = 31;
@@ -436,6 +470,7 @@
             this.Controls.Add(this.SecondFloor);
             this.Name = "Rounds";
             this.Text = "Building Usage";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();

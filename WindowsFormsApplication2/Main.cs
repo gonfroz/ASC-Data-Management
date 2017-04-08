@@ -39,16 +39,16 @@ namespace WindowsFormsApplication2
         delegate void updateLabelText(string text);
         private void updateWorker(string e)
         {
-            if (label1.InvokeRequired)
+            if (onDuty.InvokeRequired)
             {
                 // this is worker thread
                 updateLabelText del = updateWorker;
-                label1.Invoke(del, e);
+                onDuty.Invoke(del, e);
             }
             else
             {
                 // this is UI thread
-                label1.Text = e;
+                onDuty.Text = e;
             }
         }
 

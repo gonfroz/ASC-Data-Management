@@ -65,22 +65,25 @@
             // 
             // NameBox
             // 
-            this.NameBox.Location = new System.Drawing.Point(232, 126);
+            this.NameBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.NameBox.Location = new System.Drawing.Point(229, 122);
             this.NameBox.Name = "NameBox";
             this.NameBox.Size = new System.Drawing.Size(117, 20);
             this.NameBox.TabIndex = 20;
             // 
             // IDBox
             // 
-            this.IDBox.Location = new System.Drawing.Point(232, 155);
+            this.IDBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.IDBox.Location = new System.Drawing.Point(229, 151);
             this.IDBox.Name = "IDBox";
             this.IDBox.Size = new System.Drawing.Size(117, 20);
             this.IDBox.TabIndex = 21;
             // 
             // NameLabel
             // 
+            this.NameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NameLabel.AutoSize = true;
-            this.NameLabel.Location = new System.Drawing.Point(151, 129);
+            this.NameLabel.Location = new System.Drawing.Point(148, 125);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(75, 13);
             this.NameLabel.TabIndex = 22;
@@ -88,8 +91,9 @@
             // 
             // IDLabel
             // 
+            this.IDLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.IDLabel.AutoSize = true;
-            this.IDLabel.Location = new System.Drawing.Point(168, 158);
+            this.IDLabel.Location = new System.Drawing.Point(165, 154);
             this.IDLabel.Name = "IDLabel";
             this.IDLabel.Size = new System.Drawing.Size(58, 13);
             this.IDLabel.TabIndex = 23;
@@ -97,7 +101,8 @@
             // 
             // SubmitButton
             // 
-            this.SubmitButton.Location = new System.Drawing.Point(398, 136);
+            this.SubmitButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SubmitButton.Location = new System.Drawing.Point(395, 132);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(75, 32);
             this.SubmitButton.TabIndex = 24;
@@ -140,15 +145,17 @@
             // 
             // ControllersNum
             // 
-            this.ControllersNum.Location = new System.Drawing.Point(265, 69);
+            this.ControllersNum.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ControllersNum.Location = new System.Drawing.Point(262, 65);
             this.ControllersNum.Name = "ControllersNum";
             this.ControllersNum.Size = new System.Drawing.Size(54, 20);
             this.ControllersNum.TabIndex = 28;
             // 
             // ControllersLabel
             // 
+            this.ControllersLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ControllersLabel.AutoSize = true;
-            this.ControllersLabel.Location = new System.Drawing.Point(265, 50);
+            this.ControllersLabel.Location = new System.Drawing.Point(262, 46);
             this.ControllersLabel.Name = "ControllersLabel";
             this.ControllersLabel.Size = new System.Drawing.Size(78, 13);
             this.ControllersLabel.TabIndex = 29;
@@ -157,7 +164,7 @@
             // BackButton
             // 
             this.BackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BackButton.Location = new System.Drawing.Point(25, 337);
+            this.BackButton.Location = new System.Drawing.Point(22, 333);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(80, 42);
             this.BackButton.TabIndex = 32;
@@ -167,8 +174,8 @@
             // 
             // returnButton
             // 
-            this.returnButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.returnButton.Location = new System.Drawing.Point(407, 337);
+            this.returnButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.returnButton.Location = new System.Drawing.Point(404, 333);
             this.returnButton.Name = "returnButton";
             this.returnButton.Size = new System.Drawing.Size(80, 42);
             this.returnButton.TabIndex = 33;
@@ -178,11 +185,12 @@
             // 
             // console
             // 
+            this.console.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.console.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.console.Controls.Add(this.XBoxRadio);
             this.console.Controls.Add(this.WiiRadio);
             this.console.Controls.Add(this.PSRadio);
-            this.console.Location = new System.Drawing.Point(138, 20);
+            this.console.Location = new System.Drawing.Point(135, 16);
             this.console.Name = "console";
             this.console.Size = new System.Drawing.Size(98, 92);
             this.console.TabIndex = 40;
@@ -191,6 +199,7 @@
             // 
             // games
             // 
+            this.games.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.games.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.games.Controls.Add(this.radioButton7);
             this.games.Controls.Add(this.radioButton8);
@@ -200,7 +209,7 @@
             this.games.Controls.Add(this.radioButton1);
             this.games.Controls.Add(this.radioButton2);
             this.games.Controls.Add(this.radioButton3);
-            this.games.Location = new System.Drawing.Point(18, 20);
+            this.games.Location = new System.Drawing.Point(15, 16);
             this.games.Name = "games";
             this.games.Size = new System.Drawing.Size(98, 155);
             this.games.TabIndex = 41;
@@ -297,8 +306,9 @@
             // 
             // hdmi
             // 
+            this.hdmi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.hdmi.AutoSize = true;
-            this.hdmi.Location = new System.Drawing.Point(265, 20);
+            this.hdmi.Location = new System.Drawing.Point(262, 16);
             this.hdmi.Name = "hdmi";
             this.hdmi.Size = new System.Drawing.Size(84, 17);
             this.hdmi.TabIndex = 44;
@@ -307,6 +317,7 @@
             // 
             // listView1
             // 
+            this.listView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -314,7 +325,7 @@
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6});
-            this.listView1.Location = new System.Drawing.Point(18, 194);
+            this.listView1.Location = new System.Drawing.Point(15, 190);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(483, 112);
             this.listView1.TabIndex = 45;
@@ -372,6 +383,7 @@
             this.Controls.Add(this.NameBox);
             this.Name = "Checkout";
             this.Text = "Checkout";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Checkout_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ControllersNum)).EndInit();
             this.console.ResumeLayout(false);

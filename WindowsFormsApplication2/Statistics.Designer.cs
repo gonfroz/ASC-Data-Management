@@ -71,7 +71,7 @@ namespace WindowsFormsApplication2
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(47, 454);
+            this.button1.Location = new System.Drawing.Point(12, 471);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 36);
             this.button1.TabIndex = 0;
@@ -81,10 +81,11 @@ namespace WindowsFormsApplication2
             // 
             // WeeklyStats
             // 
+            this.WeeklyStats.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.WeeklyStats.AutoSize = true;
             this.WeeklyStats.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.WeeklyStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.WeeklyStats.Location = new System.Drawing.Point(259, 34);
+            this.WeeklyStats.Location = new System.Drawing.Point(267, 80);
             this.WeeklyStats.Name = "WeeklyStats";
             this.WeeklyStats.Size = new System.Drawing.Size(129, 20);
             this.WeeklyStats.TabIndex = 1;
@@ -93,9 +94,10 @@ namespace WindowsFormsApplication2
             // 
             // MostPopLabel
             // 
+            this.MostPopLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MostPopLabel.AutoSize = true;
             this.MostPopLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.MostPopLabel.Location = new System.Drawing.Point(212, 79);
+            this.MostPopLabel.Location = new System.Drawing.Point(220, 125);
             this.MostPopLabel.Name = "MostPopLabel";
             this.MostPopLabel.Size = new System.Drawing.Size(97, 13);
             this.MostPopLabel.TabIndex = 2;
@@ -103,9 +105,10 @@ namespace WindowsFormsApplication2
             // 
             // LeastPopLabel
             // 
+            this.LeastPopLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LeastPopLabel.AutoSize = true;
             this.LeastPopLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.LeastPopLabel.Location = new System.Drawing.Point(209, 117);
+            this.LeastPopLabel.Location = new System.Drawing.Point(217, 163);
             this.LeastPopLabel.Name = "LeastPopLabel";
             this.LeastPopLabel.Size = new System.Drawing.Size(100, 13);
             this.LeastPopLabel.TabIndex = 3;
@@ -113,8 +116,9 @@ namespace WindowsFormsApplication2
             // 
             // CommonGroundsLabel
             // 
+            this.CommonGroundsLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CommonGroundsLabel.AutoSize = true;
-            this.CommonGroundsLabel.Location = new System.Drawing.Point(118, 194);
+            this.CommonGroundsLabel.Location = new System.Drawing.Point(126, 240);
             this.CommonGroundsLabel.Name = "CommonGroundsLabel";
             this.CommonGroundsLabel.Size = new System.Drawing.Size(91, 13);
             this.CommonGroundsLabel.TabIndex = 5;
@@ -122,8 +126,9 @@ namespace WindowsFormsApplication2
             // 
             // CommuterLoungeLabel
             // 
+            this.CommuterLoungeLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CommuterLoungeLabel.AutoSize = true;
-            this.CommuterLoungeLabel.Location = new System.Drawing.Point(118, 221);
+            this.CommuterLoungeLabel.Location = new System.Drawing.Point(126, 267);
             this.CommuterLoungeLabel.Name = "CommuterLoungeLabel";
             this.CommuterLoungeLabel.Size = new System.Drawing.Size(93, 13);
             this.CommuterLoungeLabel.TabIndex = 6;
@@ -131,8 +136,9 @@ namespace WindowsFormsApplication2
             // 
             // MediaRoomLabel
             // 
+            this.MediaRoomLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MediaRoomLabel.AutoSize = true;
-            this.MediaRoomLabel.Location = new System.Drawing.Point(118, 252);
+            this.MediaRoomLabel.Location = new System.Drawing.Point(126, 298);
             this.MediaRoomLabel.Name = "MediaRoomLabel";
             this.MediaRoomLabel.Size = new System.Drawing.Size(67, 13);
             this.MediaRoomLabel.TabIndex = 7;
@@ -140,8 +146,9 @@ namespace WindowsFormsApplication2
             // 
             // HiveLabel
             // 
+            this.HiveLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.HiveLabel.AutoSize = true;
-            this.HiveLabel.Location = new System.Drawing.Point(118, 280);
+            this.HiveLabel.Location = new System.Drawing.Point(126, 326);
             this.HiveLabel.Name = "HiveLabel";
             this.HiveLabel.Size = new System.Drawing.Size(51, 13);
             this.HiveLabel.TabIndex = 8;
@@ -149,8 +156,9 @@ namespace WindowsFormsApplication2
             // 
             // BreakoutLabel
             // 
+            this.BreakoutLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BreakoutLabel.AutoSize = true;
-            this.BreakoutLabel.Location = new System.Drawing.Point(118, 306);
+            this.BreakoutLabel.Location = new System.Drawing.Point(126, 352);
             this.BreakoutLabel.Name = "BreakoutLabel";
             this.BreakoutLabel.Size = new System.Drawing.Size(50, 13);
             this.BreakoutLabel.TabIndex = 9;
@@ -158,8 +166,9 @@ namespace WindowsFormsApplication2
             // 
             // GreatRoomLabel
             // 
+            this.GreatRoomLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.GreatRoomLabel.AutoSize = true;
-            this.GreatRoomLabel.Location = new System.Drawing.Point(118, 329);
+            this.GreatRoomLabel.Location = new System.Drawing.Point(126, 375);
             this.GreatRoomLabel.Name = "GreatRoomLabel";
             this.GreatRoomLabel.Size = new System.Drawing.Size(64, 13);
             this.GreatRoomLabel.TabIndex = 10;
@@ -167,8 +176,9 @@ namespace WindowsFormsApplication2
             // 
             // MailLabel
             // 
+            this.MailLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MailLabel.AutoSize = true;
-            this.MailLabel.Location = new System.Drawing.Point(118, 354);
+            this.MailLabel.Location = new System.Drawing.Point(126, 400);
             this.MailLabel.Name = "MailLabel";
             this.MailLabel.Size = new System.Drawing.Size(60, 13);
             this.MailLabel.TabIndex = 11;
@@ -176,8 +186,9 @@ namespace WindowsFormsApplication2
             // 
             // ActivitiesLabel
             // 
+            this.ActivitiesLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ActivitiesLabel.AutoSize = true;
-            this.ActivitiesLabel.Location = new System.Drawing.Point(118, 377);
+            this.ActivitiesLabel.Location = new System.Drawing.Point(126, 423);
             this.ActivitiesLabel.Name = "ActivitiesLabel";
             this.ActivitiesLabel.Size = new System.Drawing.Size(80, 13);
             this.ActivitiesLabel.TabIndex = 12;
@@ -185,8 +196,9 @@ namespace WindowsFormsApplication2
             // 
             // Other1Label
             // 
+            this.Other1Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Other1Label.AutoSize = true;
-            this.Other1Label.Location = new System.Drawing.Point(377, 194);
+            this.Other1Label.Location = new System.Drawing.Point(385, 240);
             this.Other1Label.Name = "Other1Label";
             this.Other1Label.Size = new System.Drawing.Size(79, 13);
             this.Other1Label.TabIndex = 13;
@@ -194,8 +206,9 @@ namespace WindowsFormsApplication2
             // 
             // Other2Label
             // 
+            this.Other2Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Other2Label.AutoSize = true;
-            this.Other2Label.Location = new System.Drawing.Point(377, 221);
+            this.Other2Label.Location = new System.Drawing.Point(385, 267);
             this.Other2Label.Name = "Other2Label";
             this.Other2Label.Size = new System.Drawing.Size(83, 13);
             this.Other2Label.TabIndex = 14;
@@ -203,8 +216,9 @@ namespace WindowsFormsApplication2
             // 
             // Halls1Label
             // 
+            this.Halls1Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Halls1Label.AutoSize = true;
-            this.Halls1Label.Location = new System.Drawing.Point(377, 252);
+            this.Halls1Label.Location = new System.Drawing.Point(385, 298);
             this.Halls1Label.Name = "Halls1Label";
             this.Halls1Label.Size = new System.Drawing.Size(95, 13);
             this.Halls1Label.TabIndex = 15;
@@ -212,8 +226,9 @@ namespace WindowsFormsApplication2
             // 
             // Halss2Label
             // 
+            this.Halss2Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Halss2Label.AutoSize = true;
-            this.Halss2Label.Location = new System.Drawing.Point(377, 280);
+            this.Halss2Label.Location = new System.Drawing.Point(385, 326);
             this.Halss2Label.Name = "Halss2Label";
             this.Halss2Label.Size = new System.Drawing.Size(99, 13);
             this.Halss2Label.TabIndex = 16;
@@ -221,8 +236,9 @@ namespace WindowsFormsApplication2
             // 
             // GameRoomLabel
             // 
+            this.GameRoomLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.GameRoomLabel.AutoSize = true;
-            this.GameRoomLabel.Location = new System.Drawing.Point(377, 306);
+            this.GameRoomLabel.Location = new System.Drawing.Point(385, 352);
             this.GameRoomLabel.Name = "GameRoomLabel";
             this.GameRoomLabel.Size = new System.Drawing.Size(66, 13);
             this.GameRoomLabel.TabIndex = 17;
@@ -230,8 +246,9 @@ namespace WindowsFormsApplication2
             // 
             // PrayerLabel
             // 
+            this.PrayerLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PrayerLabel.AutoSize = true;
-            this.PrayerLabel.Location = new System.Drawing.Point(377, 329);
+            this.PrayerLabel.Location = new System.Drawing.Point(385, 375);
             this.PrayerLabel.Name = "PrayerLabel";
             this.PrayerLabel.Size = new System.Drawing.Size(68, 13);
             this.PrayerLabel.TabIndex = 18;
@@ -239,8 +256,9 @@ namespace WindowsFormsApplication2
             // 
             // CollabLabel
             // 
+            this.CollabLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CollabLabel.AutoSize = true;
-            this.CollabLabel.Location = new System.Drawing.Point(377, 354);
+            this.CollabLabel.Location = new System.Drawing.Point(385, 400);
             this.CollabLabel.Name = "CollabLabel";
             this.CollabLabel.Size = new System.Drawing.Size(72, 13);
             this.CollabLabel.TabIndex = 19;
@@ -248,8 +266,9 @@ namespace WindowsFormsApplication2
             // 
             // CommonGroundsNum
             // 
+            this.CommonGroundsNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CommonGroundsNum.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CommonGroundsNum.Location = new System.Drawing.Point(242, 194);
+            this.CommonGroundsNum.Location = new System.Drawing.Point(250, 240);
             this.CommonGroundsNum.Name = "CommonGroundsNum";
             this.CommonGroundsNum.Size = new System.Drawing.Size(25, 15);
             this.CommonGroundsNum.TabIndex = 20;
@@ -257,8 +276,9 @@ namespace WindowsFormsApplication2
             // 
             // CommuterLoungeNum
             // 
+            this.CommuterLoungeNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CommuterLoungeNum.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CommuterLoungeNum.Location = new System.Drawing.Point(242, 221);
+            this.CommuterLoungeNum.Location = new System.Drawing.Point(250, 267);
             this.CommuterLoungeNum.Name = "CommuterLoungeNum";
             this.CommuterLoungeNum.Size = new System.Drawing.Size(25, 15);
             this.CommuterLoungeNum.TabIndex = 21;
@@ -266,8 +286,9 @@ namespace WindowsFormsApplication2
             // 
             // MediaRoomNum
             // 
+            this.MediaRoomNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MediaRoomNum.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.MediaRoomNum.Location = new System.Drawing.Point(242, 252);
+            this.MediaRoomNum.Location = new System.Drawing.Point(250, 298);
             this.MediaRoomNum.Name = "MediaRoomNum";
             this.MediaRoomNum.Size = new System.Drawing.Size(25, 15);
             this.MediaRoomNum.TabIndex = 22;
@@ -275,8 +296,9 @@ namespace WindowsFormsApplication2
             // 
             // HiveNum
             // 
+            this.HiveNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.HiveNum.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.HiveNum.Location = new System.Drawing.Point(242, 280);
+            this.HiveNum.Location = new System.Drawing.Point(250, 326);
             this.HiveNum.Name = "HiveNum";
             this.HiveNum.Size = new System.Drawing.Size(25, 15);
             this.HiveNum.TabIndex = 23;
@@ -284,8 +306,9 @@ namespace WindowsFormsApplication2
             // 
             // BreakoutNum
             // 
+            this.BreakoutNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BreakoutNum.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BreakoutNum.Location = new System.Drawing.Point(242, 306);
+            this.BreakoutNum.Location = new System.Drawing.Point(250, 352);
             this.BreakoutNum.Name = "BreakoutNum";
             this.BreakoutNum.Size = new System.Drawing.Size(25, 15);
             this.BreakoutNum.TabIndex = 24;
@@ -293,8 +316,9 @@ namespace WindowsFormsApplication2
             // 
             // GreatRoomNum
             // 
+            this.GreatRoomNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.GreatRoomNum.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.GreatRoomNum.Location = new System.Drawing.Point(242, 329);
+            this.GreatRoomNum.Location = new System.Drawing.Point(250, 375);
             this.GreatRoomNum.Name = "GreatRoomNum";
             this.GreatRoomNum.Size = new System.Drawing.Size(25, 15);
             this.GreatRoomNum.TabIndex = 25;
@@ -302,8 +326,9 @@ namespace WindowsFormsApplication2
             // 
             // MailNum
             // 
+            this.MailNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MailNum.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.MailNum.Location = new System.Drawing.Point(242, 354);
+            this.MailNum.Location = new System.Drawing.Point(250, 400);
             this.MailNum.Name = "MailNum";
             this.MailNum.Size = new System.Drawing.Size(25, 15);
             this.MailNum.TabIndex = 26;
@@ -311,8 +336,9 @@ namespace WindowsFormsApplication2
             // 
             // ActivitiesNum
             // 
+            this.ActivitiesNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ActivitiesNum.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ActivitiesNum.Location = new System.Drawing.Point(242, 377);
+            this.ActivitiesNum.Location = new System.Drawing.Point(250, 423);
             this.ActivitiesNum.Name = "ActivitiesNum";
             this.ActivitiesNum.Size = new System.Drawing.Size(25, 15);
             this.ActivitiesNum.TabIndex = 27;
@@ -320,8 +346,9 @@ namespace WindowsFormsApplication2
             // 
             // Other1Num
             // 
+            this.Other1Num.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Other1Num.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Other1Num.Location = new System.Drawing.Point(503, 194);
+            this.Other1Num.Location = new System.Drawing.Point(511, 240);
             this.Other1Num.Name = "Other1Num";
             this.Other1Num.Size = new System.Drawing.Size(25, 15);
             this.Other1Num.TabIndex = 28;
@@ -329,8 +356,9 @@ namespace WindowsFormsApplication2
             // 
             // Other2Num
             // 
+            this.Other2Num.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Other2Num.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Other2Num.Location = new System.Drawing.Point(503, 221);
+            this.Other2Num.Location = new System.Drawing.Point(511, 267);
             this.Other2Num.Name = "Other2Num";
             this.Other2Num.Size = new System.Drawing.Size(25, 15);
             this.Other2Num.TabIndex = 29;
@@ -338,8 +366,9 @@ namespace WindowsFormsApplication2
             // 
             // Halls1Num
             // 
+            this.Halls1Num.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Halls1Num.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Halls1Num.Location = new System.Drawing.Point(503, 252);
+            this.Halls1Num.Location = new System.Drawing.Point(511, 298);
             this.Halls1Num.Name = "Halls1Num";
             this.Halls1Num.Size = new System.Drawing.Size(25, 15);
             this.Halls1Num.TabIndex = 30;
@@ -347,8 +376,9 @@ namespace WindowsFormsApplication2
             // 
             // Halls2Num
             // 
+            this.Halls2Num.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Halls2Num.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Halls2Num.Location = new System.Drawing.Point(503, 280);
+            this.Halls2Num.Location = new System.Drawing.Point(511, 326);
             this.Halls2Num.Name = "Halls2Num";
             this.Halls2Num.Size = new System.Drawing.Size(25, 15);
             this.Halls2Num.TabIndex = 31;
@@ -356,8 +386,9 @@ namespace WindowsFormsApplication2
             // 
             // GameRoomNum
             // 
+            this.GameRoomNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.GameRoomNum.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.GameRoomNum.Location = new System.Drawing.Point(503, 306);
+            this.GameRoomNum.Location = new System.Drawing.Point(511, 352);
             this.GameRoomNum.Name = "GameRoomNum";
             this.GameRoomNum.Size = new System.Drawing.Size(25, 15);
             this.GameRoomNum.TabIndex = 32;
@@ -365,8 +396,9 @@ namespace WindowsFormsApplication2
             // 
             // PrayerNum
             // 
+            this.PrayerNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PrayerNum.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.PrayerNum.Location = new System.Drawing.Point(503, 329);
+            this.PrayerNum.Location = new System.Drawing.Point(511, 375);
             this.PrayerNum.Name = "PrayerNum";
             this.PrayerNum.Size = new System.Drawing.Size(25, 15);
             this.PrayerNum.TabIndex = 33;
@@ -374,8 +406,9 @@ namespace WindowsFormsApplication2
             // 
             // CollabNum
             // 
+            this.CollabNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CollabNum.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CollabNum.Location = new System.Drawing.Point(503, 354);
+            this.CollabNum.Location = new System.Drawing.Point(511, 400);
             this.CollabNum.Name = "CollabNum";
             this.CollabNum.Size = new System.Drawing.Size(25, 15);
             this.CollabNum.TabIndex = 34;
@@ -383,8 +416,9 @@ namespace WindowsFormsApplication2
             // 
             // MostPopVal
             // 
+            this.MostPopVal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MostPopVal.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.MostPopVal.Location = new System.Drawing.Point(315, 79);
+            this.MostPopVal.Location = new System.Drawing.Point(323, 125);
             this.MostPopVal.Name = "MostPopVal";
             this.MostPopVal.Size = new System.Drawing.Size(122, 13);
             this.MostPopVal.TabIndex = 35;
@@ -392,8 +426,9 @@ namespace WindowsFormsApplication2
             // 
             // LeastPopVal
             // 
+            this.LeastPopVal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LeastPopVal.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.LeastPopVal.Location = new System.Drawing.Point(315, 117);
+            this.LeastPopVal.Location = new System.Drawing.Point(323, 163);
             this.LeastPopVal.Name = "LeastPopVal";
             this.LeastPopVal.Size = new System.Drawing.Size(122, 13);
             this.LeastPopVal.TabIndex = 36;
@@ -401,10 +436,11 @@ namespace WindowsFormsApplication2
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(289, 155);
+            this.label1.Location = new System.Drawing.Point(297, 201);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 17);
             this.label1.TabIndex = 37;
@@ -413,7 +449,7 @@ namespace WindowsFormsApplication2
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(560, 74);
+            this.button2.Location = new System.Drawing.Point(506, 125);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 38;
@@ -426,7 +462,7 @@ namespace WindowsFormsApplication2
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(647, 519);
+            this.ClientSize = new System.Drawing.Size(663, 519);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LeastPopVal);
@@ -467,6 +503,7 @@ namespace WindowsFormsApplication2
             this.Controls.Add(this.button1);
             this.Name = "Statistics";
             this.Text = "Statistics";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Statistics_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
