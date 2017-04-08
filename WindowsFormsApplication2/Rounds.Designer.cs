@@ -30,53 +30,53 @@
         {
             this.SecondFloor = new System.Windows.Forms.Label();
             this.FirstFloor = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.colabs = new System.Windows.Forms.NumericUpDown();
+            this.prayer = new System.Windows.Forms.NumericUpDown();
+            this.activities = new System.Windows.Forms.NumericUpDown();
+            this.other2 = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.hallways2 = new System.Windows.Forms.NumericUpDown();
+            this.gameRoom = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.hallways1 = new System.Windows.Forms.NumericUpDown();
+            this.hive = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
+            this.other1 = new System.Windows.Forms.NumericUpDown();
+            this.mediaRoom = new System.Windows.Forms.NumericUpDown();
+            this.commuter = new System.Windows.Forms.NumericUpDown();
+            this.commonGrounds = new System.Windows.Forms.NumericUpDown();
+            this.breakout = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
+            this.greatRoom = new System.Windows.Forms.NumericUpDown();
+            this.mailCenter = new System.Windows.Forms.NumericUpDown();
             this.label15 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colabs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prayer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.activities)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hallways2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameRoom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hallways1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hive)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mediaRoom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.commuter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.commonGrounds)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.breakout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greatRoom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mailCenter)).BeginInit();
             this.SuspendLayout();
             // 
             // SecondFloor
@@ -104,37 +104,37 @@
             this.FirstFloor.TabIndex = 0;
             this.FirstFloor.Text = "------ First Floor ------";
             // 
-            // numericUpDown1
+            // colabs
             // 
-            this.numericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown1.Location = new System.Drawing.Point(214, 61);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown1.TabIndex = 1;
+            this.colabs.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.colabs.Location = new System.Drawing.Point(214, 61);
+            this.colabs.Name = "colabs";
+            this.colabs.Size = new System.Drawing.Size(49, 20);
+            this.colabs.TabIndex = 1;
             // 
-            // numericUpDown2
+            // prayer
             // 
-            this.numericUpDown2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown2.Location = new System.Drawing.Point(312, 61);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown2.TabIndex = 2;
+            this.prayer.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.prayer.Location = new System.Drawing.Point(312, 61);
+            this.prayer.Name = "prayer";
+            this.prayer.Size = new System.Drawing.Size(49, 20);
+            this.prayer.TabIndex = 2;
             // 
-            // numericUpDown3
+            // activities
             // 
-            this.numericUpDown3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown3.Location = new System.Drawing.Point(410, 61);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown3.TabIndex = 3;
+            this.activities.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.activities.Location = new System.Drawing.Point(410, 61);
+            this.activities.Name = "activities";
+            this.activities.Size = new System.Drawing.Size(49, 20);
+            this.activities.TabIndex = 3;
             // 
-            // numericUpDown4
+            // other2
             // 
-            this.numericUpDown4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown4.Location = new System.Drawing.Point(410, 133);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown4.TabIndex = 6;
+            this.other2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.other2.Location = new System.Drawing.Point(410, 133);
+            this.other2.Name = "other2";
+            this.other2.Size = new System.Drawing.Size(49, 20);
+            this.other2.TabIndex = 6;
             // 
             // label3
             // 
@@ -208,21 +208,21 @@
             this.label10.Text = "Hallways";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numericUpDown7
+            // hallways2
             // 
-            this.numericUpDown7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown7.Location = new System.Drawing.Point(312, 133);
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown7.TabIndex = 5;
+            this.hallways2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.hallways2.Location = new System.Drawing.Point(312, 133);
+            this.hallways2.Name = "hallways2";
+            this.hallways2.Size = new System.Drawing.Size(49, 20);
+            this.hallways2.TabIndex = 5;
             // 
-            // numericUpDown8
+            // gameRoom
             // 
-            this.numericUpDown8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown8.Location = new System.Drawing.Point(214, 133);
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown8.TabIndex = 4;
+            this.gameRoom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gameRoom.Location = new System.Drawing.Point(214, 133);
+            this.gameRoom.Name = "gameRoom";
+            this.gameRoom.Size = new System.Drawing.Size(49, 20);
+            this.gameRoom.TabIndex = 4;
             // 
             // label1
             // 
@@ -248,21 +248,21 @@
             this.label2.Text = "Hallways";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numericUpDown5
+            // hallways1
             // 
-            this.numericUpDown5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown5.Location = new System.Drawing.Point(410, 302);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown5.TabIndex = 20;
+            this.hallways1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.hallways1.Location = new System.Drawing.Point(410, 302);
+            this.hallways1.Name = "hallways1";
+            this.hallways1.Size = new System.Drawing.Size(49, 20);
+            this.hallways1.TabIndex = 20;
             // 
-            // numericUpDown6
+            // hive
             // 
-            this.numericUpDown6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown6.Location = new System.Drawing.Point(457, 230);
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown6.TabIndex = 19;
+            this.hive.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.hive.Location = new System.Drawing.Point(457, 230);
+            this.hive.Name = "hive";
+            this.hive.Size = new System.Drawing.Size(49, 20);
+            this.hive.TabIndex = 19;
             // 
             // label7
             // 
@@ -312,45 +312,45 @@
             this.label12.Text = "Common";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numericUpDown9
+            // other1
             // 
-            this.numericUpDown9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown9.Location = new System.Drawing.Point(508, 302);
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown9.TabIndex = 22;
+            this.other1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.other1.Location = new System.Drawing.Point(508, 302);
+            this.other1.Name = "other1";
+            this.other1.Size = new System.Drawing.Size(49, 20);
+            this.other1.TabIndex = 22;
             // 
-            // numericUpDown10
+            // mediaRoom
             // 
-            this.numericUpDown10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown10.Location = new System.Drawing.Point(361, 230);
-            this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown10.TabIndex = 18;
+            this.mediaRoom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mediaRoom.Location = new System.Drawing.Point(361, 230);
+            this.mediaRoom.Name = "mediaRoom";
+            this.mediaRoom.Size = new System.Drawing.Size(49, 20);
+            this.mediaRoom.TabIndex = 18;
             // 
-            // numericUpDown11
+            // commuter
             // 
-            this.numericUpDown11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown11.Location = new System.Drawing.Point(265, 230);
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown11.TabIndex = 17;
+            this.commuter.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.commuter.Location = new System.Drawing.Point(265, 230);
+            this.commuter.Name = "commuter";
+            this.commuter.Size = new System.Drawing.Size(49, 20);
+            this.commuter.TabIndex = 17;
             // 
-            // numericUpDown12
+            // commonGrounds
             // 
-            this.numericUpDown12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown12.Location = new System.Drawing.Point(169, 230);
-            this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown12.TabIndex = 16;
+            this.commonGrounds.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.commonGrounds.Location = new System.Drawing.Point(169, 230);
+            this.commonGrounds.Name = "commonGrounds";
+            this.commonGrounds.Size = new System.Drawing.Size(49, 20);
+            this.commonGrounds.TabIndex = 16;
             // 
-            // numericUpDown13
+            // breakout
             // 
-            this.numericUpDown13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown13.Location = new System.Drawing.Point(116, 302);
-            this.numericUpDown13.Name = "numericUpDown13";
-            this.numericUpDown13.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown13.TabIndex = 28;
+            this.breakout.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.breakout.Location = new System.Drawing.Point(116, 302);
+            this.breakout.Name = "breakout";
+            this.breakout.Size = new System.Drawing.Size(49, 20);
+            this.breakout.TabIndex = 28;
             // 
             // label13
             // 
@@ -376,22 +376,22 @@
             this.label14.Text = "Great Room";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numericUpDown14
+            // greatRoom
             // 
-            this.numericUpDown14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown14.Location = new System.Drawing.Point(214, 302);
-            this.numericUpDown14.Name = "numericUpDown14";
-            this.numericUpDown14.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown14.TabIndex = 28;
+            this.greatRoom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.greatRoom.Location = new System.Drawing.Point(214, 302);
+            this.greatRoom.Name = "greatRoom";
+            this.greatRoom.Size = new System.Drawing.Size(49, 20);
+            this.greatRoom.TabIndex = 28;
             // 
-            // numericUpDown15
+            // mailCenter
             // 
-            this.numericUpDown15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown15.Location = new System.Drawing.Point(312, 302);
-            this.numericUpDown15.Name = "numericUpDown15";
-            this.numericUpDown15.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown15.TabIndex = 20;
-            this.numericUpDown15.ValueChanged += new System.EventHandler(this.numericUpDown15_ValueChanged);
+            this.mailCenter.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mailCenter.Location = new System.Drawing.Point(312, 302);
+            this.mailCenter.Name = "mailCenter";
+            this.mailCenter.Size = new System.Drawing.Size(49, 20);
+            this.mailCenter.TabIndex = 20;
+            this.mailCenter.ValueChanged += new System.EventHandler(this.numericUpDown15_ValueChanged);
             // 
             // label15
             // 
@@ -436,57 +436,57 @@
             this.ClientSize = new System.Drawing.Size(684, 411);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.numericUpDown14);
+            this.Controls.Add(this.greatRoom);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.numericUpDown13);
+            this.Controls.Add(this.breakout);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.numericUpDown15);
+            this.Controls.Add(this.mailCenter);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.numericUpDown5);
-            this.Controls.Add(this.numericUpDown6);
+            this.Controls.Add(this.hallways1);
+            this.Controls.Add(this.hive);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.numericUpDown9);
-            this.Controls.Add(this.numericUpDown10);
-            this.Controls.Add(this.numericUpDown11);
-            this.Controls.Add(this.numericUpDown12);
+            this.Controls.Add(this.other1);
+            this.Controls.Add(this.mediaRoom);
+            this.Controls.Add(this.commuter);
+            this.Controls.Add(this.commonGrounds);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.numericUpDown7);
-            this.Controls.Add(this.numericUpDown8);
+            this.Controls.Add(this.hallways2);
+            this.Controls.Add(this.gameRoom);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.numericUpDown4);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.other2);
+            this.Controls.Add(this.activities);
+            this.Controls.Add(this.prayer);
+            this.Controls.Add(this.colabs);
             this.Controls.Add(this.FirstFloor);
             this.Controls.Add(this.SecondFloor);
             this.Name = "Rounds";
             this.Text = "Building Usage";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colabs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prayer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.activities)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hallways2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameRoom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hallways1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hive)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mediaRoom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.commuter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.commonGrounds)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.breakout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greatRoom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mailCenter)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -496,35 +496,35 @@
 
         private System.Windows.Forms.Label SecondFloor;
         private System.Windows.Forms.Label FirstFloor;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown colabs;
+        private System.Windows.Forms.NumericUpDown prayer;
+        private System.Windows.Forms.NumericUpDown activities;
+        private System.Windows.Forms.NumericUpDown other2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
+        private System.Windows.Forms.NumericUpDown hallways2;
+        private System.Windows.Forms.NumericUpDown gameRoom;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
+        private System.Windows.Forms.NumericUpDown hallways1;
+        private System.Windows.Forms.NumericUpDown hive;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.NumericUpDown numericUpDown9;
-        private System.Windows.Forms.NumericUpDown numericUpDown10;
-        private System.Windows.Forms.NumericUpDown numericUpDown11;
-        private System.Windows.Forms.NumericUpDown numericUpDown12;
-        private System.Windows.Forms.NumericUpDown numericUpDown13;
+        private System.Windows.Forms.NumericUpDown other1;
+        private System.Windows.Forms.NumericUpDown mediaRoom;
+        private System.Windows.Forms.NumericUpDown commuter;
+        private System.Windows.Forms.NumericUpDown commonGrounds;
+        private System.Windows.Forms.NumericUpDown breakout;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.NumericUpDown numericUpDown14;
-        private System.Windows.Forms.NumericUpDown numericUpDown15;
+        private System.Windows.Forms.NumericUpDown greatRoom;
+        private System.Windows.Forms.NumericUpDown mailCenter;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
