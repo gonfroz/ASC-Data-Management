@@ -66,7 +66,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.Time = new System.Windows.Forms.Label();
             this.worker = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.roundTime = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.colabs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.activities)).BeginInit();
@@ -477,16 +477,16 @@
             this.worker.TabIndex = 36;
             this.worker.Text = " ";
             // 
-            // label20
+            // roundTime
             // 
-            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label20.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label20.Location = new System.Drawing.Point(12, 108);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(120, 20);
-            this.label20.TabIndex = 37;
-            this.label20.Text = " ";
+            this.roundTime.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundTime.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.roundTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.roundTime.Location = new System.Drawing.Point(12, 108);
+            this.roundTime.Name = "roundTime";
+            this.roundTime.Size = new System.Drawing.Size(120, 20);
+            this.roundTime.TabIndex = 37;
+            this.roundTime.Text = " ";
             // 
             // Rounds
             // 
@@ -495,7 +495,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(684, 411);
-            this.Controls.Add(this.label20);
+            this.Controls.Add(this.roundTime);
             this.Controls.Add(this.worker);
             this.Controls.Add(this.Time);
             this.Controls.Add(this.label17);
@@ -598,7 +598,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label Time;
         private System.Windows.Forms.Label worker;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label roundTime;
     }
 }
 

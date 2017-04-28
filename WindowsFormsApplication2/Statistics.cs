@@ -135,7 +135,7 @@ namespace WindowsFormsApplication2
                 ColumnStats(lines, 16, "sum") + ColumnStats(lines, 17, "sum")
                 )/(lines.Count())),2).ToString();
 
-            foreach (string line in lines)
+            //foreach (string line in lines)
             {
                 //if(ColumnStats(lines, 17, "max").ToString() == line)
                 {

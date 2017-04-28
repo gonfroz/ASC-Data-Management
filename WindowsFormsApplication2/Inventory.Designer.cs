@@ -58,7 +58,7 @@
             "Wii Controllers",
             "Playstation Controllers",
             "HDMI Cables"});
-            this.Items.Location = new System.Drawing.Point(477, 77);
+            this.Items.Location = new System.Drawing.Point(450, 95);
             this.Items.Name = "Items";
             this.Items.Size = new System.Drawing.Size(217, 186);
             this.Items.TabIndex = 4;
@@ -89,7 +89,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(163, 104);
+            this.label3.Location = new System.Drawing.Point(204, 79);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 12;
