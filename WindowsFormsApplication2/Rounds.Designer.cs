@@ -62,6 +62,11 @@
             this.label15 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.Time = new System.Windows.Forms.Label();
+            this.worker = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.colabs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.activities)).BeginInit();
@@ -427,6 +432,64 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.White;
+            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label16.Location = new System.Drawing.Point(12, 20);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(64, 15);
+            this.label16.TabIndex = 32;
+            this.label16.Text = "Last Round";
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.White;
+            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label17.Location = new System.Drawing.Point(12, 43);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(40, 15);
+            this.label17.TabIndex = 33;
+            this.label17.Text = "Name:";
+            // 
+            // Time
+            // 
+            this.Time.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Time.AutoSize = true;
+            this.Time.BackColor = System.Drawing.Color.White;
+            this.Time.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Time.Location = new System.Drawing.Point(12, 88);
+            this.Time.Name = "Time";
+            this.Time.Size = new System.Drawing.Size(35, 15);
+            this.Time.TabIndex = 34;
+            this.Time.Text = "Time:";
+            // 
+            // worker
+            // 
+            this.worker.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.worker.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.worker.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.worker.Location = new System.Drawing.Point(12, 63);
+            this.worker.Name = "worker";
+            this.worker.Size = new System.Drawing.Size(120, 20);
+            this.worker.TabIndex = 36;
+            this.worker.Text = " ";
+            // 
+            // label20
+            // 
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label20.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label20.Location = new System.Drawing.Point(12, 108);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(120, 20);
+            this.label20.TabIndex = 37;
+            this.label20.Text = " ";
+            // 
             // Rounds
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -434,6 +497,11 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(684, 411);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.worker);
+            this.Controls.Add(this.Time);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.greatRoom);
@@ -469,7 +537,7 @@
             this.Controls.Add(this.FirstFloor);
             this.Controls.Add(this.SecondFloor);
             this.Name = "Rounds";
-            this.Text = "Building Usage";
+            this.Text = "Rounds";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.colabs)).EndInit();
@@ -528,6 +596,11 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label Time;
+        private System.Windows.Forms.Label worker;
+        private System.Windows.Forms.Label label20;
     }
 }
 

@@ -31,7 +31,37 @@ namespace WindowsFormsApplication2
 
         private void Admin_Load(object sender, EventArgs e)
         {
+            try
+            {
+                System.IO.FileStream srcFS;
+                srcFS = new System.IO.FileStream("asc_inventory.csv", System.IO.FileMode.OpenOrCreate);
+                System.IO.StreamReader srcSR = new System.IO.StreamReader(srcFS, System.Text.Encoding.Default);
+                while (true)
+                {
+                    string ins = srcSR.ReadLine();
+                    if (ins == null)
+                    {
+                        break;
+                    }
+                    string[] columns = ins.Split(',');
 
+                    ListViewItem lvi = new ListViewItem(columns[0]);
+
+                    for (int i = 1; i < columns.Count(); i++)
+                    {
+                        lvi.SubItems.Add(columns[i]);
+                    }
+
+                    //listView1.Items.Add(lvi);
+
+                }
+                srcSR.Close();
+
+            }
+            catch (Exception errorMsg)
+            {
+                MessageBox.Show(errorMsg.Message, "Error reading a file", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -49,7 +79,7 @@ namespace WindowsFormsApplication2
             var csv = new StringBuilder();
             csv.AppendLine("item,owned,available");
 
-            for (var i=0;i<Items.Items.Count;i++) csv.AppendLine($"{Items.Items[i]},{Owned.Items[i]},{Available.Items[i]}");
+            for (var i=0;i<Items.Items.Count;i++) csv.AppendLine($"{Items.Items[i]},{Owned.Items[i]}");
 
             File.WriteAllText(sfdInventory.FileName, csv.ToString());
 
@@ -59,12 +89,10 @@ namespace WindowsFormsApplication2
         {
             Items.Items.Clear();
             Owned.Items.Clear();
-            Available.Items.Clear();
             foreach (var lsplit in File.ReadAllLines(ofdInventory.FileName).Select(line => line.Trim()).Where(l => l != "item,owned,available").Select(l => l.Split(',')))
             {
                 Items.Items.Add(lsplit[0]);
                 Owned.Items.Add(lsplit[1]);
-                Available.Items.Add(lsplit[2]);
             }
         }
     }

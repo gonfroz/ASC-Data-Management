@@ -44,20 +44,24 @@ namespace WindowsFormsApplication2
             {
             }
                     
-            var other = ControllersNum.Value;
-            if (hdmi.Checked) { other++; }
+            var controllerNum = ControllersNum.Value;
+            var hdmiNum = 0;
+            if(hdmi.Checked) { hdmiNum++; }
+            var chargerNum = 0;
+            if (chargers.Checked) { chargerNum++; }
 
             //add checkout info to list view
-            listView1.Items.Add(new ListViewItem(new[] { NameBox.Text, IDBox.Text, consoleName, gameName, other.ToString(), Manager.MainInstance.workerName}));
+            listView1.Items.Add(new ListViewItem(new[] { NameBox.Text, IDBox.Text, gameName, controllerNum.ToString(), hdmiNum.ToString(), chargerNum.ToString(), Manager.MainInstance.workerName}));
             
             //append to csv
-            System.IO.File.AppendAllText("asc_checkout_list.csv", $"{NameBox.Text}, {IDBox.Text}, {consoleName}, {gameName}, {other.ToString()}, {Manager.MainInstance.workerName}\n");
+            System.IO.File.AppendAllText("asc_checkout_list.csv", $"{NameBox.Text}, {IDBox.Text}, {gameName}, {controllerNum.ToString()}, {hdmiNum.ToString()}, {chargerNum.ToString()}, {Manager.MainInstance.workerName}\n");
        
             //reset stuff
             NameBox.Clear();
             IDBox.Clear();
             ControllersNum.Value = 0;
             hdmi.Checked = false;
+            chargers.Checked = false;
 
             foreach (Control ctrl in games.Controls)
             {
