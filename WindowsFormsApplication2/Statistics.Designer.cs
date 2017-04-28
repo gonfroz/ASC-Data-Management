@@ -46,7 +46,6 @@ namespace WindowsFormsApplication2
             this.PrayerLabel = new System.Windows.Forms.Label();
             this.CollabLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.duration = new System.Windows.Forms.Button();
             this.groupBoxStats = new System.Windows.Forms.GroupBox();
             this.ActivitiesNum = new System.Windows.Forms.TextBox();
             this.CollabNum = new System.Windows.Forms.TextBox();
@@ -64,6 +63,10 @@ namespace WindowsFormsApplication2
             this.CommuterLoungeNum = new System.Windows.Forms.TextBox();
             this.CommonGroundsNum = new System.Windows.Forms.TextBox();
             this.totalAverage = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBoxStats.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -247,23 +250,12 @@ namespace WindowsFormsApplication2
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(234, 122);
+            this.label1.Location = new System.Drawing.Point(257, 122);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 17);
             this.label1.TabIndex = 37;
             this.label1.Text = "Total Average:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // duration
-            // 
-            this.duration.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.duration.Location = new System.Drawing.Point(370, 182);
-            this.duration.Name = "duration";
-            this.duration.Size = new System.Drawing.Size(75, 23);
-            this.duration.TabIndex = 39;
-            this.duration.Text = "Daily";
-            this.duration.UseVisualStyleBackColor = true;
-            this.duration.Click += new System.EventHandler(this.duration_Click);
             // 
             // groupBoxStats
             // 
@@ -427,11 +419,55 @@ namespace WindowsFormsApplication2
             // totalAverage
             // 
             this.totalAverage.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.totalAverage.Location = new System.Drawing.Point(337, 121);
+            this.totalAverage.Location = new System.Drawing.Point(360, 121);
             this.totalAverage.Name = "totalAverage";
             this.totalAverage.ReadOnly = true;
             this.totalAverage.Size = new System.Drawing.Size(45, 20);
             this.totalAverage.TabIndex = 41;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.Location = new System.Drawing.Point(271, 173);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(45, 20);
+            this.textBox1.TabIndex = 43;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label2.Location = new System.Drawing.Point(190, 174);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 17);
+            this.label2.TabIndex = 42;
+            this.label2.Text = "Begin Date";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.Location = new System.Drawing.Point(466, 174);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(45, 20);
+            this.textBox2.TabIndex = 45;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label3.Location = new System.Drawing.Point(389, 175);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 17);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "End Date:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Statistics
             // 
@@ -439,9 +475,12 @@ namespace WindowsFormsApplication2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(663, 519);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.totalAverage);
             this.Controls.Add(this.groupBoxStats);
-            this.Controls.Add(this.duration);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.WeeklyStats);
             this.Controls.Add(this.button1);
@@ -478,7 +517,6 @@ namespace WindowsFormsApplication2
         private System.Windows.Forms.Label PrayerLabel;
         private System.Windows.Forms.Label CollabLabel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button duration;
         private System.Windows.Forms.GroupBox groupBoxStats;
         private System.Windows.Forms.TextBox CommonGroundsNum;
         private System.Windows.Forms.TextBox ActivitiesNum;
@@ -496,5 +534,9 @@ namespace WindowsFormsApplication2
         private System.Windows.Forms.TextBox Other1Num;
         private System.Windows.Forms.TextBox CommuterLoungeNum;
         private System.Windows.Forms.TextBox totalAverage;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label3;
     }
 }
