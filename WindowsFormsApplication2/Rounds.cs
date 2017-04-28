@@ -40,11 +40,18 @@ namespace WindowsFormsApplication2
                 results = columnQuery.ToList();
 
                 roundTime.Text = results.Last().ToString();
+
+
             }
             catch (Exception errorMsg)
             {
                 MessageBox.Show(errorMsg.Message, "Error reading a file", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            commonGrounds.Value = 0; commuter.Value = 0; mediaRoom.Value = 0; hive.Value = 0;
+            breakout.Value = 0; greatRoom.Value = 0; mailCenter.Value = 0; hallways1.Value = 0;
+            other1.Value = 0; colabs.Value = 0; prayer.Value = 0; activities.Value = 0;
+            gameRoom.Value = 0; hallways2.Value = 0; other2.Value = 0;
         }
 
         //double check
@@ -59,6 +66,12 @@ namespace WindowsFormsApplication2
                 var total = commonGrounds.Value+commuter.Value+mediaRoom.Value+hive.Value+breakout.Value+greatRoom.Value+mailCenter.Value+hallways1.Value+other1.Value+colabs.Value+prayer.Value+activities.Value+gameRoom.Value+hallways2.Value+other2.Value;
                 var dataLine = $"{time},{worker},{commonGrounds.Value},{commuter.Value},{mediaRoom.Value},{hive.Value},{breakout.Value},{greatRoom.Value},{mailCenter.Value},{hallways1.Value},{other1.Value},0,{colabs.Value},{prayer.Value},{activities.Value},{gameRoom.Value},{hallways2.Value},{other2.Value},{total}\n";
                 System.IO.File.AppendAllText("asc_data.csv", dataLine);
+
+
+                //reset page
+                EventArgs T = new EventArgs();
+                Form1_Load(time, T);
+
             }
         }
 

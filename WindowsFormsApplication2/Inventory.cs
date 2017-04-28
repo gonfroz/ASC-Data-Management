@@ -36,9 +36,10 @@ namespace WindowsFormsApplication2
                 System.IO.FileStream srcFS;
                 srcFS = new System.IO.FileStream("asc_inventory.csv", System.IO.FileMode.OpenOrCreate);
                 System.IO.StreamReader srcSR = new System.IO.StreamReader(srcFS, System.Text.Encoding.Default);
+                string ins = srcSR.ReadLine();
                 while (true)
                 {
-                    string ins = srcSR.ReadLine();
+                    ins = srcSR.ReadLine();
                     if (ins == null)
                     {
                         break;
@@ -47,7 +48,7 @@ namespace WindowsFormsApplication2
 
                     ListViewItem lvi = new ListViewItem(columns[0]);
 
-                    for (int i = 2; i < columns.Count(); i++)
+                    for (int i = 0; i < columns.Count(); i++)
                     {
                         lvi.SubItems.Add(columns[i]);
                     }
@@ -94,5 +95,6 @@ namespace WindowsFormsApplication2
         {
             ofdInventory.ShowDialog();
         }
+
     }
 }

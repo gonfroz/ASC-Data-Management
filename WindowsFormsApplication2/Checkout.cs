@@ -148,15 +148,5 @@ namespace WindowsFormsApplication2
                 MessageBox.Show(errorMsg.Message, "Error reading a file", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void chargers_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void console_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }

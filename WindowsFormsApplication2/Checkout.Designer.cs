@@ -198,7 +198,6 @@
             this.console.TabIndex = 40;
             this.console.TabStop = false;
             this.console.Text = "Console";
-            this.console.Enter += new System.EventHandler(this.console_Enter);
             // 
             // gamescheck
             // 
@@ -383,7 +382,6 @@
             this.chargers.TabIndex = 46;
             this.chargers.Text = "Phone Charger";
             this.chargers.UseVisualStyleBackColor = true;
-            this.chargers.CheckedChanged += new System.EventHandler(this.chargers_CheckedChanged);
             // 
             // Checkout
             // 
