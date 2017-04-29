@@ -47,12 +47,12 @@ namespace WindowsFormsApplication2
 
                     ListViewItem lvi = new ListViewItem(columns[0]);
 
-                    for (int i = 1; i < columns.Count(); i++)
+                    for (int i = 2; i < columns.Count(); i++)
                     {
                         lvi.SubItems.Add(columns[i]);
                     }
 
-                    //listView1.Items.Add(lvi);
+                    inventoryBox.Items.Add(lvi);
 
                 }
                 srcSR.Close();
@@ -64,36 +64,35 @@ namespace WindowsFormsApplication2
             }
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            sfdInventory.ShowDialog();
-        }
-
-        private void btnLoad_Click(object sender, EventArgs e)
-        {
-            ofdInventory.ShowDialog();
-        }
-
         private void sfdInventory_FileOk(object sender, CancelEventArgs e)
         {
+            /*
             var csv = new StringBuilder();
-            csv.AppendLine("item,owned,available");
+            csv.AppendLine("item,owned");
 
             for (var i=0;i<Items.Items.Count;i++) csv.AppendLine($"{Items.Items[i]},{Owned.Items[i]}");
 
             File.WriteAllText(sfdInventory.FileName, csv.ToString());
+            */
 
         }
 
         private void ofdInventory_FileOk(object sender, CancelEventArgs e)
         {
+            /*
             Items.Items.Clear();
-            Owned.Items.Clear();
-            foreach (var lsplit in File.ReadAllLines(ofdInventory.FileName).Select(line => line.Trim()).Where(l => l != "item,owned,available").Select(l => l.Split(',')))
+            ListViewItem lvi = new ListViewItem(columns[0]);
+            foreach (var lsplit in File.ReadAllLines(ofdInventory.FileName).Select(line => line.Trim()).Where(l => l != "item name,number").Select(l => l.Split(',')))
             {
                 Items.Items.Add(lsplit[0]);
                 Owned.Items.Add(lsplit[1]);
             }
+            */
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            ofdInventory.ShowDialog();
         }
     }
 }

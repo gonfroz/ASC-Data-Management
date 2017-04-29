@@ -41,7 +41,7 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.returnButton = new System.Windows.Forms.Button();
             this.console = new System.Windows.Forms.GroupBox();
-            this.games = new System.Windows.Forms.GroupBox();
+            this.gamescheck = new System.Windows.Forms.GroupBox();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
@@ -54,21 +54,21 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chargers = new System.Windows.Forms.CheckBox();
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.ControllersNum)).BeginInit();
             this.console.SuspendLayout();
-            this.games.SuspendLayout();
+            this.gamescheck.SuspendLayout();
             this.SuspendLayout();
             // 
             // NameBox
             // 
             this.NameBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.NameBox.Location = new System.Drawing.Point(342, 59);
+            this.NameBox.Location = new System.Drawing.Point(342, 65);
             this.NameBox.Name = "NameBox";
             this.NameBox.Size = new System.Drawing.Size(117, 20);
             this.NameBox.TabIndex = 20;
@@ -76,7 +76,7 @@
             // IDBox
             // 
             this.IDBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.IDBox.Location = new System.Drawing.Point(342, 88);
+            this.IDBox.Location = new System.Drawing.Point(342, 94);
             this.IDBox.Name = "IDBox";
             this.IDBox.Size = new System.Drawing.Size(117, 20);
             this.IDBox.TabIndex = 21;
@@ -85,7 +85,7 @@
             // 
             this.NameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NameLabel.AutoSize = true;
-            this.NameLabel.Location = new System.Drawing.Point(261, 62);
+            this.NameLabel.Location = new System.Drawing.Point(261, 68);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(75, 13);
             this.NameLabel.TabIndex = 22;
@@ -95,7 +95,7 @@
             // 
             this.IDLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.IDLabel.AutoSize = true;
-            this.IDLabel.Location = new System.Drawing.Point(278, 91);
+            this.IDLabel.Location = new System.Drawing.Point(278, 97);
             this.IDLabel.Name = "IDLabel";
             this.IDLabel.Size = new System.Drawing.Size(58, 13);
             this.IDLabel.TabIndex = 23;
@@ -115,6 +115,7 @@
             // XBoxRadio
             // 
             this.XBoxRadio.AutoSize = true;
+            this.XBoxRadio.Checked = true;
             this.XBoxRadio.Location = new System.Drawing.Point(9, 19);
             this.XBoxRadio.Name = "XBoxRadio";
             this.XBoxRadio.Size = new System.Drawing.Size(48, 17);
@@ -130,7 +131,6 @@
             this.WiiRadio.Name = "WiiRadio";
             this.WiiRadio.Size = new System.Drawing.Size(40, 17);
             this.WiiRadio.TabIndex = 26;
-            this.WiiRadio.TabStop = true;
             this.WiiRadio.Text = "Wii";
             this.WiiRadio.UseVisualStyleBackColor = true;
             // 
@@ -141,14 +141,13 @@
             this.PSRadio.Name = "PSRadio";
             this.PSRadio.Size = new System.Drawing.Size(76, 17);
             this.PSRadio.TabIndex = 27;
-            this.PSRadio.TabStop = true;
             this.PSRadio.Text = "Playstation";
             this.PSRadio.UseVisualStyleBackColor = true;
             // 
             // ControllersNum
             // 
             this.ControllersNum.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ControllersNum.Location = new System.Drawing.Point(264, 146);
+            this.ControllersNum.Location = new System.Drawing.Point(262, 146);
             this.ControllersNum.Name = "ControllersNum";
             this.ControllersNum.Size = new System.Drawing.Size(54, 20);
             this.ControllersNum.TabIndex = 28;
@@ -159,9 +158,10 @@
             this.ControllersLabel.AutoSize = true;
             this.ControllersLabel.Location = new System.Drawing.Point(261, 127);
             this.ControllersLabel.Name = "ControllersLabel";
-            this.ControllersLabel.Size = new System.Drawing.Size(78, 13);
+            this.ControllersLabel.Size = new System.Drawing.Size(56, 13);
             this.ControllersLabel.TabIndex = 29;
-            this.ControllersLabel.Text = "# of Controllers";
+            this.ControllersLabel.Text = "Controllers";
+            this.ControllersLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BackButton
             // 
@@ -198,25 +198,26 @@
             this.console.TabIndex = 40;
             this.console.TabStop = false;
             this.console.Text = "Console";
+            this.console.Enter += new System.EventHandler(this.console_Enter);
             // 
-            // games
+            // gamescheck
             // 
-            this.games.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.games.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.games.Controls.Add(this.radioButton7);
-            this.games.Controls.Add(this.radioButton8);
-            this.games.Controls.Add(this.radioButton4);
-            this.games.Controls.Add(this.radioButton5);
-            this.games.Controls.Add(this.radioButton6);
-            this.games.Controls.Add(this.radioButton1);
-            this.games.Controls.Add(this.radioButton2);
-            this.games.Controls.Add(this.radioButton3);
-            this.games.Location = new System.Drawing.Point(127, 16);
-            this.games.Name = "games";
-            this.games.Size = new System.Drawing.Size(98, 155);
-            this.games.TabIndex = 41;
-            this.games.TabStop = false;
-            this.games.Text = "Games";
+            this.gamescheck.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gamescheck.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gamescheck.Controls.Add(this.radioButton7);
+            this.gamescheck.Controls.Add(this.radioButton8);
+            this.gamescheck.Controls.Add(this.radioButton4);
+            this.gamescheck.Controls.Add(this.radioButton5);
+            this.gamescheck.Controls.Add(this.radioButton6);
+            this.gamescheck.Controls.Add(this.radioButton1);
+            this.gamescheck.Controls.Add(this.radioButton2);
+            this.gamescheck.Controls.Add(this.radioButton3);
+            this.gamescheck.Location = new System.Drawing.Point(136, 16);
+            this.gamescheck.Name = "gamescheck";
+            this.gamescheck.Size = new System.Drawing.Size(98, 155);
+            this.gamescheck.TabIndex = 41;
+            this.gamescheck.TabStop = false;
+            this.gamescheck.Text = "Games";
             // 
             // radioButton7
             // 
@@ -310,11 +311,11 @@
             // 
             this.hdmi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.hdmi.AutoSize = true;
-            this.hdmi.Location = new System.Drawing.Point(262, 16);
+            this.hdmi.Location = new System.Drawing.Point(264, 35);
             this.hdmi.Name = "hdmi";
-            this.hdmi.Size = new System.Drawing.Size(84, 17);
+            this.hdmi.Size = new System.Drawing.Size(126, 17);
             this.hdmi.TabIndex = 44;
-            this.hdmi.Text = "HDMI Cable";
+            this.hdmi.Text = "HDMI Cable/Adapter";
             this.hdmi.UseVisualStyleBackColor = true;
             // 
             // listView1
@@ -329,6 +330,7 @@
             this.columnHeader6,
             this.columnHeader7});
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F);
+            this.listView1.FullRowSelect = true;
             this.listView1.Location = new System.Drawing.Point(15, 190);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(483, 112);
@@ -346,22 +348,25 @@
             this.columnHeader2.Text = "Student ID";
             this.columnHeader2.Width = 63;
             // 
-            // columnHeader3
-            // 
-            this.columnHeader3.DisplayIndex = 3;
-            this.columnHeader3.Text = "Controllers";
-            this.columnHeader3.Width = 61;
-            // 
             // columnHeader4
             // 
-            this.columnHeader4.DisplayIndex = 2;
             this.columnHeader4.Text = "Game";
             this.columnHeader4.Width = 91;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Controllers";
+            this.columnHeader3.Width = 61;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "HDMI";
             this.columnHeader5.Width = 40;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Chargers";
+            this.columnHeader6.Width = 55;
             // 
             // columnHeader7
             // 
@@ -372,17 +377,13 @@
             // 
             this.chargers.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chargers.AutoSize = true;
-            this.chargers.Location = new System.Drawing.Point(362, 16);
+            this.chargers.Location = new System.Drawing.Point(264, 16);
             this.chargers.Name = "chargers";
             this.chargers.Size = new System.Drawing.Size(97, 17);
             this.chargers.TabIndex = 46;
             this.chargers.Text = "Phone Charger";
             this.chargers.UseVisualStyleBackColor = true;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Chargers";
-            this.columnHeader6.Width = 55;
+            this.chargers.CheckedChanged += new System.EventHandler(this.chargers_CheckedChanged);
             // 
             // Checkout
             // 
@@ -393,7 +394,7 @@
             this.Controls.Add(this.chargers);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.hdmi);
-            this.Controls.Add(this.games);
+            this.Controls.Add(this.gamescheck);
             this.Controls.Add(this.console);
             this.Controls.Add(this.returnButton);
             this.Controls.Add(this.BackButton);
@@ -411,8 +412,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ControllersNum)).EndInit();
             this.console.ResumeLayout(false);
             this.console.PerformLayout();
-            this.games.ResumeLayout(false);
-            this.games.PerformLayout();
+            this.gamescheck.ResumeLayout(false);
+            this.gamescheck.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,7 +433,7 @@
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button returnButton;
         private System.Windows.Forms.GroupBox console;
-        private System.Windows.Forms.GroupBox games;
+        private System.Windows.Forms.GroupBox gamescheck;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;

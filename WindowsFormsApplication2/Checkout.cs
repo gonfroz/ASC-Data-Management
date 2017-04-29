@@ -20,7 +20,7 @@ namespace WindowsFormsApplication2
         private void button1_Click(object sender, EventArgs e)
         {
             //find checked buttons
-            var game = games.Controls.OfType<RadioButton>().FirstOrDefault(n => n.Checked);
+            var game = gamescheck.Controls.OfType<RadioButton>().FirstOrDefault(n => n.Checked);
             var cons = console.Controls.OfType<RadioButton>().FirstOrDefault(n => n.Checked);
 
             //names of buttons
@@ -63,7 +63,7 @@ namespace WindowsFormsApplication2
             hdmi.Checked = false;
             chargers.Checked = false;
 
-            foreach (Control ctrl in games.Controls)
+            foreach (Control ctrl in gamescheck.Controls)
             {
                 (ctrl as RadioButton).Checked = false;
             }
@@ -82,32 +82,37 @@ namespace WindowsFormsApplication2
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            try
+
+            if (MessageBox.Show("Are you sure you want to return these items?", "Confirm", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk) == DialogResult.OK)
             {
 
-                var lines = new List<string>();
-                var file = new System.IO.StreamReader("asc_checkout_list.csv");
-                string line;
-                while ((line = file.ReadLine()) != null)
+                try
                 {
-                    lines.Add(line);
+
+                    var lines = new List<string>();
+                    var file = new System.IO.StreamReader("asc_checkout_list.csv");
+                    string line;
+                    while ((line = file.ReadLine()) != null)
+                    {
+                        lines.Add(line);
+                    }
+                    file.Close();
+
+                    lines.RemoveAt(listView1.SelectedIndices[0]);
+
+                    System.IO.File.WriteAllLines("asc_checkout_list.csv", lines);
+
+                    //remove from listView1
+                    listView1.SelectedItems[0].Remove();
+
                 }
-                file.Close();
-
-                lines.RemoveAt(listView1.SelectedIndices[0]);
-
-                System.IO.File.WriteAllLines("asc_checkout_list.csv", lines);
-                
-                //remove from listView1
-                listView1.SelectedItems[0].Remove();
+                catch (ArgumentOutOfRangeException)
+                {
+                    MessageBox.Show("No item selected to remove.", "Select an Item",
+                    MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
 
             }
-            catch(ArgumentOutOfRangeException)
-            {
-                MessageBox.Show("No item selected to remove.", "Select an Item",
-                MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            }
-            
         }
 
         private void Checkout_Load(object sender, EventArgs e)
@@ -142,6 +147,16 @@ namespace WindowsFormsApplication2
             {
                 MessageBox.Show(errorMsg.Message, "Error reading a file", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void chargers_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void console_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -92,15 +92,14 @@ namespace WindowsFormsApplication2
   
             // Execute the query and cache the results to improve  
             // performance. This is helpful only with very large files.  
-            var results = columnQuery.ToList();  
-  
-            // Perform calculations Average, Max, and Min on column.  
-            if (mode == "min")
-                return results.Min();
-            if (mode == "max")
-                return results.Max();
+            var results = columnQuery.ToList();
+
+            if (mode == "average")
+                return Math.Round(results.Average(),2);
+            else if (mode == "sum")
+                return results.Sum();
             else
-                return results.Average();
+                return 0;
  
         } 
 
@@ -125,10 +124,20 @@ namespace WindowsFormsApplication2
             Halls2Num.Text = ColumnStats(lines, 16, "average").ToString();
             Other2Num.Text = ColumnStats(lines, 17, "average").ToString();
 
+            totalAverage.Text = Math.Round(((
+                ColumnStats(lines, 2, "sum") + ColumnStats(lines, 3, "sum") +
+                ColumnStats(lines, 4, "sum") + ColumnStats(lines, 5, "sum") +
+                ColumnStats(lines, 6, "sum") + ColumnStats(lines, 7, "sum") +
+                ColumnStats(lines, 8, "sum") + ColumnStats(lines, 9, "sum") +
+                ColumnStats(lines, 10, "sum") + ColumnStats(lines, 11, "sum") +
+                ColumnStats(lines, 12, "sum") + ColumnStats(lines, 13, "sum") +
+                ColumnStats(lines, 14, "sum") + ColumnStats(lines, 15, "sum") +
+                ColumnStats(lines, 16, "sum") + ColumnStats(lines, 17, "sum")
+                )/(lines.Count())),2).ToString();
 
             foreach (string line in lines)
             {
-                if(ColumnStats(lines, 17, "max").ToString() == line)
+                //if(ColumnStats(lines, 17, "max").ToString() == line)
                 {
 
                 }

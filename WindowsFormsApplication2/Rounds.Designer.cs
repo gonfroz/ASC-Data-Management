@@ -95,7 +95,6 @@
             this.SecondFloor.Size = new System.Drawing.Size(96, 15);
             this.SecondFloor.TabIndex = 0;
             this.SecondFloor.Text = "--- Second Floor ---";
-            this.SecondFloor.Click += new System.EventHandler(this.label1_Click);
             // 
             // FirstFloor
             // 
@@ -396,7 +395,6 @@
             this.mailCenter.Name = "mailCenter";
             this.mailCenter.Size = new System.Drawing.Size(49, 20);
             this.mailCenter.TabIndex = 20;
-            this.mailCenter.ValueChanged += new System.EventHandler(this.numericUpDown15_ValueChanged);
             // 
             // label15
             // 

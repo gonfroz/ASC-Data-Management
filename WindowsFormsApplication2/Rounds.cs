@@ -17,52 +17,31 @@ namespace WindowsFormsApplication2
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //read time and name from last round 
         private void Form1_Load(object sender, EventArgs e)
         {
+            /*
             try
             {
-                System.IO.FileStream srcFS;
-                srcFS = new System.IO.FileStream("asc_data.csv", System.IO.FileMode.OpenOrCreate);
-                System.IO.StreamReader srcSR = new System.IO.StreamReader(srcFS, System.Text.Encoding.Default);
-                while (true)
+                var lines = File.ReadLines("asc_data.csv");
+
+                foreach (string line in lines)
                 {
-                    string ins = srcSR.ReadLine();
-                    if (ins == null)
+                    if (line.Last<>)
                     {
-                        break;
+                        Console.WriteLine(line);
                     }
-                    string[] columns = ins.Split(',');
-
-                    ListViewItem lvi = new ListViewItem(columns[0]);
-
-                    for (int i = 1; i < columns.Count(); i++)
-                    {
-                        lvi.SubItems.Add(columns[i]);
-                    }
-
-                    //listView1.Items.Add(lvi);
-
                 }
-                srcSR.Close();
 
             }
             catch (Exception errorMsg)
             {
                 MessageBox.Show(errorMsg.Message, "Error reading a file", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            */
         }
 
-        
-        private void numericUpDown15_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        //double check
         private void button1_Click(object sender, EventArgs e)
         {
             var worker = Manager.MainInstance.workerName;
@@ -77,6 +56,7 @@ namespace WindowsFormsApplication2
             }
         }
 
+        //exit
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();

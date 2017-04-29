@@ -30,8 +30,6 @@ namespace WindowsFormsApplication2
         {
             this.button1 = new System.Windows.Forms.Button();
             this.WeeklyStats = new System.Windows.Forms.Label();
-            this.MostPopLabel = new System.Windows.Forms.Label();
-            this.LeastPopLabel = new System.Windows.Forms.Label();
             this.CommonGroundsLabel = new System.Windows.Forms.Label();
             this.CommuterLoungeLabel = new System.Windows.Forms.Label();
             this.MediaRoomLabel = new System.Windows.Forms.Label();
@@ -47,26 +45,25 @@ namespace WindowsFormsApplication2
             this.GameRoomLabel = new System.Windows.Forms.Label();
             this.PrayerLabel = new System.Windows.Forms.Label();
             this.CollabLabel = new System.Windows.Forms.Label();
-            this.MostPopVal = new System.Windows.Forms.Label();
-            this.LeastPopVal = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.duration = new System.Windows.Forms.Button();
             this.groupBoxStats = new System.Windows.Forms.GroupBox();
-            this.CommonGroundsNum = new System.Windows.Forms.TextBox();
-            this.CommuterLoungeNum = new System.Windows.Forms.TextBox();
-            this.HiveNum = new System.Windows.Forms.TextBox();
-            this.MediaRoomNum = new System.Windows.Forms.TextBox();
             this.ActivitiesNum = new System.Windows.Forms.TextBox();
-            this.MailNum = new System.Windows.Forms.TextBox();
-            this.GreatRoomNum = new System.Windows.Forms.TextBox();
-            this.BreakoutNum = new System.Windows.Forms.TextBox();
-            this.Other1Num = new System.Windows.Forms.TextBox();
-            this.Other2Num = new System.Windows.Forms.TextBox();
-            this.Halls1Num = new System.Windows.Forms.TextBox();
-            this.Halls2Num = new System.Windows.Forms.TextBox();
-            this.GameRoomNum = new System.Windows.Forms.TextBox();
-            this.PrayerNum = new System.Windows.Forms.TextBox();
             this.CollabNum = new System.Windows.Forms.TextBox();
+            this.MailNum = new System.Windows.Forms.TextBox();
+            this.PrayerNum = new System.Windows.Forms.TextBox();
+            this.GreatRoomNum = new System.Windows.Forms.TextBox();
+            this.GameRoomNum = new System.Windows.Forms.TextBox();
+            this.BreakoutNum = new System.Windows.Forms.TextBox();
+            this.Halls2Num = new System.Windows.Forms.TextBox();
+            this.HiveNum = new System.Windows.Forms.TextBox();
+            this.Halls1Num = new System.Windows.Forms.TextBox();
+            this.Other2Num = new System.Windows.Forms.TextBox();
+            this.MediaRoomNum = new System.Windows.Forms.TextBox();
+            this.Other1Num = new System.Windows.Forms.TextBox();
+            this.CommuterLoungeNum = new System.Windows.Forms.TextBox();
+            this.CommonGroundsNum = new System.Windows.Forms.TextBox();
+            this.totalAverage = new System.Windows.Forms.TextBox();
             this.groupBoxStats.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,28 +90,6 @@ namespace WindowsFormsApplication2
             this.WeeklyStats.TabIndex = 1;
             this.WeeklyStats.Text = "Statistics";
             this.WeeklyStats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // MostPopLabel
-            // 
-            this.MostPopLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.MostPopLabel.AutoSize = true;
-            this.MostPopLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.MostPopLabel.Location = new System.Drawing.Point(220, 112);
-            this.MostPopLabel.Name = "MostPopLabel";
-            this.MostPopLabel.Size = new System.Drawing.Size(97, 13);
-            this.MostPopLabel.TabIndex = 2;
-            this.MostPopLabel.Text = "Most Popular Area:";
-            // 
-            // LeastPopLabel
-            // 
-            this.LeastPopLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LeastPopLabel.AutoSize = true;
-            this.LeastPopLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.LeastPopLabel.Location = new System.Drawing.Point(217, 150);
-            this.LeastPopLabel.Name = "LeastPopLabel";
-            this.LeastPopLabel.Size = new System.Drawing.Size(100, 13);
-            this.LeastPopLabel.TabIndex = 3;
-            this.LeastPopLabel.Text = "Least Popular Area:";
             // 
             // CommonGroundsLabel
             // 
@@ -266,35 +241,17 @@ namespace WindowsFormsApplication2
             this.CollabLabel.TabIndex = 19;
             this.CollabLabel.Text = "Collab Rooms";
             // 
-            // MostPopVal
-            // 
-            this.MostPopVal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.MostPopVal.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.MostPopVal.Location = new System.Drawing.Point(323, 112);
-            this.MostPopVal.Name = "MostPopVal";
-            this.MostPopVal.Size = new System.Drawing.Size(122, 13);
-            this.MostPopVal.TabIndex = 35;
-            // 
-            // LeastPopVal
-            // 
-            this.LeastPopVal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LeastPopVal.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.LeastPopVal.Location = new System.Drawing.Point(323, 150);
-            this.LeastPopVal.Name = "LeastPopVal";
-            this.LeastPopVal.Size = new System.Drawing.Size(122, 13);
-            this.LeastPopVal.TabIndex = 36;
-            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(295, 185);
+            this.label1.Location = new System.Drawing.Point(234, 122);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
+            this.label1.Size = new System.Drawing.Size(101, 17);
             this.label1.TabIndex = 37;
-            this.label1.Text = "Averages";
+            this.label1.Text = "Total Average:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // duration
@@ -347,38 +304,6 @@ namespace WindowsFormsApplication2
             this.groupBoxStats.TabIndex = 40;
             this.groupBoxStats.TabStop = false;
             // 
-            // CommonGroundsNum
-            // 
-            this.CommonGroundsNum.Location = new System.Drawing.Point(143, 18);
-            this.CommonGroundsNum.Name = "CommonGroundsNum";
-            this.CommonGroundsNum.ReadOnly = true;
-            this.CommonGroundsNum.Size = new System.Drawing.Size(45, 20);
-            this.CommonGroundsNum.TabIndex = 35;
-            // 
-            // CommuterLoungeNum
-            // 
-            this.CommuterLoungeNum.Location = new System.Drawing.Point(143, 44);
-            this.CommuterLoungeNum.Name = "CommuterLoungeNum";
-            this.CommuterLoungeNum.ReadOnly = true;
-            this.CommuterLoungeNum.Size = new System.Drawing.Size(45, 20);
-            this.CommuterLoungeNum.TabIndex = 36;
-            // 
-            // HiveNum
-            // 
-            this.HiveNum.Location = new System.Drawing.Point(143, 96);
-            this.HiveNum.Name = "HiveNum";
-            this.HiveNum.ReadOnly = true;
-            this.HiveNum.Size = new System.Drawing.Size(45, 20);
-            this.HiveNum.TabIndex = 38;
-            // 
-            // MediaRoomNum
-            // 
-            this.MediaRoomNum.Location = new System.Drawing.Point(143, 70);
-            this.MediaRoomNum.Name = "MediaRoomNum";
-            this.MediaRoomNum.ReadOnly = true;
-            this.MediaRoomNum.Size = new System.Drawing.Size(45, 20);
-            this.MediaRoomNum.TabIndex = 37;
-            // 
             // ActivitiesNum
             // 
             this.ActivitiesNum.Location = new System.Drawing.Point(143, 200);
@@ -386,78 +311,6 @@ namespace WindowsFormsApplication2
             this.ActivitiesNum.ReadOnly = true;
             this.ActivitiesNum.Size = new System.Drawing.Size(45, 20);
             this.ActivitiesNum.TabIndex = 42;
-            // 
-            // MailNum
-            // 
-            this.MailNum.Location = new System.Drawing.Point(143, 174);
-            this.MailNum.Name = "MailNum";
-            this.MailNum.ReadOnly = true;
-            this.MailNum.Size = new System.Drawing.Size(45, 20);
-            this.MailNum.TabIndex = 41;
-            // 
-            // GreatRoomNum
-            // 
-            this.GreatRoomNum.Location = new System.Drawing.Point(143, 148);
-            this.GreatRoomNum.Name = "GreatRoomNum";
-            this.GreatRoomNum.ReadOnly = true;
-            this.GreatRoomNum.Size = new System.Drawing.Size(45, 20);
-            this.GreatRoomNum.TabIndex = 40;
-            // 
-            // BreakoutNum
-            // 
-            this.BreakoutNum.Location = new System.Drawing.Point(143, 122);
-            this.BreakoutNum.Name = "BreakoutNum";
-            this.BreakoutNum.ReadOnly = true;
-            this.BreakoutNum.Size = new System.Drawing.Size(45, 20);
-            this.BreakoutNum.TabIndex = 39;
-            // 
-            // Other1Num
-            // 
-            this.Other1Num.Location = new System.Drawing.Point(338, 18);
-            this.Other1Num.Name = "Other1Num";
-            this.Other1Num.ReadOnly = true;
-            this.Other1Num.Size = new System.Drawing.Size(45, 20);
-            this.Other1Num.TabIndex = 35;
-            // 
-            // Other2Num
-            // 
-            this.Other2Num.Location = new System.Drawing.Point(338, 44);
-            this.Other2Num.Name = "Other2Num";
-            this.Other2Num.ReadOnly = true;
-            this.Other2Num.Size = new System.Drawing.Size(45, 20);
-            this.Other2Num.TabIndex = 36;
-            // 
-            // Halls1Num
-            // 
-            this.Halls1Num.Location = new System.Drawing.Point(338, 70);
-            this.Halls1Num.Name = "Halls1Num";
-            this.Halls1Num.ReadOnly = true;
-            this.Halls1Num.Size = new System.Drawing.Size(45, 20);
-            this.Halls1Num.TabIndex = 37;
-            // 
-            // Halls2Num
-            // 
-            this.Halls2Num.Location = new System.Drawing.Point(338, 96);
-            this.Halls2Num.Name = "Halls2Num";
-            this.Halls2Num.ReadOnly = true;
-            this.Halls2Num.Size = new System.Drawing.Size(45, 20);
-            this.Halls2Num.TabIndex = 38;
-            // 
-            // GameRoomNum
-            // 
-            this.GameRoomNum.Location = new System.Drawing.Point(338, 122);
-            this.GameRoomNum.Name = "GameRoomNum";
-            this.GameRoomNum.ReadOnly = true;
-            this.GameRoomNum.Size = new System.Drawing.Size(45, 20);
-            this.GameRoomNum.TabIndex = 39;
-            // 
-            // PrayerNum
-            // 
-            this.PrayerNum.Location = new System.Drawing.Point(338, 148);
-            this.PrayerNum.Name = "PrayerNum";
-            this.PrayerNum.ReadOnly = true;
-            this.PrayerNum.Size = new System.Drawing.Size(45, 20);
-            this.PrayerNum.TabIndex = 40;
             // 
             // CollabNum
             // 
@@ -467,19 +320,129 @@ namespace WindowsFormsApplication2
             this.CollabNum.Size = new System.Drawing.Size(45, 20);
             this.CollabNum.TabIndex = 41;
             // 
+            // MailNum
+            // 
+            this.MailNum.Location = new System.Drawing.Point(143, 174);
+            this.MailNum.Name = "MailNum";
+            this.MailNum.ReadOnly = true;
+            this.MailNum.Size = new System.Drawing.Size(45, 20);
+            this.MailNum.TabIndex = 41;
+            // 
+            // PrayerNum
+            // 
+            this.PrayerNum.Location = new System.Drawing.Point(338, 148);
+            this.PrayerNum.Name = "PrayerNum";
+            this.PrayerNum.ReadOnly = true;
+            this.PrayerNum.Size = new System.Drawing.Size(45, 20);
+            this.PrayerNum.TabIndex = 40;
+            // 
+            // GreatRoomNum
+            // 
+            this.GreatRoomNum.Location = new System.Drawing.Point(143, 148);
+            this.GreatRoomNum.Name = "GreatRoomNum";
+            this.GreatRoomNum.ReadOnly = true;
+            this.GreatRoomNum.Size = new System.Drawing.Size(45, 20);
+            this.GreatRoomNum.TabIndex = 40;
+            // 
+            // GameRoomNum
+            // 
+            this.GameRoomNum.Location = new System.Drawing.Point(338, 122);
+            this.GameRoomNum.Name = "GameRoomNum";
+            this.GameRoomNum.ReadOnly = true;
+            this.GameRoomNum.Size = new System.Drawing.Size(45, 20);
+            this.GameRoomNum.TabIndex = 39;
+            // 
+            // BreakoutNum
+            // 
+            this.BreakoutNum.Location = new System.Drawing.Point(143, 122);
+            this.BreakoutNum.Name = "BreakoutNum";
+            this.BreakoutNum.ReadOnly = true;
+            this.BreakoutNum.Size = new System.Drawing.Size(45, 20);
+            this.BreakoutNum.TabIndex = 39;
+            // 
+            // Halls2Num
+            // 
+            this.Halls2Num.Location = new System.Drawing.Point(338, 96);
+            this.Halls2Num.Name = "Halls2Num";
+            this.Halls2Num.ReadOnly = true;
+            this.Halls2Num.Size = new System.Drawing.Size(45, 20);
+            this.Halls2Num.TabIndex = 38;
+            // 
+            // HiveNum
+            // 
+            this.HiveNum.Location = new System.Drawing.Point(143, 96);
+            this.HiveNum.Name = "HiveNum";
+            this.HiveNum.ReadOnly = true;
+            this.HiveNum.Size = new System.Drawing.Size(45, 20);
+            this.HiveNum.TabIndex = 38;
+            // 
+            // Halls1Num
+            // 
+            this.Halls1Num.Location = new System.Drawing.Point(338, 70);
+            this.Halls1Num.Name = "Halls1Num";
+            this.Halls1Num.ReadOnly = true;
+            this.Halls1Num.Size = new System.Drawing.Size(45, 20);
+            this.Halls1Num.TabIndex = 37;
+            // 
+            // Other2Num
+            // 
+            this.Other2Num.Location = new System.Drawing.Point(338, 44);
+            this.Other2Num.Name = "Other2Num";
+            this.Other2Num.ReadOnly = true;
+            this.Other2Num.Size = new System.Drawing.Size(45, 20);
+            this.Other2Num.TabIndex = 36;
+            // 
+            // MediaRoomNum
+            // 
+            this.MediaRoomNum.Location = new System.Drawing.Point(143, 70);
+            this.MediaRoomNum.Name = "MediaRoomNum";
+            this.MediaRoomNum.ReadOnly = true;
+            this.MediaRoomNum.Size = new System.Drawing.Size(45, 20);
+            this.MediaRoomNum.TabIndex = 37;
+            // 
+            // Other1Num
+            // 
+            this.Other1Num.Location = new System.Drawing.Point(338, 18);
+            this.Other1Num.Name = "Other1Num";
+            this.Other1Num.ReadOnly = true;
+            this.Other1Num.Size = new System.Drawing.Size(45, 20);
+            this.Other1Num.TabIndex = 35;
+            // 
+            // CommuterLoungeNum
+            // 
+            this.CommuterLoungeNum.Location = new System.Drawing.Point(143, 44);
+            this.CommuterLoungeNum.Name = "CommuterLoungeNum";
+            this.CommuterLoungeNum.ReadOnly = true;
+            this.CommuterLoungeNum.Size = new System.Drawing.Size(45, 20);
+            this.CommuterLoungeNum.TabIndex = 36;
+            // 
+            // CommonGroundsNum
+            // 
+            this.CommonGroundsNum.Location = new System.Drawing.Point(143, 18);
+            this.CommonGroundsNum.Name = "CommonGroundsNum";
+            this.CommonGroundsNum.ReadOnly = true;
+            this.CommonGroundsNum.Size = new System.Drawing.Size(45, 20);
+            this.CommonGroundsNum.TabIndex = 35;
+            // 
+            // totalAverage
+            // 
+            this.totalAverage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.totalAverage.Location = new System.Drawing.Point(337, 121);
+            this.totalAverage.Name = "totalAverage";
+            this.totalAverage.ReadOnly = true;
+            this.totalAverage.Size = new System.Drawing.Size(45, 20);
+            this.totalAverage.TabIndex = 41;
+            // 
             // Statistics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(663, 519);
+            this.Controls.Add(this.totalAverage);
             this.Controls.Add(this.groupBoxStats);
             this.Controls.Add(this.duration);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.LeastPopVal);
-            this.Controls.Add(this.MostPopVal);
-            this.Controls.Add(this.LeastPopLabel);
-            this.Controls.Add(this.MostPopLabel);
             this.Controls.Add(this.WeeklyStats);
             this.Controls.Add(this.button1);
             this.Name = "Statistics";
@@ -499,8 +462,6 @@ namespace WindowsFormsApplication2
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label WeeklyStats;
-        private System.Windows.Forms.Label MostPopLabel;
-        private System.Windows.Forms.Label LeastPopLabel;
         private System.Windows.Forms.Label CommonGroundsLabel;
         private System.Windows.Forms.Label CommuterLoungeLabel;
         private System.Windows.Forms.Label MediaRoomLabel;
@@ -516,8 +477,6 @@ namespace WindowsFormsApplication2
         private System.Windows.Forms.Label GameRoomLabel;
         private System.Windows.Forms.Label PrayerLabel;
         private System.Windows.Forms.Label CollabLabel;
-        private System.Windows.Forms.Label MostPopVal;
-        private System.Windows.Forms.Label LeastPopVal;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button duration;
         private System.Windows.Forms.GroupBox groupBoxStats;
@@ -536,5 +495,6 @@ namespace WindowsFormsApplication2
         private System.Windows.Forms.TextBox MediaRoomNum;
         private System.Windows.Forms.TextBox Other1Num;
         private System.Windows.Forms.TextBox CommuterLoungeNum;
+        private System.Windows.Forms.TextBox totalAverage;
     }
 }
