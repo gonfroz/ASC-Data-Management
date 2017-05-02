@@ -17,15 +17,14 @@ namespace WindowsFormsApplication2
             InitializeComponent();
         }
 
+        //Submit item checkout
         private void button1_Click(object sender, EventArgs e)
         {
-            //find checked buttons
+            //determine game
             var game = gamescheck.Controls.OfType<RadioButton>().FirstOrDefault(n => n.Checked);
-            var cons = console.Controls.OfType<RadioButton>().FirstOrDefault(n => n.Checked);
 
             //names of buttons
-            var gameName ="";
-            var consoleName = "";
+            var gameName ="";            
 
             //in case no button was selected (button is null)
             try
@@ -35,15 +34,8 @@ namespace WindowsFormsApplication2
             catch (NullReferenceException)
             {
             }
-
-            try
-            {
-                consoleName = cons.Text;
-            }
-            catch (NullReferenceException)
-            {
-            }
-                    
+            
+            //controllers, hdmi, and charger controls
             var controllerNum = ControllersNum.Value;
             var hdmiNum = 0;
             if(hdmi.Checked) { hdmiNum++; }
@@ -68,27 +60,23 @@ namespace WindowsFormsApplication2
                 (ctrl as RadioButton).Checked = false;
             }
 
-            foreach (Control ctrl in console.Controls)
-            {
-                (ctrl as RadioButton).Checked = false;
-            }
-
         }
 
+        //return to main menu
         private void BackButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        //return a checked out item
         private void button1_Click_1(object sender, EventArgs e)
         {
 
             if (MessageBox.Show("Are you sure you want to return these items?", "Confirm", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk) == DialogResult.OK)
             {
-
                 try
                 {
-
+                    //read csv
                     var lines = new List<string>();
                     var file = new System.IO.StreamReader("asc_checkout_list.csv");
                     string line;
@@ -99,7 +87,6 @@ namespace WindowsFormsApplication2
                     file.Close();
 
                     lines.RemoveAt(listView1.SelectedIndices[0]);
-
                     System.IO.File.WriteAllLines("asc_checkout_list.csv", lines);
 
                     //remove from listView1
@@ -111,7 +98,6 @@ namespace WindowsFormsApplication2
                     MessageBox.Show("No item selected to remove.", "Select an Item",
                     MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
-
             }
         }
 
@@ -119,17 +105,20 @@ namespace WindowsFormsApplication2
         {
             try
             {
+                //get file
                 System.IO.FileStream srcFS;
                 srcFS = new System.IO.FileStream("asc_checkout_list.csv", System.IO.FileMode.OpenOrCreate);
                 System.IO.StreamReader srcSR = new System.IO.StreamReader(srcFS, System.Text.Encoding.Default);
                 while (true)
                 {
+                    //read and split lines
                     string ins = srcSR.ReadLine();
                     if (ins == null){
                         break;
                     }
                     string[] columns = ins.Split(',');
 
+                    //add items to listview
                     ListViewItem lvi = new ListViewItem(columns[0]);
 
                     for (int i = 1; i < columns.Count(); i++)
@@ -142,6 +131,75 @@ namespace WindowsFormsApplication2
                 }
                 srcSR.Close();
                     
+            }
+            catch (Exception errorMsg)
+            {
+                MessageBox.Show(errorMsg.Message, "Error reading a file", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        //Physical games
+        private void PhysicalRadio_CheckedChanged(object sender, EventArgs e)
+        {
+            if (PhysicalRadio.Checked)
+            {
+                AddRadioButtons(3);
+            }
+        }
+
+        //Playstation games
+        private void PSRadio_CheckedChanged(object sender, EventArgs e)
+        {
+            if (PSRadio.Checked)
+            {
+                AddRadioButtons(0);
+            }
+        }
+
+        //Wii games
+        private void WiiRadio_CheckedChanged(object sender, EventArgs e)
+        {
+            if (WiiRadio.Checked)
+            {
+                AddRadioButtons(1);
+            }
+        }
+
+        //Xbox games
+        private void XBoxRadio_CheckedChanged(object sender, EventArgs e)
+        {
+            if (XBoxRadio.Checked)
+            {
+                AddRadioButtons(2);
+            }
+        }
+        
+        //list radiobuttons
+        private void AddRadioButtons(int column)
+        {
+        try
+            {
+                //get the list of games
+                gamescheck.Controls.Clear();
+                string[] lines = System.IO.File.ReadAllLines(@"asc_inventory.csv");
+                var columnQuery =
+                from line in lines
+                let elements = line.Split(',')
+                select Convert.ToString(elements[column]);
+                var results = columnQuery.ToList();
+                results.RemoveAt(0);
+                
+                //add radiobuttons to the panel
+                foreach (var myText in results)
+                {
+                    
+                    if (myText != "") {
+                        RadioButton rb = new RadioButton();
+                        rb.Text = myText;
+                        rb.Name = myText;
+                        gamescheck.Controls.Add(rb);
+                    }
+                }
             }
             catch (Exception errorMsg)
             {

@@ -36,20 +36,12 @@
             this.XBoxRadio = new System.Windows.Forms.RadioButton();
             this.WiiRadio = new System.Windows.Forms.RadioButton();
             this.PSRadio = new System.Windows.Forms.RadioButton();
+            this.PhysicalRadio = new System.Windows.Forms.RadioButton();
             this.ControllersNum = new System.Windows.Forms.NumericUpDown();
             this.ControllersLabel = new System.Windows.Forms.Label();
             this.BackButton = new System.Windows.Forms.Button();
             this.returnButton = new System.Windows.Forms.Button();
             this.console = new System.Windows.Forms.GroupBox();
-            this.gamescheck = new System.Windows.Forms.GroupBox();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.hdmi = new System.Windows.Forms.CheckBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -60,9 +52,9 @@
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chargers = new System.Windows.Forms.CheckBox();
+            this.gamescheck = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.ControllersNum)).BeginInit();
             this.console.SuspendLayout();
-            this.gamescheck.SuspendLayout();
             this.SuspendLayout();
             // 
             // NameBox
@@ -115,14 +107,13 @@
             // XBoxRadio
             // 
             this.XBoxRadio.AutoSize = true;
-            this.XBoxRadio.Checked = true;
             this.XBoxRadio.Location = new System.Drawing.Point(9, 19);
             this.XBoxRadio.Name = "XBoxRadio";
             this.XBoxRadio.Size = new System.Drawing.Size(48, 17);
             this.XBoxRadio.TabIndex = 25;
-            this.XBoxRadio.TabStop = true;
             this.XBoxRadio.Text = "xBox";
             this.XBoxRadio.UseVisualStyleBackColor = true;
+            this.XBoxRadio.CheckedChanged += new System.EventHandler(this.XBoxRadio_CheckedChanged);
             // 
             // WiiRadio
             // 
@@ -133,6 +124,7 @@
             this.WiiRadio.TabIndex = 26;
             this.WiiRadio.Text = "Wii";
             this.WiiRadio.UseVisualStyleBackColor = true;
+            this.WiiRadio.CheckedChanged += new System.EventHandler(this.WiiRadio_CheckedChanged);
             // 
             // PSRadio
             // 
@@ -143,6 +135,18 @@
             this.PSRadio.TabIndex = 27;
             this.PSRadio.Text = "Playstation";
             this.PSRadio.UseVisualStyleBackColor = true;
+            this.PSRadio.CheckedChanged += new System.EventHandler(this.PSRadio_CheckedChanged);
+            // 
+            // PhysicalRadio
+            // 
+            this.PhysicalRadio.AutoSize = true;
+            this.PhysicalRadio.Location = new System.Drawing.Point(9, 88);
+            this.PhysicalRadio.Name = "PhysicalRadio";
+            this.PhysicalRadio.Size = new System.Drawing.Size(64, 17);
+            this.PhysicalRadio.TabIndex = 29;
+            this.PhysicalRadio.Text = "Physical";
+            this.PhysicalRadio.UseVisualStyleBackColor = true;
+            this.PhysicalRadio.CheckedChanged += new System.EventHandler(this.PhysicalRadio_CheckedChanged);
             // 
             // ControllersNum
             // 
@@ -189,122 +193,16 @@
             // 
             this.console.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.console.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.console.Controls.Add(this.PhysicalRadio);
             this.console.Controls.Add(this.XBoxRadio);
             this.console.Controls.Add(this.WiiRadio);
             this.console.Controls.Add(this.PSRadio);
             this.console.Location = new System.Drawing.Point(15, 16);
             this.console.Name = "console";
-            this.console.Size = new System.Drawing.Size(92, 92);
+            this.console.Size = new System.Drawing.Size(92, 111);
             this.console.TabIndex = 40;
             this.console.TabStop = false;
             this.console.Text = "Console";
-            // 
-            // gamescheck
-            // 
-            this.gamescheck.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gamescheck.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gamescheck.Controls.Add(this.radioButton7);
-            this.gamescheck.Controls.Add(this.radioButton8);
-            this.gamescheck.Controls.Add(this.radioButton4);
-            this.gamescheck.Controls.Add(this.radioButton5);
-            this.gamescheck.Controls.Add(this.radioButton6);
-            this.gamescheck.Controls.Add(this.radioButton1);
-            this.gamescheck.Controls.Add(this.radioButton2);
-            this.gamescheck.Controls.Add(this.radioButton3);
-            this.gamescheck.Location = new System.Drawing.Point(136, 16);
-            this.gamescheck.Name = "gamescheck";
-            this.gamescheck.Size = new System.Drawing.Size(98, 155);
-            this.gamescheck.TabIndex = 41;
-            this.gamescheck.TabStop = false;
-            this.gamescheck.Text = "Games";
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(5, 109);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(73, 17);
-            this.radioButton7.TabIndex = 31;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Mario Kart";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(5, 124);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(85, 17);
-            this.radioButton8.TabIndex = 32;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Battle Toads";
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(5, 64);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(87, 17);
-            this.radioButton4.TabIndex = 28;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Madden NFL";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(5, 79);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(71, 17);
-            this.radioButton5.TabIndex = 29;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Battlefield";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(5, 94);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(79, 17);
-            this.radioButton6.TabIndex = 30;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Call of Duty";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(5, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(90, 17);
-            this.radioButton1.TabIndex = 25;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Donkey Kong";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(5, 34);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(42, 17);
-            this.radioButton2.TabIndex = 26;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Fifa";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(5, 49);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(81, 17);
-            this.radioButton3.TabIndex = 27;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Smash Bros";
-            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // hdmi
             // 
@@ -383,16 +281,28 @@
             this.chargers.Text = "Phone Charger";
             this.chargers.UseVisualStyleBackColor = true;
             // 
+            // gamescheck
+            // 
+            this.gamescheck.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gamescheck.AutoScroll = true;
+            this.gamescheck.BackColor = System.Drawing.SystemColors.Control;
+            this.gamescheck.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.gamescheck.Location = new System.Drawing.Point(117, 14);
+            this.gamescheck.Name = "gamescheck";
+            this.gamescheck.Size = new System.Drawing.Size(138, 170);
+            this.gamescheck.TabIndex = 47;
+            // 
             // Checkout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(513, 391);
+            this.Controls.Add(this.gamescheck);
             this.Controls.Add(this.chargers);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.hdmi);
-            this.Controls.Add(this.gamescheck);
             this.Controls.Add(this.console);
             this.Controls.Add(this.returnButton);
             this.Controls.Add(this.BackButton);
@@ -410,8 +320,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ControllersNum)).EndInit();
             this.console.ResumeLayout(false);
             this.console.PerformLayout();
-            this.gamescheck.ResumeLayout(false);
-            this.gamescheck.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -426,20 +334,12 @@
         private System.Windows.Forms.RadioButton XBoxRadio;
         private System.Windows.Forms.RadioButton WiiRadio;
         private System.Windows.Forms.RadioButton PSRadio;
+        private System.Windows.Forms.RadioButton PhysicalRadio;
         private System.Windows.Forms.NumericUpDown ControllersNum;
         private System.Windows.Forms.Label ControllersLabel;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button returnButton;
         private System.Windows.Forms.GroupBox console;
-        private System.Windows.Forms.GroupBox gamescheck;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.CheckBox hdmi;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
@@ -450,5 +350,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.CheckBox chargers;
         private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.FlowLayoutPanel gamescheck;
     }
 }

@@ -28,7 +28,7 @@ namespace WindowsFormsApplication2
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.backButton = new System.Windows.Forms.Button();
             this.WeeklyStats = new System.Windows.Forms.Label();
             this.CommonGroundsLabel = new System.Windows.Forms.Label();
             this.CommuterLoungeLabel = new System.Windows.Forms.Label();
@@ -70,16 +70,16 @@ namespace WindowsFormsApplication2
             this.groupBoxStats.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // backButton
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(12, 471);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.backButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.backButton.Location = new System.Drawing.Point(12, 471);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(82, 36);
+            this.backButton.TabIndex = 0;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // WeeklyStats
             // 
@@ -440,11 +440,11 @@ namespace WindowsFormsApplication2
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(190, 174);
+            this.label2.Location = new System.Drawing.Point(183, 174);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 17);
+            this.label2.Size = new System.Drawing.Size(82, 17);
             this.label2.TabIndex = 42;
-            this.label2.Text = "Begin Date";
+            this.label2.Text = "Begin Date:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox2
@@ -483,7 +483,7 @@ namespace WindowsFormsApplication2
             this.Controls.Add(this.groupBoxStats);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.WeeklyStats);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.backButton);
             this.Name = "Statistics";
             this.Text = "Statistics";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -499,7 +499,7 @@ namespace WindowsFormsApplication2
 
 
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Label WeeklyStats;
         private System.Windows.Forms.Label CommonGroundsLabel;
         private System.Windows.Forms.Label CommuterLoungeLabel;

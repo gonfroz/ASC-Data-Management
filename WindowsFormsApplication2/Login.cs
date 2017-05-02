@@ -17,8 +17,10 @@ namespace WindowsFormsApplication2
             InitializeComponent();
         }
 
+        //login button
         private void button1_Click(object sender, EventArgs e)
         {
+            //if no name is entered, prompt for name
             if (textBox1.Text == "")
             {
                 MessageBox.Show("Please enter your name.", "Sign In",
@@ -26,6 +28,7 @@ namespace WindowsFormsApplication2
             }
             else
             {
+                //open main menu, and save username
                 this.Hide();
                 Manager.MainInstance.workerName = textBox1.Text;
                 Manager.MainInstance.ShowDialog();
@@ -34,6 +37,7 @@ namespace WindowsFormsApplication2
             }
         }
 
+        //exit
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();

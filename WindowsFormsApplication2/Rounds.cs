@@ -25,6 +25,7 @@ namespace WindowsFormsApplication2
             {
                 string[] lines = System.IO.File.ReadAllLines(@"asc_data.csv");
 
+                //worker name
                 var columnQuery =
                 from line in lines
                 let elements = line.Split(',')
@@ -33,6 +34,7 @@ namespace WindowsFormsApplication2
 
                 worker.Text = results.Last().ToString();
 
+                //time
                 columnQuery =
                 from line in lines
                 let elements = line.Split(',')
@@ -48,6 +50,7 @@ namespace WindowsFormsApplication2
                 MessageBox.Show(errorMsg.Message, "Error reading a file", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+            //zero values
             commonGrounds.Value = 0; commuter.Value = 0; mediaRoom.Value = 0; hive.Value = 0;
             breakout.Value = 0; greatRoom.Value = 0; mailCenter.Value = 0; hallways1.Value = 0;
             other1.Value = 0; colabs.Value = 0; prayer.Value = 0; activities.Value = 0;
@@ -75,7 +78,7 @@ namespace WindowsFormsApplication2
             }
         }
 
-        //exit
+        //return to main menu
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();

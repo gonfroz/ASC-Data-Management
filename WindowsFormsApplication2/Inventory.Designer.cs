@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
+            this.backButton = new System.Windows.Forms.Button();
             this.sfdInventory = new System.Windows.Forms.SaveFileDialog();
             this.ofdInventory = new System.Windows.Forms.OpenFileDialog();
             this.inventoryBox = new System.Windows.Forms.ListView();
@@ -43,26 +43,16 @@
             this.otherAmount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
-            // button5
+            // backButton
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button5.Location = new System.Drawing.Point(12, 359);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 40);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "Back";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // sfdInventory
-            // 
-            this.sfdInventory.Filter = "CSV File|*.csv|All Files|*.*";
-            this.sfdInventory.FileOk += new System.ComponentModel.CancelEventHandler(this.sfdInventory_FileOk);
-            // 
-            // ofdInventory
-            // 
-            this.ofdInventory.Filter = "CSV File|*.csv|All Files|*.*";
-            this.ofdInventory.FileOk += new System.ComponentModel.CancelEventHandler(this.ofdInventory_FileOk);
+            this.backButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.backButton.Location = new System.Drawing.Point(12, 359);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(80, 40);
+            this.backButton.TabIndex = 8;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.button5_Click);
             // 
             // inventoryBox
             // 
@@ -79,10 +69,10 @@
             this.otherAmount});
             this.inventoryBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F);
             this.inventoryBox.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.inventoryBox.Location = new System.Drawing.Point(19, 85);
+            this.inventoryBox.Location = new System.Drawing.Point(13, 59);
             this.inventoryBox.MultiSelect = false;
             this.inventoryBox.Name = "inventoryBox";
-            this.inventoryBox.Size = new System.Drawing.Size(613, 240);
+            this.inventoryBox.Size = new System.Drawing.Size(624, 266);
             this.inventoryBox.TabIndex = 46;
             this.inventoryBox.UseCompatibleStateImageBehavior = false;
             this.inventoryBox.View = System.Windows.Forms.View.Details;
@@ -109,7 +99,7 @@
             // physical
             // 
             this.physical.Text = "Physical";
-            this.physical.Width = 79;
+            this.physical.Width = 101;
             // 
             // controllers
             // 
@@ -137,7 +127,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(651, 411);
             this.Controls.Add(this.inventoryBox);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.backButton);
             this.Name = "Inventory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inventory";
@@ -148,7 +138,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.SaveFileDialog sfdInventory;
         private System.Windows.Forms.OpenFileDialog ofdInventory;
         private System.Windows.Forms.ListView inventoryBox;

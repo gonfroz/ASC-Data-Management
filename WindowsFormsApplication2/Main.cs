@@ -12,6 +12,7 @@ namespace WindowsFormsApplication2
 {
     public partial class Main : Form
     {
+        //worker name getter
         private string _workerName;
         public string workerName
         {
@@ -28,14 +29,7 @@ namespace WindowsFormsApplication2
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Statistics frm = new Statistics();
-            this.Hide();
-            frm.ShowDialog();
-            this.Show();
-        }
-
+        //set text of worker name
         delegate void updateLabelText(string text);
         private void updateWorker(string e)
         {
@@ -52,6 +46,16 @@ namespace WindowsFormsApplication2
             }
         }
 
+        //open statistics page
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Statistics frm = new Statistics();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+        //open rounds page
         private void button1_Click(object sender, EventArgs e)
         {
             Rounds frm = new Rounds();
@@ -60,6 +64,7 @@ namespace WindowsFormsApplication2
             this.Show();
         }
 
+        //open inventory page
         private void button4_Click(object sender, EventArgs e)
         {
             Inventory frm = new Inventory();
@@ -68,6 +73,7 @@ namespace WindowsFormsApplication2
             this.Show();
         }
 
+        //open checkout page
         private void button2_Click(object sender, EventArgs e)
         {
             Checkout frm = new Checkout();
@@ -76,6 +82,7 @@ namespace WindowsFormsApplication2
             this.Show();
         }
 
+        //exit
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
