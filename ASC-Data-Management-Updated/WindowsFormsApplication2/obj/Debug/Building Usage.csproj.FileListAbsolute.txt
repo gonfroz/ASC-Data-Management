@@ -1,0 +1,15 @@
+F:\Connor Manning\Downloads\ASC-Data-Management-Updated (6)\ASC-Data-Management-Updated\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+F:\Connor Manning\Downloads\ASC-Data-Management-Updated (6)\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\Building Usage.csproj.ResolveComReference.cache
+F:\Connor Manning\Downloads\ASC-Data-Management-Updated (6)\ASC-Data-Management-Updated\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+F:\Connor Manning\Downloads\ASC-Data-Management-Updated (6)\ASC-Data-Management-Updated\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+F:\Connor Manning\Downloads\ASC-Data-Management-Updated (6)\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\Building Usage.csprojResolveAssemblyReference.cache
+F:\Connor Manning\Downloads\ASC-Data-Management-Updated (6)\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Checkout.resources
+F:\Connor Manning\Downloads\ASC-Data-Management-Updated (6)\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Rounds.resources
+F:\Connor Manning\Downloads\ASC-Data-Management-Updated (6)\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Main.resources
+F:\Connor Manning\Downloads\ASC-Data-Management-Updated (6)\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Inventory.resources
+F:\Connor Manning\Downloads\ASC-Data-Management-Updated (6)\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Statistics.resources
+F:\Connor Manning\Downloads\ASC-Data-Management-Updated (6)\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Login.resources
+F:\Connor Manning\Downloads\ASC-Data-Management-Updated (6)\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+F:\Connor Manning\Downloads\ASC-Data-Management-Updated (6)\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\Building Usage.csproj.GenerateResource.Cache
+F:\Connor Manning\Downloads\ASC-Data-Management-Updated (6)\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+F:\Connor Manning\Downloads\ASC-Data-Management-Updated (6)\ASC-Data-Management-Updated\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
